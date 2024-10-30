@@ -1,0 +1,95 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+ul,
+ol {
+  list-style: none; /* Remove os marcadores da lista */
+  padding: 0; /* Remove o preenchimento padrão */
+  margin: 0; /* Remove a margem padrão */
+}
+
+a {
+  text-decoration: none; /* Remove o sublinhado do link */
+}
+body {
+  margin: 1px;
+overflow-x: hidden;
+}
+footer {
+  background-color: purple;
+}
+
+header,
+.main-inicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  height: 100vh;
+background-color: antiquewhite;
+}
+nav {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.logo-header {
+  width: 20%;
+}
+.links-nav {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.botoes {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.botao-contato,
+.botao-iniciar {
+  background-color: orange;
+  border-radius: 20px 20px 20px 20px;
+  padding: 7px;
+}
+
+.main .main-inicio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main .main-comofunciona{
+background-color: rgb(255, 213, 96);
+}
+.col-1 {
+  width: 50%;
+  height: 100%;
+
+}
+.col-2 {
+  width: 50%;
+  height: 100%;
+}
+.linha-2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+}
+
+.texto {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  display: grid;
+  padding: 2%;
+  align-items: end;
+}
+.iframe {
+    width: 100%;
+  grid-column: 2/3;
+}
