@@ -5,7 +5,10 @@ body {
   margin: 0;
   overflow-x: hidden !important;
   padding: 0;
+  font-family: "Instrument Sans";
   overflow: hidden;
+  background: #ffff;
+  position: relative;
 }
 
 main {
@@ -80,7 +83,7 @@ main {
   align-items: flex-start;
   gap: 1rem;
 }
-span {
+#ai {
   color: orange;
 }
 
@@ -117,6 +120,7 @@ button {
 
 @media (min-width: 760px) and (max-width: 1024px) {
   main {
+    display: flex;
     flex-direction: column;
     height: 100vh;
     width: 93vw;
@@ -127,6 +131,7 @@ button {
 
 @media (min-width: 480px) and (max-width: 759px) {
   main {
+    display: flex;
     flex-direction: column;
     height: 100vh;
     max-width: 100vw;
@@ -137,11 +142,33 @@ button {
 
 @media (max-width: 479px) {
   main {
+    display: flex;
     flex-direction: column;
     max-width: 100vw;
     height: auto;
     padding: 0 0.5rem;
     padding-top: 6rem;
-    text-align: center;
   }
+}
+
+@media (max-width: 479px) {
+  img {
+    display: none;
+  }
+}
+
+@media (max-width: 479px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: normal;
+    gap: 30rem;
+    width: 100%;
+  }
+}
+@media (max-width: 479px) {
+.container2{
+  display: flex;
+  flex-direction: column;
+}
 }
