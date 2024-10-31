@@ -1,6 +1,31 @@
+:root {
+  --fundo: rgba(250, 115, 30, 0.4); /* Corrigi a variável */
+  --cor-primaria: #FA731E; /* Cor primária para botões */
+  --cor-secundaria: purple; /* Cor de fundo do footer */
+}
+
+body {
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.22; /* Usar unidade relativa para altura de linha */
+  margin: 5px;
+  overflow-x: hidden;
+}
+
+img{
+  width: 80%;
+}
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Para melhor controle do box model */
+}
+a{
+  text-decoration: none;
+}
+button{
+  text-decoration: none; /* Remove a decoração do texto */
+  border: 0px;
 }
 ul,
 ol {
@@ -9,87 +34,111 @@ ol {
   margin: 0; /* Remove a margem padrão */
 }
 
-a {
-  text-decoration: none; /* Remove o sublinhado do link */
-}
-body {
-  margin: 1px;
-overflow-x: hidden;
-}
-footer {
-  background-color: purple;
-}
 
-header,
-.main-inicio {
+header, .main-inicio {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-main {
-  height: 100vh;
-background-color: antiquewhite;
-}
 nav {
   width: 90%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between; /* Melhor organização */
 }
+
 .logo-header {
   width: 20%;
 }
+
 .links-nav {
-  width: 40%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.botoes {
+  justify-content: space-around; /* Melhor espaçamento */
   width: 40%;
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-}
-.botao-contato,
-.botao-iniciar {
-  background-color: orange;
-  border-radius: 20px 20px 20px 20px;
-  padding: 7px;
 }
 
-.main .main-inicio {
+.botoes {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+button {
+    background-color: var(--cor-primaria);
+  border-radius: 20px;
+  padding: 7px 15px; /* Mais espaçamento */
+  font-family: inherit; /* Mantém a fonte do body */
+  cursor: pointer; /* Muda o cursor para indicar que é um botão */
+}
+
+.main-inicio {
+  padding-top: 2%;
+  height: 100vh;
+  background-color: var(--fundo);
+  display: flex;
+  flex-wrap: wrap; /* Permite que os filhos quebrem para a próxima linha */
+}
+
+.col-1, .col-2 {
+  width: 50%;
+  height: 100%;
+}
+
+.linha-2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.texto {
+  width: 50%;
+  padding: 2%;
+  display: flex;
+  align-items: flex-end; /* Mais claro que end */
+}
+
+.iframe {
+  width: 50%;
+  height: 100%; /* Para preencher a altura do container */
+}
+
+footer {
+  background-color: var(--cor-secundaria);
+  text-align: center;
+  padding: 20px 0; /* Adiciona espaço ao redor do conteúdo */
+}
+
+.col-2{
+  display: grid;
+  grid-template-rows: 40% 40%;
+
+}
+.linha-1-col-2{
+  width: 80%;
+grid-area: 1/3;
+display: grid;
+justify-content: space-evenly;
+}
+.linha-2-col-2{
+  grid-area: 2/3; 
   display: flex;
   flex-wrap: wrap;
 }
 
-.main .main-comofunciona{
-background-color: rgb(255, 213, 96);
+.botao-iniciarjornada{
+  width: 30%;
+  height: 55%;
 }
-.col-1 {
-  width: 50%;
-  height: 100%;
-
-}
-.col-2 {
-  width: 50%;
-  height: 100%;
-}
-.linha-2 {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 100%;
+.main-comofunciona{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.texto {
-  grid-column: 1 / 2;
-  grid-row: 1;
-  display: grid;
-  padding: 2%;
-  align-items: end;
+.img-boneca{
+  width: 50%;
 }
-.iframe {
-    width: 100%;
-  grid-column: 2/3;
+.texto-parte2{
+  width: 50%;
 }
