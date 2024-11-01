@@ -87,7 +87,7 @@ main {
   color: orange;
 }
 
-img {
+#img1 {
   width: 658px;
   height: 658px;
 }
@@ -140,24 +140,53 @@ button {
   }
 }
 
+
 @media (max-width: 479px) {
+  #logo {
+    width: 160px;
+    height: 62px;
+    margin-top: 44px;
+    margin-left: 30px;
+    font-family: "AirbnbCereal_W_Bd";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 62.5px;
+    text-align: left;
+  }
+  #p1 {
+    width: 360px;
+    height: 62px;
+    font-family: "Instrument Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #090830;
+  }
+  #termo {
+    font-size: 15px;
+  }
+
+  .img-icon {
+    width: 10px;
+    height: 10px;
+    display: flex;
+  }
   main {
     display: flex;
     flex-direction: column;
     max-width: 100vw;
     height: auto;
     padding: 0 0.5rem;
-    padding-top: 6rem;
+    padding-top: 3rem;
   }
-}
-
-@media (max-width: 479px) {
-  img {
+  #img1 {
     display: none;
   }
-}
-
-@media (max-width: 479px) {
+  .container2 {
+    display: flex;
+    flex-direction: column;
+  }
   .container {
     display: flex;
     align-items: center;
@@ -165,10 +194,4 @@ button {
     gap: 30rem;
     width: 100%;
   }
-}
-@media (max-width: 479px) {
-.container2{
-  display: flex;
-  flex-direction: column;
-}
 }
