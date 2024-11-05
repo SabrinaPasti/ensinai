@@ -110,6 +110,25 @@ main {
   width: 20px;
   height: 20px;
 }
+.container4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container4 .ou {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.container4 .forgot-password {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.click {
+  cursor: pointer;
+}
 button {
   width: 324px;
   height: 56px;
@@ -117,6 +136,9 @@ button {
   border-radius: 70px;
   background: #fa731e;
   border-radius: 70px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
 }
 
 @media (min-width: 760px) and (max-width: 1024px) {
@@ -195,7 +217,7 @@ button {
     width: 100%;
   }
 
-  .container1{
-    gap: 1.4rem
+  .container1 {
+    gap: 1.4rem;
   }
 }
