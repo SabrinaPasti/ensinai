@@ -1,50 +1,119 @@
 :root {
-  --fundo: rgba(250, 115, 30, 0.4); /* Corrigi a variável */
-  --cor-primaria: #FA731E; /* Cor primária para botões */
-  --cor-secundaria: purple; /* Cor de fundo do footer */
+  --fundo: rgba(250, 115, 30, 0.4);
+  /* Corrigi a variável */
+  --cor-primaria: #FA731E;
+  /* Cor primária para botões */
+  --cor-secundaria: purple;
+  /* Cor de fundo do footer */
+}
+
+h1 {
+  padding: 0%;
+  text-decoration: none;
 }
 
 body {
   font-family: "Instrument Sans", sans-serif;
   font-size: 18px;
-  line-height: 1.22; /* Usar unidade relativa para altura de linha */
-  margin: 5px;
+  line-height: 1.22;
   overflow-x: hidden;
 }
 
-img{
+h1,h2,p{
+    font-family: "Instrument Sans", sans-serif;
+
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: 500;
+  /* Tamanho da fonte */
+}
+
+.azul {
+  display: inline;
+  /* Mantém tudo na mesma linha */
+
+  color: blue;
+  /* Cor azul para ENSIN */
+}
+
+.laranja {
+  display: inline;
+  /* Mantém tudo na mesma linha */
+
+  color: orange;
+  /* Cor laranja para AÍ */
+}
+
+img {
   width: 80%;
 }
-* {
+
+*{
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Para melhor controle do box model */
+  box-sizing: border-box;
+  /* Para melhor controle do box model */
 }
-a{
+
+input{
+  border: 0px;
+  margin: 0px;
+  color: black;
   text-decoration: none;
+
 }
-button{
-  text-decoration: none; /* Remove a decoração do texto */
+a {
+  text-decoration: none;
+  color: black ;
+}
+p{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  text-decoration: none;
+  /* Remove a decoração do texto */
   border: 0px;
 }
+
 ul,
 ol {
-  list-style: none; /* Remove os marcadores da lista */
-  padding: 0; /* Remove o preenchimento padrão */
-  margin: 0; /* Remove a margem padrão */
+  list-style: none;
+  /* Remove os marcadores da lista */
+  padding: 0;
+  /* Remove o preenchimento padrão */
+  margin: 0;
+  /* Remove a margem padrão */
+}
+footer{
+  height: 20vh !important;
+  background-color: var(--cor-secundaria);
+  color: azure;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-
-header, .main-inicio {
+header,
+.main-inicio {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 nav {
-  width: 90%;
+  width: 100%;
+  padding: 0% 1% 0% 2%;
   display: flex;
-  justify-content: space-between; /* Melhor organização */
+  align-items: center;
+  justify-content: space-between;
+  /* Melhor organização */
+  background-color: var(--fundo);
+  ;
 }
 
 .logo-header {
@@ -53,7 +122,8 @@ nav {
 
 .links-nav {
   display: flex;
-  justify-content: space-around; /* Melhor espaçamento */
+  justify-content: space-around;
+  /* Melhor espaçamento */
   width: 40%;
 }
 
@@ -64,11 +134,21 @@ nav {
 }
 
 button {
-    background-color: var(--cor-primaria);
+  background-color: var(--cor-primaria);
   border-radius: 20px;
-  padding: 7px 15px; /* Mais espaçamento */
-  font-family: inherit; /* Mantém a fonte do body */
-  cursor: pointer; /* Muda o cursor para indicar que é um botão */
+  padding: 7px 15px;
+  /* Mais espaçamento */
+  font-family: inherit;
+  /* Mantém a fonte do body */
+  cursor: pointer;
+  /* Muda o cursor para indicar que é um botão */
+  align-items: center;
+  justify-content: center;
+}
+
+.img-boneca-1 {
+  height: 100%;
+
 }
 
 .main-inicio {
@@ -76,10 +156,12 @@ button {
   height: 100vh;
   background-color: var(--fundo);
   display: flex;
-  flex-wrap: wrap; /* Permite que os filhos quebrem para a próxima linha */
+  flex-wrap: wrap;
+  /* Permite que os filhos quebrem para a próxima linha */
 }
 
-.col-1, .col-2 {
+.col-1,
+.col-2 {
   width: 50%;
   height: 100%;
 }
@@ -93,52 +175,256 @@ button {
   width: 50%;
   padding: 2%;
   display: flex;
-  align-items: flex-end; /* Mais claro que end */
+  align-items: flex-end;
+  /* Mais claro que end */
 }
 
 .iframe {
   width: 50%;
-  height: 100%; /* Para preencher a altura do container */
+  height: 100%;
+  /* Para preencher a altura do container */
 }
 
-footer {
-  background-color: var(--cor-secundaria);
-  text-align: center;
-  padding: 20px 0; /* Adiciona espaço ao redor do conteúdo */
-}
 
-.col-2{
+.col-2 {
   display: grid;
   grid-template-rows: 40% 40%;
 
 }
-.linha-1-col-2{
+
+.linha-1-col-2 {
   width: 80%;
-grid-area: 1/3;
-display: grid;
-justify-content: space-evenly;
+  grid-area: 1/3;
+  display: grid;
+  justify-content: space-evenly;
 }
-.linha-2-col-2{
-  grid-area: 2/3; 
+
+.linha-2-col-2 {
+  grid-area: 2/3;
   display: flex;
   flex-wrap: wrap;
 }
 
-.botao-iniciarjornada{
+.botao-iniciarjornada {
   width: 30%;
-  height: 55%;
 }
-.main-comofunciona{
+
+.main-comofunciona {
   width: 100%;
   height: 100vh;
+  display: grid;
+  grid-template-rows: 20% 60% 20%;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+}
+
+.titulo-comofunciona {
+  grid-row: 1/2;
+  grid-column: 1/3;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-parte2 {
+  height: max-content;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.caixa-img-boneca-2 {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.img-boneca-2 {
+  display: grid;
+  justify-content: end;
+  width: 100%;
+  height: 80%;
+
+}
+h2{
+  width: 100%;
+  display: flex;
   justify-content: center;
 }
 
-.img-boneca{
-  width: 50%;
+.main-quemsomos {
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
-.texto-parte2{
-  width: 50%;
+
+.caixa-botao-comofunciona {
+  width: 100%;
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+}
+
+.botao-comofunciona {
+  width: 15%;
+  height: 20%;
+}
+
+
+.caixa-texto-parte2 {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 30% 70%;
+}
+
+.texto-parte1 {
+  grid-row: 1/2;
+  grid-column: 2/4;
+}
+
+.texto-parte2 {
+  grid-row: 2/3;
+  grid-column: 2/4;
+
+}
+
+.texto-parte3 {
+  grid-row: 3/4;
+  grid-column: 2/4;
+}
+
+.num1 {
+  color: blue;
+  grid-row: 1/2;
+  font-size: 100px;
+
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+}
+
+.num2 {
+  display: flex;
+  justify-content: center;
+  color: blue;
+  font-size: 100px;
+
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+.num3 {
+  display: flex;
+  justify-content: center;
+  color: blue;
+  font-size: 100px;
+  justify-content: center;
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+.caixa-cards {
+  width: 100%;
+  height: 90%;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 18%;
+  height: 100%;
+  border-radius: 8%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.img-card {
+  width: 100%;
+  height: 90%;
+  border-radius: 8%;
+  background-color: #FA731E;
+}
+
+.parte-azul {
+  height: 33%;
+    padding: 2%;
+
+  color: white;
+  background-color: rgb(5, 5, 77);
+}
+
+.parte-branca {
+  width: 100%;
+  height: 34%;
+}
+.caixa-contato {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 20%;
+
+}
+
+h1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.caixa-inputs {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 30% 60% 10%;
+justify-content: center;
+align-items: center;
+}
+
+.linha-inputs {
+  grid-row: 1/2;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.linha-inputs-caixa {
+  grid-row: 2/3;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  justify-content: center;
+}
+
+.botao-quemsomos {
+  grid-row: 3/4;
+  width: 30%;
+  height: 50%;
+
+}
+
+.input-menor {
+  width: 30%;
+  border: 1px solid black;
+}
+
+.nome {
+  width: 100%;
+}
+
+h1 {
+  padding-bottom: 4%;
+}
+
+input{
+  background-color: var(--fundo);
+  color: black;
 }
