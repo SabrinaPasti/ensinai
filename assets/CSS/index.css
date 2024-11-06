@@ -310,16 +310,23 @@ nav {
   height: 50%;
 }
 
+
+.logo-footer{
+  width: 30%;
+  height: 50%;
+}
+
 /* Footer */
 footer {
+
   height: 20vh;
-  background-color: var(--cor-secundaria);
-  color: azure;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-evenly;
-  justify-content: center;
-  flex-direction: column;
+    background-color: var(--cor-secundaria);
+    color: azure;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 .titulo-contato{
   text-align: center;
