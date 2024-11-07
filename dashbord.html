@@ -66,16 +66,35 @@
 
       <!-- Header da dashbord -->
       <div class="DashHeader">
-        <h1>Welcome to the Dashboard</h1>
+        <h1>Ola, User</h1>
       </div>
 
       <!-- Os widget da dashbord -->
       <div class="content-area">
-        <div class="widget">Widget 1</div>
-        <div class="widget">Widget 2</div>
-        <div class="widget">Widget 3</div>
-        <div class="widget">Widget 4</div>
+        <!-- tempo de atividade -->
+        <div class="widget">
+          <!-- Botão dropdown com tempo de atividade -->
+          <div class="activy-border">
+            <div class="activy-header">
+              <h3>Tempo de Atividade</h3>
+              <div class="dropdown">
+                <button id="dropdownButton" class="dropdown-btn">
+                  Semanal <span class="arrow">&#9662;</span>
+                </button>
+                <div id="dropdownContent" class="dropdown-content">
+                  <div class="dropdown-option" onclick="fetchData('mensal')">
+                    Mensal
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- grafico -->
+            <div class="activy-container"></div>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="assets/JS/dashbord.js"></script>
   </body>
 </html>

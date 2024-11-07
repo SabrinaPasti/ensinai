@@ -56,6 +56,7 @@ body {
   color: #fff;
   line-height: 26px;
   font-weight: 400;
+  line-height: 26px;
   text-decoration: none;
   width: auto;
 }
@@ -68,44 +69,9 @@ body {
   vertical-align: middle;
 }
 
-.container-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 70%;
-  gap: 20px;
-  justify-items: center;
-  align-items: center;
-}
-
-.content-area {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.widget {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  font-size: 18px;
-}
-
-.conteinerHeader {
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.DashHeader {
-  padding: 130px 50px 0px;
-}
-
 .search-conteiner {
   color: black;
-  padding: 50px;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -130,6 +96,9 @@ body {
   border-radius: 51px;
   padding: 10px 10px 10px 40px;
 }
+.DashHeader {
+  padding: 10px 50px 0px;
+}
 
 .icon {
   position: absolute;
@@ -139,4 +108,114 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 70%;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.content-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 50px 0px;
+}
+
+.widget {
+  width: 790px;
+  height: 267px;
+  border: 25px solid #fff1e9;
+  border-radius: 18px;
+}
+
+.conteinerHeader {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activy-border {
+  width: 740px;
+  height: 218px;
+}
+
+.activy-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.activy-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.activy-header h3 {
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+}
+.activy-header p {
+  padding-top: 10px;
+  padding-right: 50px;
+}
+
+.activy-header img {
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Estilização do botão */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  padding: 20px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.dropdown-btn .arrow {
+  margin-left: 10px;
+}
+
+/* Estilização do conteúdo dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 100px;
+  z-index: 1;
+}
+
+.dropdown-option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-option:hover {
+  background-color: #ddd;
+}
+
+/* Mostra o dropdown quando ativo */
+.dropdown.show .dropdown-content {
+  display: block;
 }
