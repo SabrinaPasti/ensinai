@@ -1,0 +1,85 @@
+html,
+body {
+  max-height: 100vw !important;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Instrument Sans";
+  background: #fff;
+  position: relative;
+  caret-color: transparent;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+.container-grid {
+  display: grid;
+  overflow-x: hidden !important;
+
+}
+
+.container-perfil {
+  display: flex;
+  width: 280px;
+  background-color: orange;
+  margin: 20px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 18px;
+  justify-content: space-between;
+  flex-direction: column;
+  position: fixed;
+height: 90%;
+  gap: 0px;
+  border-radius: 18px;
+  opacity: 0px;
+
+
+}
+
+.perfil {
+  flex-direction: column;
+  padding: 10px 10px;
+  justify-content: space-between;
+}
+
+.perfil p {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #fff;
+  line-height: 26px;
+  font-weight: 400;
+  overflow: auto;
+
+}
+
+.perfil p img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h4 {
+  color: #fff;
+}
+
+.linha-perfil {
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between
+}
+
+.logo-escrita {
+  width: 60%;
+}
+
+.inferior-menulateral {
+  display: flex;
+
+  justify-content: end;
+  flex-direction: column;
+}

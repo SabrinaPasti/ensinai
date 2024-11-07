@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/CSS/dashbord.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./assets/CSS/telaListagemCursos.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Press+Start+2P&display=swap"
+        rel="stylesheet" />
+
+        <style>
+             /* Estilos do container do campo de busca */
+    .container-search {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+      width: 100%;
+      height: 20%;
+    }
+
+    /* Estilos do campo de entrada */
+    .search-input {
+      width: 300px;
+      padding: 10px 15px;
+      border-radius: 25px;
+      background-color: #FFF1E9      ;
+      outline: none;
+      font-size: 16px;
+      transition: border 0.3s ease;
+    }
+
+    /* Estilos do botão */
+    .search-button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      margin-left: -45px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Efeito de hover no botão */
+    .search-button:hover {
+      background-color: #2980b9;
+    }
+
+    /* Efeito de foco no campo de entrada */
+    .search-input:focus {
+      border-color: #3498db;
+    }
+        </style>
+</head>
+
+<body>
+    <div class="container-grid">
+        <div class="container-perfil">
+            <div class="perfil">
+                <img src="./assets/IMG/logo-escrita.svg" alt="" class="logo-escrita">
+                <p><img src="assets/IMG/proicons_home.svg" alt="" />Dashbord</p>
+                <p><img src="assets/IMG/humbleicons_book.svg" alt="" />Meus Cursos</p>
+
+                <p><img src="assets/IMG/iconamoon_clock-light.svg" alt="" />Historico</p>
+                <p><img src="assets/IMG/Vector.svg" alt="" />Certfificados</p>
+                <p><img src="assets/IMG/Group.svg" alt="" />Perfil</p>
+
+                <h4>Perfil</h4>
+
+                <div class="linha-perfil">
+                    <img src="./assets/IMG/image.svg" alt="">
+                    <p>Meu perfil</p>
+                    <img src="./assets/IMG/iconamoon_arrow-up-2-light.svg" alt="">
+                </div>
+
+                <div class="inferior-menulateral">
+                    <p><img src="assets/IMG/guidance_settings.svg" alt="" />Configurações</p>
+                    <p><img src="assets/IMG/weui_help-outlined.svg" alt="" />Ajuda FAQ</p>
+                    <p><img src="assets/IMG/lets-icons_out-light.svg" alt="" />Sair </p>
+                </div>
+            </div>            
+        </div>
+
+        <div class="container-search">
+            <input type="text" class="search-input" placeholder="Digite sua busca...">
+            <button class="search-button"><img src="./assets/IMG/lupa.svg" alt=""></button>
+        </div>
+    </div>
+</body>
+
+</html>
