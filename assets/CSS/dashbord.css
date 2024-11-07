@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 html,
 body {
   max-height: 100vw !important;
@@ -10,10 +15,13 @@ body {
   background: #fff;
   position: relative;
   caret-color: transparent;
+  display: flex;
 }
 
-.container-grid {
-  display: grid;
+.container-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .container-perfil {
@@ -22,7 +30,7 @@ body {
   background-color: orange;
   height: 47vw;
   margin: 20px;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   border-radius: 18px;
   justify-content: space-between;
   flex-direction: column;
@@ -31,22 +39,104 @@ body {
 .perfil {
   display: flex;
   flex-direction: column;
-  padding: 20px 20px;
+  padding: 25px;
+  gap: 8px;
+}
+.perfil2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  gap: 20px;
 }
 
-.perfil p {
+.perfil a {
   display: flex;
   align-items: center;
   font-size: 18px;
   color: #fff;
   line-height: 26px;
   font-weight: 400;
+  text-decoration: none;
+  width: auto;
 }
 
-.perfil p img {
+.perfil a img {
   width: 32px;
   height: 32px;
   margin-right: 8px;
   display: inline-block;
   vertical-align: middle;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 70%;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.content-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.widget {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.conteinerHeader {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.DashHeader {
+  padding: 130px 50px 0px;
+}
+
+.search-conteiner {
+  color: black;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-conteiner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  caret-color: auto;
+  flex-direction: row-reverse;
+}
+
+.search {
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 830px;
+  height: 60px;
+  background: #fff1e9;
+  border: 1px solid #090830;
+  border-radius: 51px;
+  padding: 10px 10px 10px 40px;
+}
+
+.icon {
+  position: absolute;
+  right: 20px;
+}
+.noti {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
