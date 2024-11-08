@@ -158,7 +158,7 @@ body {
 }
 .activy-header h3 {
   padding-left: 20px;
-  padding-top: 10px;
+  padding-top: 3px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 600;
@@ -178,7 +178,6 @@ body {
   display: inline-block;
 }
 
-/* Estilização do botão */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -186,6 +185,7 @@ body {
 
 .dropdown-btn {
   padding: 20px 10px;
+  padding-top: 3px;
   border: none;
   cursor: pointer;
   font-size: 16px;
@@ -198,7 +198,6 @@ body {
   margin-left: 10px;
 }
 
-/* Estilização do conteúdo dropdown */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -215,7 +214,24 @@ body {
   background-color: #ddd;
 }
 
-/* Mostra o dropdown quando ativo */
 .dropdown.show .dropdown-content {
   display: block;
+}
+
+.time-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 155px;
+  width: 1px;
+  background-color: orange;
+  margin-left: 20px;
+}
+.number-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #ff8e47;
+  line-height: 26px;
+  margin-left: 4px;
+  gap: 8px;
 }

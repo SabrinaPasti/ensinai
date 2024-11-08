@@ -6,12 +6,11 @@ body {
   width: 100%;
   overflow-x: hidden !important;
   font-family: "Instrument Sans";
-  background: linear-gradient(to right, white 50%, #FA731E);
+  background: linear-gradient(to right, white 50%, #fdc7a5 50%);
   margin: 0;
   padding: 0;
   z-index: -1;
 }
-
 
 #logo {
   width: 160px;
@@ -150,13 +149,13 @@ button {
 }
 
 @media (max-width: 479px) {
-  
   html,
-body { background: none;
-  width: 100%;
-  font-family: "Instrument Sans";
-  max-height: none
-}
+  body {
+    background: none;
+    width: 100%;
+    font-family: "Instrument Sans";
+    max-height: none;
+  }
 
   #logo {
     width: 160px;
@@ -179,7 +178,7 @@ body { background: none;
     line-height: 44px;
     color: #090830;
   }
-  #p2{
+  #p2 {
     width: 390px;
   }
   #termo {
@@ -202,7 +201,6 @@ body { background: none;
   }
   #img1 {
     display: none;
-  
   }
   .container2 {
     display: flex;
