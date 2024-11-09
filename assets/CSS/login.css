@@ -68,6 +68,12 @@ body {
   gap: 1rem;
   width: 420px;
 }
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+}
+
 #ai {
   color: orange;
 }
@@ -95,26 +101,23 @@ body {
   width: 20px;
   height: 20px;
 }
-.container4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.container4 .ou {
+.container2 .ou {
   margin-bottom: 5px;
   font-weight: bold;
 }
 
-.container4 .forgot-password {
-  color: blue;
+.container2 .forgot-password {
   text-decoration: underline;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding-left: 100px;
 }
 .click {
   cursor: pointer;
 }
 button {
+  margin-top: 20px;
   width: 324px;
   height: 56px;
   background: #fa731e;
@@ -123,7 +126,6 @@ button {
   border-radius: 70px;
   font-size: 18px;
   color: white;
-  cursor: pointer;
 }
 
 @media (min-width: 760px) and (max-width: 1024px) {
@@ -202,18 +204,26 @@ button {
   #img1 {
     display: none;
   }
+
   .container2 {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .container {
     display: flex;
-    justify-content: normal;
+    justify-content: center;
+    align-items: center;
     padding-left: 5px;
     width: 100%;
+    flex-direction: column;
   }
 
   .container1 {
     gap: 1.4rem;
+    padding-left: 40px;
+  }
+  .container2 .forgot-password {
+    padding-left: 0px;
   }
 }

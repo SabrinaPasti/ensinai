@@ -28,3 +28,6 @@ function fetchData(option) {
     .catch(error => console.error("Erro ao buscar dados:", error));
   */
 }
+
+const userHeight = 1;
+document.documentElement.style.setProperty("--graph-height", `${userHeight}%`);
