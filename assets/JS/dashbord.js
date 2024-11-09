@@ -29,5 +29,23 @@ function fetchData(option) {
   */
 }
 
-const userHeight = 1;
-document.documentElement.style.setProperty("--graph-height", `${userHeight}%`);
+// JavaScript para dashbord.html
+// JavaScript para dashbord.html
+// JavaScript para dashbord.html
+window.addEventListener("DOMContentLoaded", () => {
+  const timeData = JSON.parse(localStorage.getItem("timeSpent")) || {};
+
+  // Define o tempo máximo para 8 horas (em segundos)
+  const maxTime = 8 * 60 * 60; // 8 horas em segundos
+
+  // Seleciona todos os elementos de barra de progresso
+  const graphBars = document.querySelectorAll(".graphs");
+
+  graphBars.forEach((bar, index) => {
+    const timeSpent = timeData[index] || 0; // Tempo para o dia da semana correspondente
+    const percentage = Math.max(1, (timeSpent / maxTime) * 100); // Calcula a altura da barra, com mínimo de 1%
+
+    // Define a altura diretamente no style.height para simplificar
+    bar.style.height = `${percentage}%`;
+  });
+});
