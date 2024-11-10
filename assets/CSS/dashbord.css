@@ -71,7 +71,8 @@ body {
 
 .search-conteiner {
   color: black;
-  padding: 30px;
+  padding-left: 20px;
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,7 +98,7 @@ body {
   padding: 10px 10px 10px 40px;
 }
 .DashHeader {
-  padding: 10px 50px 0px;
+  padding: 10px 20px 0px;
 }
 
 .icon {
@@ -123,13 +124,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px 50px 0px;
-  height: 100%;
+  padding: 10px 20px 0px;
   width: 100%;
 }
 
 .widget {
- width: calc(50% - 20px);
+  width: calc(50% - 20px);
   height: 280px;
   border: 25px solid #fff1e9;
   border-radius: 18px;
@@ -272,24 +272,22 @@ body {
 /* calendario */
 
 .widget2 {
-  width: calc(35% - 20px);
   height: 280px;
-  border: 25px solid #fff1e9;
+  border: 2px solid #ff5e00;
   border-radius: 18px;
-
 }
 
 .wrapper {
   width: 450px;
   background: #fff;
-  height: 218px;
-  border-radius: 10px;
+
+  border-radius: 20px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 .wrapper header {
   display: flex;
   align-items: center;
-  padding: 25px 30px 10px;
+  padding: 15px 20px 5px;
   justify-content: space-between;
 }
 header .icons {
@@ -297,8 +295,7 @@ header .icons {
 }
 header .icons span {
   height: 38px;
-  width: 38px;
-  margin: 0 1px;
+  width: 28px;
   cursor: pointer;
   color: #878787;
   text-align: center;
@@ -318,7 +315,7 @@ header .current-date {
   font-weight: 500;
 }
 .calendar {
-  padding: 20px;
+  padding: 10px;
 }
 .calendar ul {
   display: flex;
@@ -327,7 +324,7 @@ header .current-date {
   text-align: center;
 }
 .calendar .days {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 .calendar li {
   color: #333;
@@ -342,7 +339,7 @@ header .current-date {
   z-index: 1;
   cursor: pointer;
   position: relative;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .days li.inactive {
   color: #aaa;
@@ -366,4 +363,91 @@ header .current-date {
 }
 .days li:not(.active):hover::before {
   background: #f2f2f2;
+}
+
+#widget3 {
+  width: calc(25% - 20px);
+  height: 220px;
+  border: 25px solid #fff1e9;
+  border-radius: 18px;
+  background-color: #fff1e9;
+}
+.widget3-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+#widget3 h1 {
+  font-size: 20px;
+}
+.widget3-container p {
+  font-size: 14px;
+  line-height: 26px;
+}
+.widget3-container input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 1px solid orange;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.widget3-container input[type="checkbox"]:checked {
+  background-color: #eee;
+}
+
+.widget3-container input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.progress-bar {
+  width: 231px;
+  height: 9px;
+  background-color: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar .progress {
+  height: 100%;
+  width: 50%;
+  background-color: #ff8e47;
+  transition: width 0.3s ease;
+}
+
+.prog-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+
+.widget3-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.widget3-container2 {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+.widget3-container2 img {
+  width: 18.4px;
+  height: 18.57px;
+}
+.widget3-container2 p {
+  justify-content: flex-start;
 }
