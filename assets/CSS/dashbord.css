@@ -28,7 +28,7 @@ body {
   display: flex;
   width: 280px;
   background-color: orange;
-  height: 47vw;
+  height: 48vw;
   margin: 20px;
   padding: 10px;
   border-radius: 18px;
@@ -130,9 +130,16 @@ body {
 
 .widget {
   width: calc(50% - 20px);
-  height: 280px;
   border: 25px solid #fff1e9;
   border-radius: 18px;
+}
+
+.activy-border {
+  width: 640px;
+  height: 238px;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .conteinerHeader {
@@ -140,11 +147,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.activy-border {
-  width: 640px;
-  height: 218px;
 }
 
 .activy-container {
@@ -247,6 +249,7 @@ body {
   flex-direction: row;
   align-items: flex-end;
   gap: 30px;
+  /* padding-top: 130px; */
 }
 
 .graph-wrapper {
@@ -263,10 +266,11 @@ body {
 }
 
 .graph-wrapper p {
-  margin-top: 8px;
   align-items: center;
   justify-content: center;
   display: flex;
+  position: absolute;
+  margin-top: 50px;
 }
 
 /* calendario */
@@ -428,8 +432,6 @@ header .current-date {
 }
 
 .prog-container {
-  display: flex;
-  flex-wrap: wrap;
   margin-left: 20px;
 }
 
@@ -450,4 +452,68 @@ header .current-date {
 }
 .widget3-container2 p {
   justify-content: flex-start;
+}
+
+.widget4 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.text-block1 {
+  width: 453px;
+  height: 149px;
+  background-color: #fff1e9;
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px;
+  border-radius: 16px;
+}
+
+.text-container1 {
+  display: flex;
+  flex-direction: column;
+}
+.text-block1 img {
+  width: 453px;
+  height: 149px;
+}
+
+.text-block2 {
+  width: 453px;
+  height: 149px;
+  background-color: #fff1e9;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  border: solid 1px;
+  border-radius: 16px;
+}
+
+.text-container2 {
+  display: flex;
+  flex-direction: column;
+}
+.text-block2 img {
+  width: 453px;
+  height: 149px;
+}
+
+.text-block3 {
+  width: 453px;
+  height: 149px;
+  background-color: #fff1e9;
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px;
+  border-radius: 16px;
+}
+
+.text-container3 {
+  display: flex;
+  flex-direction: column;
+}
+.text-block3 img {
+  width: 453px;
+  height: 149px;
 }

@@ -29,49 +29,45 @@ function fetchData(option) {
   */
 }
 // grafico
-window.addEventListener("DOMContentLoaded", () => {
-  const timeData = JSON.parse(localStorage.getItem("timeSpent")) || {};
+// window.addEventListener("DOMContentLoaded", () => {
+//   const timeData = JSON.parse(localStorage.getItem("timeSpent")) || {};
 
-  // Define o tempo máximo para 8 horas (em segundos)
-  const maxTime = 8 * 60 * 60; // 8 horas em segundos
+//   // Define o tempo máximo para 8 horas (em segundos)
+//   const maxTime = 8 * 60 * 60; // 8 horas em segundos
 
-  // Seleciona todos os elementos de barra de progresso
-  const graphBars = document.querySelectorAll(".graphs");
+//   // Seleciona todos os elementos de barra de progresso
+//   const graphBars = document.querySelectorAll(".graphs");
 
-  graphBars.forEach((bar, index) => {
-    const timeSpent = timeData[index] || 0; // Tempo para o dia da semana correspondente
-    const percentage = Math.max(1, (timeSpent / maxTime) * 100); // Calcula a altura da barra, com mínimo de 1%
+//   graphBars.forEach((bar, index) => {
+//     const timeSpent = timeData[index] || 0; // Tempo para o dia da semana correspondente
+//     const percentage = Math.max(1, (timeSpent / maxTime) * 100); // Calcula a altura da barra, com mínimo de 1%
 
-    // Define a altura diretamente no style.height para simplificar
-    bar.style.height = `${percentage}%`;
-  });
-});
-
+//     // Define a altura diretamente no style.height para simplificar
+//     bar.style.height = `${percentage}%`;
+//   });
+// });
 
 // calendario
-
 
 const daysTag = document.querySelector(".days"),
   currentDate = document.querySelector(".current-date"),
   prevNextIcon = document.querySelectorAll(".icons span");
-// getting new date, current year and month
 let date = new Date(),
   currYear = date.getFullYear(),
   currMonth = date.getMonth();
-// storing full name of all months in array
 const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
+  "Janeiro",
+  "Fevereiro",
+  "Março",
+  "Abril",
+  "Maio",
+  "Junho",
+  "Julho",
+  "Agosto",
+  "Setembro",
+  "Outubro",
+  "Novembro",
+  "Dezembro",
 ];
 const renderCalendar = () => {
   let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(), // getting first day of month
