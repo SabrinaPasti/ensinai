@@ -69,6 +69,11 @@ img {
 }
 
 /* Header e Navegação */
+
+article .header-mobile{
+  display: none;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -517,6 +522,13 @@ nav {
   margin-bottom: 3.4rem;
 }
 
+.form-home button{
+  background-color: #090830;
+  color: white;
+  padding: 2.1rem 2.5rem;
+  font-size: 1.8rem;
+}
+
 /*  Footer */
 
 footer{
@@ -547,8 +559,8 @@ footer img{
 /* Responsivo Tablet */
 
 @media (max-width: 800px) {
-  header{
-
+  header .content{
+    flex-direction: row;
   }
 
   .links-nav li a{
@@ -565,6 +577,29 @@ footer img{
 
   .botao-iniciar {
     font-size: 1.5rem;
+  }
+
+  .main-inicio{
+    padding-bottom: 8rem;
+  }
+
+  .main-inicio .wrapper{
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .col-1{
+    width: 100%;
+  }
+
+  .col-2{
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .linha-2-col-2{
+    margin-top: 0;
   }
 
   .linha-1-col-2 h1 {
@@ -591,6 +626,242 @@ footer img{
   }
 
   .linha-2-col-2 p {
-    text-align: left;
+    font-size:  1.5rem;
+    width: 80%;
+  }
+
+  /* Como funciona */
+
+  .como-funciona h2{
+    font-size: 2.6rem;
+    line-height: 3.4rem
+  }
+
+  .content{
+    flex-direction: column;
+  }
+
+  .passos ul span{
+    font-size: 7.8rem;
+  }
+
+  .passos ul li strong{
+    font-size: 2.2rem;
+  }
+
+  .passos ul li p{
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+
+  .passos ul:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+
+  /* Quem somos */
+
+  .quem-somos .content h2{
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+  }
+
+  .quem-somos .text p{
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+
+  .quem-somos .text p:not(:last-child){
+    margin-bottom: 2rem;
+  }
+
+  .quem-somos .text{
+    flex-direction: column;
+  }
+
+  .box-content h3:first-child{
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+    height: 32rem;
+    width: 50%;
+
+  }
+
+  .box-content h3:last-child{
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+    height: 32rem;
+    width: 50%;
+  }
+
+  .content .box-content{
+    max-width: -webkit-fill-available;
+  }
+
+  .slide-time .pictures .box-texto{
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  /* Formulário */
+
+  .form-home h2{
+    font-size: 2.6rem;
+    line-height: 3.4rem
+  }
+
+  .form-home p{
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+
+  .form-home .campos input{
+    width: 19.9rem;
+  }
+
+  .form-home button{
+    font-size: 1.4rem;
+  }
+
+  /* footer */
+
+  footer .wrapper{
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+  }
+
+  footer p{
+    max-width: 38.8rem;
+  }
+
+}
+
+/* Mobile */
+
+@media (max-width: 425px) {
+  .header-web{
+    display: none;
+  }
+
+  .header-mobile{
+    display: flex;
+    background-color: var(--fundo);
+  }
+
+  .header-mobile img{
+    width: 150px;
+  }
+
+  #pencet{
+    display:flex;
+    align-items:center;
+    margin-top:50vh;
+    flex-direction:column;
+    cursor:pointer;
+  }
+  
+  #pencet span{
+    background-color: var(--cor-primaria);
+    width:2em;
+    height:.2em;
+    margin:0.26em 0;
+    display:block;
+    transition: all .4s ease;
+    transform-origin:0 0;
+  }
+  
+  .Diam span:nth-child(1) {
+    transform: rotate(45deg) translate(1px, -1px);
+  }
+  
+  .Diam span:nth-child(2) {
+    Transform: scaleX(0);
+  }
+  
+  .Diam span:nth-child(3) {
+    transform: rotate(-45deg) translate(1px, 0);
+  }
+
+  .col-2{
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+
+  .main-inicio{
+    padding-bottom: 4rem;
+  }
+
+  .main-inicio .wrapper{
+    flex-direction: column-reverse;
+  }
+
+  .linha-2-col-2{
+    display: none;
+  }
+
+  /* Como funciona */
+
+  .passos ul li strong{
+    line-height: 3rem;
+  }
+
+  .como-funciona{
+    padding: 4rem 0;
+  }
+
+  /* quem somos */
+
+  .quem-somos .content{
+    padding-top: 4rem;
+  }
+
+  .quem-somos .text p{
+    width: 100%;
+  }
+
+  .content .box-content{
+    flex-direction: column;
+  }
+
+  .box-content h3:first-child{
+    width: 100%;
+  }
+
+  .box-content h3:last-child{
+    width: 100%;
+  }
+
+  .quem-somos{
+    padding-bottom: 4rem;
+  }
+
+  /* Form */
+
+  .form-home .campos{
+    flex-direction: column;
+  }
+
+  .form-home .campos input{
+    width: 100%;
+  }
+  .form-home .campos input:not(:last-child){
+    margin-bottom: 2rem;
+  }
+
+  .form-home button{
+    width: 100%;
+  }
+
+  /* Footer */
+
+  footer .wrapper{
+    flex-direction: column;
+  }
+
+  footer .wrapper img{
+    margin-bottom: 2rem;
+  }
+
+  footer p{
+    text-align: center;
   }
 }
