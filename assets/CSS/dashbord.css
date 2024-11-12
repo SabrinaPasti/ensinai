@@ -135,6 +135,7 @@ body {
   border: 25px solid #fff1e9;
   border-radius: 18px;
   height: 300px;
+   width: calc(100% - 20px);
 }
 
 .activy-border {
@@ -481,6 +482,7 @@ header .current-date {
 .widget4-header {
   display: flex;
   justify-content: space-between;
+  width: calc(100% - 20px);
 }
 
 .widget5 {
@@ -549,7 +551,6 @@ header .current-date {
 .widget4-container {
   display: flex;
   align-items: center;
-  width: 630px;
   height: 88px;
   background-color: #fff1e9;
   border: 0px solid #fff1e9;
@@ -571,5 +572,5 @@ header .current-date {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 600px;
+  width: calc(100% - 20px);
 }
