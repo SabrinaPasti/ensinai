@@ -57,15 +57,16 @@ ul, ol {
   list-style: none;
 }
 
-input {
+input, textarea{
   background: #FDC7A580;
   border: 1px solid #090830;
   padding: 1%;
   border-radius: 10px;
+  font-family: "Instrument Sans", sans-serif;
 }
 
 img {
-  width: 80%;
+  /*width: 80%;*/
 }
 
 /* Header e Navegação */
@@ -328,6 +329,7 @@ nav {
 .quem-somos{
   background-color: var(--azul);
   padding-bottom: 10rem;
+  overflow: hidden;
 }
 
 .quem-somos .wrapper{
@@ -409,6 +411,11 @@ nav {
   display: flex;
 }
 
+.slide-time .arrows .arrow{
+  padding: unset;
+  background: none;
+}
+
 .slide-time .arrows img{
   background: rgba(255, 255, 255, 0.42);
   border-radius: 50%;
@@ -445,6 +452,8 @@ nav {
 
 }
 
+
+
 .slide-time .pictures .box-texto{
   border-top: 4px solid #fff;
   background-color: var(--cor-primaria);
@@ -457,11 +466,63 @@ nav {
   border-bottom-right-radius: 38px;
   border-bottom-left-radius: 38px;
   min-height: 120px;
-
 }
 
 .slide-time .box-texto  img{
   width: 40px !important;
+}
+
+.splide-home .splide__track{
+  overflow: unset;
+}
+
+.splide-home .splide__slide .box-texto{
+  position: absolute;
+  bottom: 0;
+}
+
+.splide-home .splide__slide figure > img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 38px;
+  border-top-right-radius: 38px;
+  margin-bottom: 9rem;
+}
+
+
+.splide-home .splide__slide .box-texto .text{
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  max-height: 0;
+  overflow: hidden;
+  transition: .3s ease;
+}
+
+.splide-home .splide__slide .box-texto.show{
+  border-top-right-radius: 38px;
+  border-top-left-radius: 38px;
+  transition: .3s ease;
+}
+
+.splide-home .splide__slide .box-texto.show .text{
+  max-height: 12vh;
+  padding-top: 1.2rem;
+}
+
+.splide-home .splide__slide .box-texto{
+  border-top: 2px solid #fff;
+  background-color: var(--cor-primaria);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.9rem 2.4rem;
+  color: white;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  border-bottom-right-radius: 38px;
+  border-bottom-left-radius: 38px;
+  min-height: 120px;
 }
 
 /* Formulário */
@@ -473,6 +534,9 @@ nav {
 }
 
 .form-home .wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -492,6 +556,7 @@ nav {
 }
 
 .form-home .campos{
+  width: 100%;
   margin-top: 4.3rem;
   display: flex;
   justify-content: space-between;
@@ -513,7 +578,7 @@ nav {
   height: 17.8rem;
   width: 100%;
   border-radius: 16px;
-  padding: 0 2.8rem;
+  padding: 1.8rem 2.8rem;
   font-size: 1.8rem;
   background: #FDC7A580;
   border: 1px solid #090830;
@@ -522,7 +587,13 @@ nav {
   margin-bottom: 3.4rem;
 }
 
+.form-home textarea::placeholder{
+  color: var(--azul);
+  
+}
+
 .form-home button{
+
   background-color: #090830;
   color: white;
   padding: 2.1rem 2.5rem;
@@ -565,6 +636,10 @@ footer img{
 
   .links-nav li a{
     font-size: 1.5rem;
+  }
+
+  .links-nav{
+    display: none;
   }
 
   .wrapper{
@@ -714,8 +789,16 @@ footer img{
     line-height: 2.4rem;
   }
 
+  .form-home .campos{
+    flex-direction: column;
+  }
+
   .form-home .campos input{
-    width: 19.9rem;
+    width: 100%
+  }
+
+  .form-home .campos input:not(:last-child){
+    margin-bottom: 2rem;
   }
 
   .form-home button{
@@ -738,47 +821,20 @@ footer img{
 /* Mobile */
 
 @media (max-width: 425px) {
-  .header-web{
+  .botoes{
+    justify-content: space-between;
+  }
+
+  .botao-contato{
+    margin: 0;
+  }
+
+  .botao-iniciar{
     display: none;
   }
 
-  .header-mobile{
-    display: flex;
-    background-color: var(--fundo);
-  }
-
-  .header-mobile img{
-    width: 150px;
-  }
-
-  #pencet{
-    display:flex;
-    align-items:center;
-    margin-top:50vh;
-    flex-direction:column;
-    cursor:pointer;
-  }
-  
-  #pencet span{
-    background-color: var(--cor-primaria);
-    width:2em;
-    height:.2em;
-    margin:0.26em 0;
-    display:block;
-    transition: all .4s ease;
-    transform-origin:0 0;
-  }
-  
-  .Diam span:nth-child(1) {
-    transform: rotate(45deg) translate(1px, -1px);
-  }
-  
-  .Diam span:nth-child(2) {
-    Transform: scaleX(0);
-  }
-  
-  .Diam span:nth-child(3) {
-    transform: rotate(-45deg) translate(1px, 0);
+  .logo img{
+    width: 80%;
   }
 
   .col-2{
