@@ -22,14 +22,17 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .container-perfil {
   display: flex;
   width: 280px;
   background-color: orange;
-  height: 48vw;
-  margin: 20px;
+  height: 54vw;
+  margin-left: 40px;
+  margin-top: 20px;
   padding: 10px;
   border-radius: 18px;
   justify-content: space-between;
@@ -516,4 +519,11 @@ header .current-date {
 .text-block3 img {
   width: 453px;
   height: 149px;
+}
+
+.widget5{
+  width: 630px;
+  height: 88px;
+  position: relative;
+  
 }
