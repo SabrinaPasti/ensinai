@@ -129,6 +129,8 @@ body {
   gap: 20px;
   padding: 10px 20px 0px;
   width: 100%;
+  max-width: 90vw; /* define um limite para a largura total */
+  min-width: 600px; /* para evitar que fique muito pequena com zoom */
 }
 
 .widget {
@@ -142,7 +144,6 @@ body {
   height: 238px;
   display: flex;
   flex-direction: column;
-
 }
 
 .conteinerHeader {
@@ -372,19 +373,24 @@ header .current-date {
   background: #f2f2f2;
 }
 
-#widget3 {
-  width: calc(25% - 20px);
+#widget3-1,
+#widget3-2 {
+  width: calc(50% - 20px);
   height: 220px;
   border: 25px solid #fff1e9;
   border-radius: 18px;
   background-color: #fff1e9;
+  gap: 20px;
 }
 .widget3-container {
   display: flex;
   margin-top: 10px;
 }
 
-#widget3 h1 {
+#widget3-1 h1{
+  font-size: 20px;
+}
+#widget3-2 h1 {
   font-size: 20px;
 }
 .widget3-container p {
@@ -438,6 +444,14 @@ header .current-date {
   margin-left: 20px;
 }
 
+.container-widget3-4 {
+  display: flex;
+  flex-direction: row;
+  width: calc(50% - 20px);
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 .widget3-container {
   display: flex;
   justify-content: space-between;
@@ -457,7 +471,13 @@ header .current-date {
   justify-content: flex-start;
 }
 
-.widget4 {
+.widget4{
+width: calc(100% - 20px);
+padding-bottom: 90px;
+display: flex;
+}
+
+.widget5 {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -519,11 +539,4 @@ header .current-date {
 .text-block3 img {
   width: 453px;
   height: 149px;
-}
-
-.widget5{
-  width: 630px;
-  height: 88px;
-  position: relative;
-  
 }
