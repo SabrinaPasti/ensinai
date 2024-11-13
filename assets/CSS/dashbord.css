@@ -5,7 +5,6 @@
 }
 html,
 body {
-  max-height: 100vw !important;
   width: 100%;
   margin: 0;
   overflow-x: hidden !important;
@@ -504,9 +503,9 @@ header .current-date {
 .text-container1 {
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
 }
 .text-block1 img {
-  width: 453px;
   height: 149px;
 }
 
@@ -573,4 +572,36 @@ header .current-date {
   flex-direction: row;
   justify-content: space-between;
   width: calc(100% - 20px);
+}
+
+
+@media (max-width: 479px) {
+
+  .container-perfil {
+    display: none;
+  }
+  html,
+  body {
+    max-height: none;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden !important;
+  padding: 0;
+  font-family: "Instrument Sans";
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+  caret-color: transparent;
+  display: flex;
+}
+.container-main{
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.content-area{
+  display: flex;
+  flex-direction: column;
+}
 }
