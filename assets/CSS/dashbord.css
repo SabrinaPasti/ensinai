@@ -134,7 +134,7 @@ body {
   border: 25px solid #fff1e9;
   border-radius: 18px;
   height: 300px;
-   width: calc(100% - 20px);
+  width: calc(100% - 20px);
 }
 
 .activy-border {
@@ -574,34 +574,52 @@ header .current-date {
   width: calc(100% - 20px);
 }
 
-
 @media (max-width: 479px) {
-
   .container-perfil {
     display: none;
   }
   html,
   body {
     max-height: none;
-  height: 100%;
-  margin: 0;
-  overflow-x: hidden !important;
-  padding: 0;
-  font-family: "Instrument Sans";
-  overflow: hidden;
-  background: #fff;
-  position: relative;
-  caret-color: transparent;
-  display: flex;
-}
-.container-main{
-  display: flex;
-  flex-direction: column;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-.content-area{
-  display: flex;
-  flex-direction: column;
-}
+    height: 100vh; /* Garante que ocupe 100% da altura da tela */
+    width: 100vw; /* Garante que ocupe 100% da largura da tela */
+    overflow-x: hidden; /* Remove qualquer overflow horizontal */
+    overflow-y: auto; /* Permite rolagem vertical, se necessário */
+    margin: 0;
+    padding: 0;
+    font-family: "Instrument Sans";
+    background: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Empilha widgets verticalmente no modo mobile */
+    box-sizing: border-box;
+  }
+  .container-main {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .content-area {
+    display: flex;
+    flex-direction: column;
+  }
+  .widget,
+  .widget2,
+  .widget4,
+  .widget5,
+  .text-block1,
+  .text-block2,
+  .text-block3,
+  #widget3-1,
+  #widget3-2,
+  .container-widget3-4 {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .widget {
+    border: none;
+  }
 }
