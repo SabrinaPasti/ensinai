@@ -627,9 +627,82 @@ footer img{
   width: 15.2rem;
 }
 
+/* Responsivo Desktop */
+
+@media (max-width: 1100px) {
+  .wrapper{
+    max-width: 800px;
+  }
+
+  .links-nav{
+    margin-right: 0;
+  }
+
+  .links-nav li a{
+    font-size: 1.5rem;
+  }
+
+  .links-nav li a:last-child{
+    margin-right: 1rem;
+  }
+
+  .img-boneca-1{
+    width: 100%;
+  }
+
+  .linha-2-col-2{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .linha-2-col-2 p{
+    align-items: center;
+    text-align: center;
+  }
+
+  .passos ul li strong{
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+
+  .passos ul span{
+    font-size: 5rem;
+  }
+
+  .quem-somos .text{
+    flex-direction: column;
+  }
+  
+  .quem-somos .text p:last-child{
+    margin-top: 3rem;
+  }
+ 
+  .box-content h3:first-child{
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .box-content h3:last-child{
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .form-home .campos input{
+    width: 25.9rem;
+  }
+}
+
 /* Responsivo Tablet */
 
 @media (max-width: 800px) {
+  img{
+    width: 80%;
+  }
+
+  .img-boneca-1{
+    width: 60%;
+  }
+
   header .content{
     flex-direction: row;
   }
