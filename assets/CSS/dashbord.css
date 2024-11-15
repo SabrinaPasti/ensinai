@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 html,
 body {
   width: 100%;
@@ -44,6 +45,7 @@ body {
   padding: 25px;
   gap: 8px;
 }
+
 .perfil2 {
   display: flex;
   flex-direction: column;
@@ -99,6 +101,7 @@ body {
   border-radius: 51px;
   padding: 10px 10px 10px 40px;
 }
+
 .DashHeader {
   padding: 10px 20px 0px;
 }
@@ -107,6 +110,7 @@ body {
   position: absolute;
   right: 20px;
 }
+
 .noti {
   display: flex;
   align-items: center;
@@ -138,7 +142,7 @@ body {
 }
 
 .activy-border {
-  width: 640px;
+  width: 100%;
   height: 238px;
   display: flex;
   flex-direction: column;
@@ -165,6 +169,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .activy-header h3 {
   padding-left: 20px;
   padding-top: 3px;
@@ -172,6 +177,7 @@ body {
   line-height: 26px;
   font-weight: 600;
 }
+
 .activy-header p {
   padding-top: 10px;
   padding-right: 50px;
@@ -229,6 +235,7 @@ body {
   background-color: orange;
   margin-left: 20px;
 }
+
 .number-container {
   display: flex;
   flex-direction: column;
@@ -251,7 +258,7 @@ body {
   flex-direction: row;
   align-items: flex-end;
   gap: 30px;
-  /* padding-top: 130px; */
+  padding-left: 40px;
 }
 
 .graph-wrapper {
@@ -290,15 +297,18 @@ body {
   border-radius: 20px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
+
 .wrapper header {
   display: flex;
   align-items: center;
   padding: 15px 20px 5px;
   justify-content: space-between;
 }
+
 header .icons {
   display: flex;
 }
+
 header .icons span {
   height: 38px;
   width: 28px;
@@ -310,49 +320,61 @@ header .icons span {
   user-select: none;
   border-radius: 50%;
 }
+
 .icons span:last-child {
   margin-right: -10px;
 }
+
 header .icons span:hover {
   background: #f2f2f2;
 }
+
 header .current-date {
   font-size: 1.45rem;
   font-weight: 500;
 }
+
 .calendar {
   padding: 10px;
 }
+
 .calendar ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   text-align: center;
 }
+
 .calendar .days {
   margin-bottom: 22px;
 }
+
 .calendar li {
   color: #333;
   width: calc(100% / 7);
   font-size: 1.07rem;
 }
+
 .calendar .weeks li {
   font-weight: 500;
   cursor: default;
 }
+
 .calendar .days li {
   z-index: 1;
   cursor: pointer;
   position: relative;
   margin-top: 10px;
 }
+
 .days li.inactive {
   color: #aaa;
 }
+
 .days li.active {
   color: #fff;
 }
+
 .days li::before {
   position: absolute;
   content: "";
@@ -364,9 +386,11 @@ header .current-date {
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
+
 .days li.active::before {
   background: #9b59b6;
 }
+
 .days li:not(.active):hover::before {
   background: #f2f2f2;
 }
@@ -380,6 +404,7 @@ header .current-date {
   background-color: #fff1e9;
   gap: 20px;
 }
+
 .widget3-container {
   display: flex;
   margin-top: 10px;
@@ -388,13 +413,20 @@ header .current-date {
 #widget3-1 h1 {
   font-size: 20px;
 }
+
 #widget3-2 h1 {
   font-size: 20px;
 }
+
 .widget3-container p {
   font-size: 14px;
   line-height: 26px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
+
 .widget3-container input[type="checkbox"] {
   appearance: none;
   width: 20px;
@@ -423,6 +455,7 @@ header .current-date {
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
+
 .progress-bar {
   width: 231px;
   height: 9px;
@@ -460,12 +493,17 @@ header .current-date {
   margin-top: 20px;
   align-items: center;
 }
+
 .widget3-container2 img {
   width: 18.4px;
   height: 18.57px;
 }
+
 .widget3-container2 p {
-  justify-content: flex-start;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 231px;
 }
 
 .widget4 {
@@ -478,6 +516,7 @@ header .current-date {
 .widget4 h1 {
   font-size: 20px;
 }
+
 .widget4-header {
   display: flex;
   justify-content: space-between;
@@ -498,55 +537,98 @@ header .current-date {
   justify-content: space-between;
   border: solid 1px;
   border-radius: 16px;
+  align-items: center;
 }
 
 .text-container1 {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
+  justify-content: center;
 }
+
+.text-container1 h1 {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.text-container2 p {
+  font-size: 14px;
+  line-height: 19px;
+}
+
 .text-block1 img {
-  height: 149px;
+  height: 122px;
+  width: 132;
 }
 
 .text-block2 {
   width: 453px;
   height: 149px;
-  background-color: #fff1e9;
+  background-color: #ff8e47b3;
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
   border: solid 1px;
   border-radius: 16px;
+  align-items: center;
 }
 
 .text-container2 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
 }
+
 .text-block2 img {
-  width: 453px;
-  height: 149px;
+  width: 130px;
+  height: 109px;
+}
+
+.text-container2 h1 {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.text-container2 p {
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .text-block3 {
   width: 453px;
   height: 149px;
-  background-color: #fff1e9;
+  background-color: #ff8e47;
   display: flex;
   justify-content: space-between;
   border: solid 1px;
   border-radius: 16px;
+  align-items: center;
 }
 
 .text-container3 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
 }
+
+.text-container3 h1 {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.text-container3 p {
+  font-size: 14px;
+  line-height: 19px;
+}
+
 .text-block3 img {
-  width: 453px;
-  height: 149px;
+  width: 210px;
+  height: 157px;
 }
+
 .widget4-container {
   display: flex;
   align-items: center;
@@ -578,32 +660,42 @@ header .current-date {
   .container-perfil {
     display: none;
   }
+
   html,
   body {
     max-height: none;
-    height: 100vh; /* Garante que ocupe 100% da altura da tela */
-    width: 100vw; /* Garante que ocupe 100% da largura da tela */
-    overflow-x: hidden; /* Remove qualquer overflow horizontal */
-    overflow-y: auto; /* Permite rolagem vertical, se necessário */
+    height: 100vh;
+    /* Garante que ocupe 100% da altura da tela */
+    width: 100vw;
+    /* Garante que ocupe 100% da largura da tela */
+    overflow-x: hidden;
+    /* Remove qualquer overflow horizontal */
+    overflow-y: auto;
+    /* Permite rolagem vertical, se necessário */
     margin: 0;
     padding: 0;
     font-family: "Instrument Sans";
     background: #fff;
     position: relative;
     display: flex;
-    flex-direction: column; /* Empilha widgets verticalmente no modo mobile */
+    flex-direction: column;
+    /* Empilha widgets verticalmente no modo mobile */
     box-sizing: border-box;
   }
+
   .container-main {
     display: flex;
     flex-direction: column;
     padding-left: 0px;
     padding-right: 0px;
   }
+
   .content-area {
     display: flex;
     flex-direction: column;
+    padding: 20px 10px 0px;
   }
+
   .widget,
   .widget2,
   .widget4,
@@ -621,5 +713,41 @@ header .current-date {
 
   .widget {
     border: none;
+  }
+
+  .activy-container {
+    display: flex;
+    justify-content: initial;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .time-container {
+    margin: 0px;
+  }
+
+  #graphs-container {
+    gap: 21px;
+    padding-left: 0px;
+    margin-left: 24px;
+  }
+
+  .graphs {
+    width: 31px;
+  }
+
+  .wrapper {
+    width: auto;
+  }
+
+  .search{
+    width: 100%;
+  }
+  .search-conteiner{
+    display: block;
+    padding-right: 20px;
+  }
+  .noti{
+    display: none;
   }
 }
