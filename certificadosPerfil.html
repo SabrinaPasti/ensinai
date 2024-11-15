@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/CSS/splide.min.css">
+    <link rel="stylesheet" href="./assets/CSS/index.css">
+    <link rel="stylesheet" href="./assets/CSS/dashbord.css">
+    <link rel="stylesheet" href="./assets/CSS/certificados.css">
+
+    <title>Meus certificados</title>
+</head>
+
+ <body>
+    <aside>
+        <nav>
+            <div class="content">
+                <img src="/assets/IMG/ensinaí-certificados.svg" alt="Logomarca">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="/assets/IMG/certificados-home.svg" alt="Ícone de menu">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/assets/IMG/certificados-home.svg" alt="Ícone de menu">
+                            Meus Cursos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/assets/IMG/certificados-home.svg" alt="Ícone de menu">
+                            Histórico
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Perfil</h2>
+                        <a href="">
+                            <img src="/assets/IMG/foto-perfil.png"" alt="">
+                            Certificados
+                            <img src="" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="setting">
+                <ul>
+                    <li>
+                        <a href=""> Configurações
+                            <img src="" alt="Icone">
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""> Ajuda FAQ
+                            <img src="" alt="Icone">
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""> Sair
+                            <img src="" alt="Icone">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+
+    <article>
+        <div>
+            <input type="text" placeholder="Buscar por curso ou aula">
+            <button><img src="" alt=""></button>
+        </div>
+        <button>Notificações
+            <img src="" alt="">
+        </button>
+    </article>
+
+    <section class="meu-perfil">
+        <h1>Meu Perfil</h1>
+        <div class="profile">
+            <img src="/assets/IMG/foto-perfil.png" alt="Foto de perfil">
+            <div>
+                <span>Sabrina Pasti</span>
+                <p>Aprenda no seu ritmo, onde e quando quiser. Cursos interativos, conteúdo de qualidade e certificação para levar sua carreira e habilidades ao próximo nível. 🌱</p>
+                <a href="">
+                    <img src="" alt="Ícone de email">
+                    sabrinapastii@gmail.com
+                </a>
+            </div>
+        </div>
+        <section class="dashboard-certificados">
+            <div class="widget">
+                <div class="activy-border">
+                  <div class="activy-header">
+                    <h3>Tempo de Atividade</h3>
+                    <div class="dropdown">
+                      <button id="dropdownButton" class="dropdown-btn">
+                        Semanal <span class="arrow">&#9662;</span>
+                      </button>
+                      <div id="dropdownContent" class="dropdown-content">
+                        <div class="dropdown-option" onclick="fetchData('mensal')">
+                          Mensal
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- grafico -->
+                  <div class="activy-container">
+                    <div class="time-container">
+                      <div class="number-container">
+                        <p>8h</p>
+                        <p>6h</p>
+                        <p>4h</p>
+                        <p>2h</p>
+                        <p>0h</p>
+                      </div>
+                    </div>
+                    <div id="graphs-container">
+                      <div class="graph-wrapper">
+                        <div class="graphs"></div>
+                        <p>Dom</p>
+                      </div>
+                      <div class="graph-wrapper">
+                        <div class="graphs"></div>
+                        <p>Seg</p>
+                      </div>
+                      <div class="graph-wrapper">
+                        <div class="graphs"></div>
+                        <p>Ter</p>
+                      </div>
+                      <div class="graph-wrapper">
+                        <div class="graphs"></div>
+                        <p>Qua</p>
+                      </div>
+                      <div class="graph-wrapper">
+                        <div class="graphs"></div>
+                        <p>Qui</p>
+                      </div>
+                      <div class="graph-wrapper">
+                        <div class="graphs"></div>
+                        <p>Sex</p>
+                      </div>
+                      <div class="graph-wrapper">
+                        <div class="graphs"></div>
+                        <p>Sab</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <section class="certificados">
+            <div class="card">
+                <div class="content">
+                    <h3>Certificação curso de Desenvolvimento </h3>
+                    <div>
+                        <span>10/10</span>
+                        <p>Módulos</p>
+                    </div>
+                </div>
+                <a href="">Emitir certificado
+                    <img src="" alt="">
+                </a>
+            </div>
+            <div class="arrow">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </section>
+    </section>
+ </body>
+ <script src="./assets/LIB/splide.min.js"></script>
+ <script src="./assets/JS/certificados.js"></script>
+
+ </html>
