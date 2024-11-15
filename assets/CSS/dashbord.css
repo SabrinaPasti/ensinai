@@ -436,7 +436,6 @@ header .current-date {
   border: 1px solid orange;
   display: inline-block;
   position: relative;
-  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
@@ -749,5 +748,8 @@ header .current-date {
   }
   .noti{
     display: none;
+  }
+  .widget4{
+    padding-bottom: 0px;
   }
 }
