@@ -30,9 +30,9 @@ body {
   display: flex;
   width: 280px;
   background-color: orange;
-  height: 54vw;
   margin-left: 40px;
   margin-top: 20px;
+  margin-bottom: 70px;
   padding: 10px;
   border-radius: 18px;
   justify-content: space-between;
