@@ -97,10 +97,27 @@ body {
   width: 830px;
   height: 60px;
   background: #fff1e9;
-  border: 1px solid #090830;
   border-radius: 51px;
+  border: none;
   padding: 10px 10px 10px 40px;
 }
+
+.border-noti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ffdac3;
+  height: 50px;
+  width: 50px;
+  flex-direction: column;
+}
+
+.border-noti img {
+  width: 30px;
+  height: 30px;
+}
+
 
 .DashHeader {
   padding: 10px 20px 0px;
@@ -136,9 +153,10 @@ body {
 
 .widget {
   border: 25px solid #fff1e9;
-  border-radius: 18px;
+  border-radius: 34px;
   height: 300px;
   width: calc(100% - 20px);
+
 }
 
 .activy-border {
@@ -160,7 +178,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 10px;
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 .activy-header {
@@ -534,9 +552,10 @@ header .current-date {
   background-color: #fff1e9;
   display: flex;
   justify-content: space-between;
-  border: solid 1px;
   border-radius: 16px;
   align-items: center;
+  position: relative;
+  overflow: visible;
 }
 
 .text-container1 {
@@ -558,7 +577,11 @@ header .current-date {
 
 .text-block1 img {
   height: 122px;
-  width: 132;
+  width: 132px;
+  position: relative;
+  left: 35px;
+  float: left;
+
 }
 
 .text-block2 {
@@ -568,9 +591,10 @@ header .current-date {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
-  border: solid 1px;
   border-radius: 16px;
   align-items: center;
+  position: relative;
+  overflow: visible;
 }
 
 .text-container2 {
@@ -578,11 +602,22 @@ header .current-date {
   flex-direction: column;
   justify-content: center;
   padding-left: 20px;
+  position: relative;
+  right: 35px;
+  max-width: 300px;
 }
 
 .text-block2 img {
   width: 130px;
   height: 109px;
+  position: relative;
+  top: 38px;
+  float: left;
+  /* Faz o texto contornar a imagem pela esquerda */
+  margin-right: 10px;
+  /* Adiciona espaço entre a imagem e o texto */
+  width: 150px;
+  /* Ajuste a largura conforme necessário */
 }
 
 .text-container2 h1 {
@@ -601,9 +636,10 @@ header .current-date {
   background-color: #ff8e47;
   display: flex;
   justify-content: space-between;
-  border: solid 1px;
   border-radius: 16px;
   align-items: center;
+  position: relative;
+  overflow: visible;
 }
 
 .text-container3 {
@@ -739,17 +775,20 @@ header .current-date {
     width: auto;
   }
 
-  .search{
+  .search {
     width: 100%;
   }
-  .search-conteiner{
+
+  .search-conteiner {
     display: block;
     padding-right: 20px;
   }
-  .noti{
+
+  .noti {
     display: none;
   }
-  .widget4{
+
+  .widget4 {
     padding-bottom: 0px;
   }
 }
