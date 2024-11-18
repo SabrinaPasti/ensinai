@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/CSS/splide.min.css">
     <link rel="stylesheet" href="./assets/CSS/index.css">
-    <!-- <link rel="stylesheet" href="./assets/CSS/dashbord.css"> -->
+    <link rel="stylesheet" href="./assets/CSS/dashbord.css">
     <link rel="stylesheet" href="./assets/CSS/certificados.css">
     <link rel="stylesheet" href="./assets/CSS/telaListagemAulas.css">
     <link rel="stylesheet" href="/assets/CSS/main.css">
@@ -26,13 +26,13 @@
                     <img src="/assets/IMG/llogo-certificados.svg" alt="Logomarca">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="dashbord.html">
                                 <img src="/assets/IMG/certificados-home.svg" alt="Ícone de menu">
                                 Dashboard
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="telaListagemCursos.html">
                                 <img src="/assets/IMG/menu-book-certificados.svg" alt="Ícone de menu">
                                 Meus Cursos
                             </a>
@@ -47,7 +47,7 @@
                     <ul>
                         <li>
                             <h2>Perfil</h2>
-                            <a href="">
+                            <a href="certificadosPerfil.html">
                                 <img src="/assets/IMG/foto-perfil.png" alt="Imagem de perfil">
                                 Certificados
                                 <img src="/assets/IMG/arrow-right-certificados.svg" alt="Seta para direita">
@@ -82,9 +82,61 @@
                     <input type="text" placeholder="Buscar por curso ou aula">
                     <button><img src="/assets/IMG/material-symbols-light_search.svg" alt="Ícone de pesquisa"></button>
                 </div>
-                <!-- <button class="notificacoes">Notificações
-                    <img src="/assets/IMG/fluent_alert-12-regular.svg" alt="Ícone de alerta">
-                </button> -->
+                <div class="notifications">
+                    <button class="notifications-button">
+                        <span>Notificações</span>
+                        <img src="/assets/IMG/fluent_alert-12-regular.svg" alt="Ícone de alerta">
+                    </button>
+                    <div class="notifications-content">
+                        <ul class="content">
+                            <li>
+                               <a href="#" class="notification notread">
+                                    <figure class="notification-icon">
+                                        <img src="/assets/IMG/alert-icon.png" alt="alert">
+                                    </figure>
+                                    <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                                    <span class="time">01h22</span>
+                               </a>
+                            </li>
+                            <li>
+                                <a href="#" class="notification">
+                                     <figure class="notification-icon">
+                                         <img src="/assets/IMG/alert-icon.png" alt="alert">
+                                     </figure>
+                                     <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                                     <span class="time">01h22</span>
+                                </a>
+                             </li>
+                             <li>
+                                <a href="#" class="notification">
+                                     <figure class="notification-icon">
+                                         <img src="/assets/IMG/alert-icon.png" alt="alert">
+                                     </figure>
+                                     <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                                     <span class="time">01h22</span>
+                                </a>
+                             </li>
+                             <li>
+                                <a href="#" class="notification">
+                                     <figure class="notification-icon">
+                                         <img src="/assets/IMG/alert-icon.png" alt="alert">
+                                     </figure>
+                                     <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                                     <span class="time">01h22</span>
+                                </a>
+                             </li>
+                             <li>
+                                <a href="#" class="notification">
+                                     <figure class="notification-icon">
+                                         <img src="/assets/IMG/alert-icon.png" alt="alert">
+                                     </figure>
+                                     <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                                     <span class="time">01h22</span>
+                                </a>
+                             </li>-
+                        </ul>
+                    </div>
+                </div>
             </article>
             <div class="listagem-content">
                 <div class="listagem-banner">
@@ -121,17 +173,102 @@
                                 </div>
                             </div>
                         </a>
+                        <a href="">
+                            <div class="listagem-card">
+                                <img src="/assets/IMG/aula.png" alt="Thumb Aula">
+                                <div class="listagem-text">
+                                    <h3>Aula 03 - JavaScript</h3>
+                                    <p>Lorem ipsum dolor sit amet. Eum Quis voluptas et quia excepturi est iure quis ea laudantium earum ab itaque odio qui eius</p>
+                                    <div class="listagem-status">
+                                        <span>07:35</span>
+                                        <span class="status fazer">A fazer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="listagem-card">
+                                <img src="/assets/IMG/aula.png" alt="Thumb Aula">
+                                <div class="listagem-text">
+                                    <h3>Aula 04 - JavaScript</h3>
+                                    <p>Lorem ipsum dolor sit amet. Eum Quis voluptas et quia excepturi est iure quis ea laudantium earum ab itaque odio qui eius</p>
+                                    <div class="listagem-status">
+                                        <span>07:35</span>
+                                        <span class="status fazer">A fazer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="listagem-infos">
+                    <!-- calendario -->
+                    <div class="widget2">
+                        <div class="wrapper">
+                        <header>
+                            <p class="current-date"></p>
+                            <div class="icons">
+                            <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                            <span id="next" class="material-symbols-rounded">chevron_right</span>
+                            </div>
+                        </header>
+                        <div class="calendar">
+                            <ul class="weeks">
+                            <li>Dom</li>
+                            <li>Seg</li>
+                            <li>Ter</li>
+                            <li>Qua</li>
+                            <li>Qui</li>
+                            <li>Sex</li>
+                            <li>Sab</li>
+                            </ul>
+                            <ul class="days"></ul>
+                        </div>
+                        </div>
+                    </div>
+                     <!-- blocos de texto start -->
+                    <div class="widget5">
+                        <div class="text-block1">
+                        <div class="text-container1">
+                            <h1>Atualize sua identidade!</h1>
+                            <p>
+                            Gerencie suas informações e preferências de aprendizagem para
+                            uma experiência personalizada.
+                            </p>
+                        </div>
+                        <img src="assets/IMG/perfil2.png" alt="" />
+                        </div>
+                        <div class="text-block2">
+                        <div class="text-container2">
+                            <h1>Aperfeiçoe suas habilidades!</h1>
+                            <p>
+                            Confira a lista completa dos cursos que você está realizando e progrida na sua jornada de aprendizado.
+                            </p>
+                        </div>
+                        <img src="assets/IMG/Livro.png" alt="" />
+                        </div>
+                        <div class="text-block3">
+                        <div class="text-container3">
+                            <h1>Conquiste seu conhecimento!</h1>
+                            <p>
+                            Acesse e baixe todos os seus certificados em um só lugar.
+                            </p>
+                        </div>
+                        <img src="assets/IMG/Chapeu.png" alt="" />
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="listagem-infos">
-
-            </div>
+            
         </section>
     </main>
     
 </body>
+<script src="./assets/JS/dashbord.js"></script>
 <script src="./assets/LIB/splide.min.js"></script>
 <script src="./assets/JS/certificados.js"></script>
+<script src="./assets/JS/main.js"></script>
+
+
 
 </html>

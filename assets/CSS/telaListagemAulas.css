@@ -1,4 +1,25 @@
 /*  Módulo listagem de aulas */
+.listagem{
+    overflow-y: overlay;
+    height: 50vh;
+}
+
+.listagem::-webkit-scrollbar{
+    width: .8rem;
+}
+
+.listagem::-webkit-scrollbar-track{
+    background-color: #ff8d4779;
+    border-radius: 50px;
+
+}
+
+.listagem::-webkit-scrollbar-thumb{
+    background-color: #090830;
+    border-radius: 50px;
+
+}
+
 
 .listagem-content{
     margin: 2.6rem 0;
@@ -86,4 +107,69 @@
 
 .listagem-status .fazer{
     background-color: #FFCC00;
+}
+
+/* Canto direito */
+.listagem-content{
+    display: flex;
+}
+
+.listagem-infos{
+    margin-left: 3.8rem;
+}
+
+.text-block1{
+    width: 37.4rem;
+    padding: 8.5rem 0;
+}
+
+.text-container1 h1{
+    font-size: 2rem;
+    color: #FF8E47;
+}
+
+.text-container1 p{
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    max-width: 24.2rem;
+    color: #FF8E47;
+}
+
+.text-block2{
+    width: 37.4rem;
+    padding: 8.5rem 0;
+    text-align: end;
+}
+
+.text-container2 h1{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.text-container2 p{
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    max-width: 24.2rem;
+    color: #fff;
+}
+
+.text-block3{
+    width: 37.4rem;
+}
+
+.text-block3{
+    width: 37.4rem;
+    padding: 8.5rem 0;
+}
+
+.text-container3 h1{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.text-container3 p{
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    max-width: 24.2rem;
+    color: #fff;
 }

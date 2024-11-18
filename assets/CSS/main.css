@@ -12,6 +12,7 @@ body::-webkit-scrollbar-thumb{
 /* Menu */
 
 aside{
+    position:sticky;
     background-color: #FF8E47;
     display: flex;
     width: 280px;
