@@ -7,10 +7,8 @@ html,
 body {
   width: 100%;
   margin: 0;
-  overflow-x: hidden !important;
   padding: 0;
   font-family: "Instrument Sans";
-  overflow: hidden;
   background: #fff;
   position: relative;
   caret-color: transparent;
@@ -273,6 +271,8 @@ body {
   display: flex;
   position: absolute;
   margin-top: 50px;
+  font-size: 1.2rem;
+  text-transform: lowercase;
 }
 
 /* calendario */

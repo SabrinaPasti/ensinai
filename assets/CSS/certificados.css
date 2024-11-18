@@ -11,129 +11,6 @@ body{
     padding: 4rem;
 }
 
-/* Menu */
-
-aside{
-    background-color: #FF8E47;
-    display: flex;
-    width: 280px;
-    height: 92vh;
-    border-radius: 1.8rem;
-}
-
-aside > div{
-    width: 92.7rem;
-}
-
-nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-nav .content{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-nav .content ul{
-    margin: 3.5rem 0;
-}
-
-nav .content ul li a{
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 1.4rem;
-}
-
-nav .content ul li a> img{
-    margin-right: .8rem;
-}
-
-nav .content ul li:not(:last-child){
-    margin-bottom: 1rem;
-}
-
-nav .content ul li:last-child > h2{
-    font-size: 1.8rem;
-    color: white;
-    font-weight: 400;
-
-}
-
-aside > nav > .content ul li a img{
-    width: 3.2rem;
-    border-radius: 50px;
-}
-
-aside > nav > .content ul li h2{
-    margin-bottom: 1.4rem;
-}
-
-.setting ul li a{
-    color: white;
-    font-size: 1.4rem;
-    display: flex;
-    align-items: center;
-}
-
-.setting ul li a img{
-    margin-right: .8rem;
-}
-
-.setting ul li:not(:last-child){
-    margin-bottom: 1rem;
-}
-
-/* Busca */
-
-article{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-article input{
-    outline: none;
-    border:none;
-    padding: 1.2rem 3.3rem;
-    border-radius: 132px;
-    color: #090830;
-    width: 63rem;
-    height: 5rem;
-}
-
-article input::placeholder{
-    color: #090830;
-}
-
-article div{
-    display: flex;
-}
-
-article div > button{
-    background: none;
-    padding: 0;
-    margin-left: -4rem;
-    font-size: 1.4rem;
-    max-height: 5rem;
-}
-
-article button{
-    background: none;
-    display: flex;
-    align-items: center;
-}
-
-article .notificacoes img{
-    background-color: #FFDAC3;
-    padding: 1rem;
-    border-radius: 50%;
-    margin-left: 1rem;
-}
-
 /* Meu perfil */
 
 .meu-perfil{
@@ -223,11 +100,11 @@ article .notificacoes img{
 
 .certificados{
     margin-top: 2.5rem;
-    display: flex;
+    /*display: flex;*/
 }
 
-.certificados ul{
-    display: flex;
+.content-certificados{
+    max-width: 927px;
 }
 
 .certificados .content{
@@ -238,6 +115,7 @@ article .notificacoes img{
 .certificados .card{
     border: #FF8E47 2px solid;
     border-radius: 1.9rem;
+    overflow: hidden;
 }
 
 .certificados .card > .content{
@@ -248,13 +126,13 @@ article .notificacoes img{
     flex-direction: column;
     align-items: flex-start;
     padding: 2.7rem;
-    border-top-left-radius: 1.8rem;
-    border-top-right-radius: 1.8rem;
-    max-height: 18.5rem;
+    border-top-left-radius: 1.4rem;
+    border-top-right-radius: 1.4rem;
+    /*max-height: 18.5rem;*/
 
 }
 
-.certificados .splide-track .card .content h3{
+.certificados .content h3{
     color: #FFF;
     font-weight: 400;
     margin-bottom: 4.4rem;
@@ -297,24 +175,31 @@ article .notificacoes img{
 
 .certificados .arrow{
     display: flex;
+    justify-content: end;
     align-items: flex-end;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
 }
 
-.certificados .arrow > img{
+.certificados .arrow > button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #090830;
-    width: 3.4rem;
-    height: 3.4rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
+    padding: 0;
+    transition: .3s ease;
 }
 
-.certificados .arrow img:first-child{
-    margin-right: 1.2rem;
-}
-
-.certificados .arrow img.desable{
+.certificados .arrow > button:disabled{
     background-color: #0908307d;
-} 
+    cursor: default;
+}
 
-.certificados ul li:not(:last-child){
-    margin-right: 2rem;
+
+article .notifications .notifications-content.open{
+    z-index: 1;
 }
