@@ -22,7 +22,7 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-left: 100px;
+  padding-left: 20px;
   padding-right: 100px;
 }
 
@@ -156,9 +156,10 @@ body {
   border: 25px solid #fff1e9;
   border-radius: 34px;
   height: 300px;
-  width: calc(100% - 20px);
-
+width:  calc(100% - 20px);
 }
+
+
 
 .activy-border {
   width: 100%;
@@ -277,7 +278,7 @@ body {
   flex-direction: row;
   align-items: flex-end;
   gap: 30px;
-  padding-left: 40px;
+  padding-right: 30px;
 }
 
 .graph-wrapper {
@@ -724,6 +725,7 @@ header .current-date {
     flex-direction: column;
     padding-left: 0px;
     padding-right: 0px;
+    max-width: 927px;
   }
 
   .content-area {
