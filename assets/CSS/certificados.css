@@ -1,0 +1,205 @@
+body{
+    display: block;
+    max-width: 1360px;
+    margin: 0 auto;
+    
+}
+
+.main-certificados{
+    display: flex;
+    gap: 3.8rem;  
+    padding: 4rem;
+}
+
+/* Meu perfil */
+
+.meu-perfil{
+    margin-top: 2.8rem;
+}
+
+.meu-perfil h1{
+    font-size: 3.2rem;
+    color: #090830;
+    line-height: 2.6rem;
+    margin-bottom: 2.8rem;
+    font-weight: 400;
+}
+
+.profile{
+    display: flex;
+}
+
+.profile img{
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #FFF1E9;
+    padding: 2rem;
+}
+
+.profile div{
+    margin-left: 2.9rem;
+    max-width: 420px;
+}
+
+.profile span{
+    font-size: 2rem;
+    line-height: 2.6rem;
+    color: #090830;
+    margin-bottom: .3rem;
+    font-weight: 600;
+}
+
+.profile p{
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    color: #090830;
+    margin-bottom: 1rem;
+}
+
+.profile a img{
+    background: none;
+    padding: 0;
+    margin-right: 1rem;
+}
+
+.profile a{
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    display: flex;
+    align-items: center;
+}
+
+/*  Dashboard */
+
+.dashboard-certificados{
+    margin-top: 2.8rem;
+}
+
+.dashboard-certificados .widget{
+    width: 92.7rem;
+}
+
+.dashboard-certificados .graphs{
+    background-color: #FF8E47;
+    width: 8.2rem;
+}
+
+.dashboard-certificados .activy-border{
+    width: 100%;
+}
+
+.dashboard-certificados .activy-header{
+    width: 100%;
+}
+
+.dashboard-certificados .graph-wrapper{
+    padding-bottom: 1.5rem;
+}
+
+/* Certificados Slide */
+
+.certificados{
+    margin-top: 2.5rem;
+    /*display: flex;*/
+}
+
+.content-certificados{
+    max-width: 927px;
+}
+
+.certificados .content{
+    display: flex;
+    flex-direction: column;
+}
+
+.certificados .card{
+    border: #FF8E47 2px solid;
+    border-radius: 1.9rem;
+    overflow: hidden;
+}
+
+.certificados .card > .content{
+    font-size: 2rem;
+    line-height: 2.6rem;
+    background-color: #FF8E47;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.7rem;
+    border-top-left-radius: 1.4rem;
+    border-top-right-radius: 1.4rem;
+    /*max-height: 18.5rem;*/
+
+}
+
+.certificados .content h3{
+    color: #FFF;
+    font-weight: 400;
+    margin-bottom: 4.4rem;
+}
+
+.certificados .card .content div p{
+    font-size: 1.4rem;
+    color: #fff;
+    margin-left: .9rem;
+}
+
+.certificados .card .content div{
+    display: flex;
+    align-items: center;
+}
+
+.certificados .card .content div span{
+    background-color: #090830;
+    color: #fff;
+    padding: .8rem 2.5rem;
+    border-radius: 47px;
+    font-size: 1.4rem;
+
+}
+
+.certificados .card .content div p{
+    font-size: 1.4rem;
+    color: #fff;
+    margin-left: .9rem;
+}
+
+.certificados .card a{
+    font-size: 1.4rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    color: #FF8E47;
+    width: 100%;
+}
+
+.certificados .arrow{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.certificados .arrow > button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #090830;
+    width: 3.6rem;
+    height: 3.6rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    padding: 0;
+    transition: .3s ease;
+}
+
+.certificados .arrow > button:disabled{
+    background-color: #0908307d;
+    cursor: default;
+}
+
+
+article .notifications .notifications-content.open{
+    z-index: 1;
+}

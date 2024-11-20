@@ -22,7 +22,6 @@ body {
   font-weight: 700;
   line-height: 62.5px;
   text-align: left;
-  animation: fadeRight 1s ease forwards;
 }
 
 #p1 {
@@ -35,7 +34,6 @@ body {
   line-height: 44px;
   color: #090830;
 }
-
 #p2 {
   width: 481px;
   font-family: "Instrument Sans";
@@ -56,7 +54,6 @@ body {
   border-radius: 51px;
   padding: 10px 10px 10px 40px;
 }
-
 .container {
   display: flex;
   align-items: center;
@@ -64,14 +61,12 @@ body {
   gap: 30rem;
   width: 100%;
 }
-
 .container1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
   width: 420px;
-  animation: fadeRight 1s ease forwards;
 }
 
 .container2 {
@@ -87,9 +82,7 @@ body {
   width: 658px;
   height: 658px;
   z-index: 10;
-  animation: fadeLeft 1s ease forwards;
 }
-
 .input-container {
   position: relative;
   display: flex;
@@ -108,7 +101,6 @@ body {
   width: 20px;
   height: 20px;
 }
-
 .container2 .ou {
   margin-bottom: 5px;
   font-weight: bold;
@@ -121,11 +113,9 @@ body {
   justify-content: center;
   padding-left: 100px;
 }
-
 .click {
   cursor: pointer;
 }
-
 button {
   margin-top: 20px;
   width: 324px;
@@ -161,14 +151,12 @@ button {
 }
 
 @media (max-width: 479px) {
-
   html,
   body {
     background: none;
     width: 100%;
     font-family: "Instrument Sans";
     max-height: none;
-    overflow: hidden !important;
   }
 
   #logo {
@@ -181,9 +169,7 @@ button {
     font-weight: 700;
     line-height: 62.5px;
     text-align: left;
-
   }
-
   #p1 {
     width: 360px;
     height: 62px;
@@ -194,11 +180,9 @@ button {
     line-height: 44px;
     color: #090830;
   }
-
   #p2 {
     width: 390px;
   }
-
   #termo {
     font-size: 13px;
   }
@@ -208,7 +192,6 @@ button {
     height: 10px;
     display: flex;
   }
-
   main {
     display: flex;
     flex-direction: column;
@@ -218,7 +201,6 @@ button {
     padding: 0 0.5rem;
     padding-top: 3rem;
   }
-
   #img1 {
     display: none;
   }
@@ -228,7 +210,6 @@ button {
     flex-direction: column;
     align-items: center;
   }
-
   .container {
     display: flex;
     justify-content: center;
@@ -236,42 +217,13 @@ button {
     padding-left: 5px;
     width: 100%;
     flex-direction: column;
-    padding-top: 20px;
   }
 
   .container1 {
     gap: 1.4rem;
     padding-left: 40px;
   }
-
   .container2 .forgot-password {
     padding-left: 0px;
-  }
-}
-
-
-
-@keyframes fadeRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-
-@keyframes fadeLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(20px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
   }
 }
