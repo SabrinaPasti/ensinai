@@ -1,0 +1,294 @@
+/* Resetando estilos padrões e definindo box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Corpo da página, centralizando o conteúdo */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  background-color: #f4f6f8;
+}
+
+
+/* Cada coluna */
+.column {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%; /* Cada coluna ocupará 30% da largura */
+}
+
+/* Estilo do título das colunas */
+.column h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Estilos específicos para a To-Do List (última coluna) */
+.todo-column {
+  width: 35%; /* Última coluna é um pouco mais larga */
+}
+
+
+.column-todo-column{
+  width: 100%;
+
+}
+
+/* Estilo do contêiner da To-Do List */
+.todo-container {
+  background-color: rgba(255, 241, 233, 1);
+  padding-top: 20px ;
+  padding-left: 15px ;
+  padding-right: 15px ;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  width : 100%;
+  display: block;
+      
+}
+  
+/* Estilo da lista de tarefas */
+.todo-list {
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  border-top: 1px solid #ddd;
+}
+
+/* Estilo de cada item da lista de tarefas */
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Estilo do texto da tarefa */
+.todo-item label {
+  flex-grow: 1;
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* Estilo da caixa de seleção */
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Quando a tarefa é marcada, risca o texto */
+.todo-item input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+/* Estilo do botão de excluir */
+.todo-item button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+/* Efeito ao passar o mouse sobre o botão de excluir */
+.todo-item button:hover {
+  background-color: #c82333;
+}
+
+/* Estilo da área de input (campo de texto e botão de adicionar) */
+.todo-input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilo do campo de texto onde o usuário digita a tarefa */
+.todo-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+/* Estilo do botão de adicionar tarefa */
+.add-btn {
+  padding: 8px 12px;
+  border: none;
+  background-color:rgba(255, 142, 71, 1);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Efeito ao passar o mouse sobre o botão de adicionar */
+.add-btn:hover {
+  background-color: #218838;
+}
+#divBusca{
+  background-color:#e4a213;
+  border:solid 1px;
+  border-radius:15px;
+  width:100vh;
+  height: 50px;
+  
+}
+
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:5px;
+  font-style:italic;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:260px;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;background-color: #555;
+}
+.column1{
+  height: 100vh ;
+  width: 33%;
+  background-color: #ffffff;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: row;  }
+
+  .main{
+      width: 22%;
+      height: 70%;
+  }
+
+
+
+.column2{
+    width: 50%;
+    height: 100vh;
+    
+    
+    
+}
+
+  .Amarelo{
+  background: rgba(255, 199, 58, 0.3);
+  border: 3px solid #d1d80c;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 22px;
+  text-align: center;
+  display: block;
+  border-radius: 18px;
+  }
+ 
+  
+  .Verde{
+  background: rgba(52, 199, 89, 0.3);
+  border: 3px solid #08ca28;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 22px;
+  text-align: center;
+  display: block;
+  border-radius: 18px;
+ }
+
+  .Vermelho{
+  background: rgba(255, 59, 48, 0.16);
+  border: 3px solid #d80c0c;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 22px;
+  text-align: center;
+  display: block;
+  border-radius: 18px;
+ 
+}
+
+#PDFAM{
+  background: rgba(255, 199, 58, 0.3);
+  border: 3px solid #d1d80c;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 3px;
+  /* text-align: left; */
+  display: block;
+  border-radius: 5px;
+}
+#DOCAM{
+  background: rgba(255, 199, 58, 0.3);
+  border: 3px solid #d1d80c;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 3px;
+  text-align: left;
+  display: block;
+  border-radius: 5px;
+}
+
+#PDFVM{ 
+  background: rgba(255, 59, 48, 0.16);
+  border: 3px solid #d80c0c;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 3px;
+  text-align: left;
+  display: block;
+  border-radius: 5px;
+}
+
+#DOCVM{ 
+  background: rgba(255, 59, 48, 0.16);
+  border: 3px solid #d80c0c;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 3px;
+  text-align: left;
+  display: block;
+  border-radius: 5px;
+}
+
+#PDFVD{ 
+  background: rgba(52, 199, 89, 0.3);
+  border: 3px solid #08ca28;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 3px;
+  text-align: left;
+  display: block;
+  border-radius: 5px;
+}
+
+#DOCVD{
+  background: rgba(52, 199, 89, 0.3);
+  border: 3px solid #08ca28;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 3px;
+  text-align: left;
+  display: block;
+  border-radius: 5px;
+}
