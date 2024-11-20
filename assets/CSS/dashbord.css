@@ -18,6 +18,10 @@ body {
   display: flex;
 }
 
+.head-mobile {
+  display: none;
+}
+
 .container-main {
   flex: 1;
   display: flex;
@@ -155,8 +159,7 @@ body {
 .widget {
   border: 25px solid #fff1e9;
   border-radius: 34px;
-  height: 300px;
-width:  calc(100% - 20px);
+  width: calc(100% - 20px);
 }
 
 
@@ -279,12 +282,16 @@ width:  calc(100% - 20px);
   align-items: flex-end;
   gap: 30px;
   padding-right: 30px;
+  justify-content: center;
+  height: 164px;
 }
 
 .graph-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 70px;
+  position: relative;
 }
 
 .graphs {
@@ -292,14 +299,14 @@ width:  calc(100% - 20px);
   background-color: orange;
   border-radius: 8px;
   height: 40px;
+  transform: translateY(28px);
 }
 
 .graph-wrapper p {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  position: absolute;
-  margin-top: 50px;
+  margin-top: 10px;
+  transform: translateY(20px);
+  text-align: center;
+  font-size: 14px;
 }
 
 /* calendario */
@@ -693,6 +700,9 @@ header .current-date {
   width: calc(100% - 20px);
 }
 
+
+
+
 @media (max-width: 479px) {
   .container-perfil {
     display: none;
@@ -702,13 +712,9 @@ header .current-date {
   body {
     max-height: none;
     height: 100vh;
-    /* Garante que ocupe 100% da altura da tela */
     width: 100vw;
-    /* Garante que ocupe 100% da largura da tela */
     overflow-x: hidden;
-    /* Remove qualquer overflow horizontal */
     overflow-y: auto;
-    /* Permite rolagem vertical, se necessário */
     margin: 0;
     padding: 0;
     font-family: "Instrument Sans";
@@ -716,7 +722,6 @@ header .current-date {
     position: relative;
     display: flex;
     flex-direction: column;
-    /* Empilha widgets verticalmente no modo mobile */
     box-sizing: border-box;
   }
 
@@ -755,9 +760,10 @@ header .current-date {
 
   .activy-container {
     display: flex;
-    justify-content: initial;
     width: 100%;
     overflow: hidden;
+    justify-content: space-between;
+    height: 238px;
   }
 
   .time-container {
@@ -765,8 +771,8 @@ header .current-date {
   }
 
   #graphs-container {
-    gap: 21px;
-    padding-left: 0px;
+    gap: 16px;
+    padding-left: 7px;
     margin-left: 24px;
   }
 
@@ -794,4 +800,88 @@ header .current-date {
   .widget4 {
     padding-bottom: 0px;
   }
+
+
+  .head-mobile {
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+
+  }
+
+  .head-mobile img {
+    height: 10px;
+  }
+
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: orange;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .circle-container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+
+  .circle {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+
+  .outer-circle {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+  }
+
+  .inner-circle {
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+  }
+
+  .nav-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-item.active .outer-circle {
+    transform: scale(1.2);
+  }
+
+  .nav-item.active .inner-circle {
+    transform: scale(1.5);
+  }
+
+  .nav-item.active .nav-icon {
+    transform: scale(1.3) translateY(-10px);
+  }
+
 }

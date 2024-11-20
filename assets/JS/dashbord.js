@@ -116,3 +116,12 @@ prevNextIcon.forEach((icon) => {
     renderCalendar(); // calling renderCalendar function
   });
 });
+
+
+function handleClick(element) {
+  document.querySelectorAll('.nav-item').forEach(item => {
+    item.classList.remove('active');
+  });
+
+  element.classList.add('active');
+}
