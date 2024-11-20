@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Ensinaí</title>
+  <!-- Referência ao CSS da pasta assets -->
+  <link rel="stylesheet" href="/CSS/login.css">
+  
+  <!-- Carregar a biblioteca do Supabase antes do script do login -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script> <!-- Carregar o Supabase primeiro -->
+</head>
+<body>
+  <div id="retangulo_laranja">
+    <div>
+      <h1 id="logo">ensin<span id="ai">aí</span></h1>
+      <div class="container">
+        <div class="container1">
+          <div>
+            <p id="p1">
+              Cada aprendizado é um passo mais perto do sucesso.
+            </p>
+          </div>
+          <div>
+            <p id="p2">
+              Conecte-se e continue sua jornada rumo ao conhecimento!
+            </p>
+          </div>
+
+          <div class="container2">
+            <div class="input-container">
+              <span class="icon">
+                <!-- Referência à imagem dentro de assets/IMG -->
+                <img src="/IMG/bmfGnbo.png" alt="ícone" />
+              </span>
+              <input
+                type="text"
+                id="username"
+                class="login"
+                placeholder="Nome Do Usuario"
+                required
+              />
+            </div>
+
+            <div class="input-container">
+              <span class="icon">
+                <img
+                  src="/IMG/UsquUX0.png"
+                  alt="ícone"
+                  id="img-icon"
+                />
+              </span>
+              <input
+                type="password"
+                id="password"
+                class="login"
+                placeholder="Senha"
+                required
+              />
+            </div>
+
+            <label class="checkbox-label">
+              <input type="checkbox" />
+              <span id="termo"
+                >Eu aceito os
+                <u class="click"> Termos e as Condições </u> da equipe
+                Ensinaí.</span
+              >
+            </label>
+            <button id="loginButton">Inicie sua jornada</button>
+            <p class="forgot-password">Esqueci a senha</p>
+          </div>
+        </div>
+        <div>
+          <img src="/IMG/QNcsDIc.png" id="img1" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carregar o seu script depois do script do Supabase -->
+  <script>
+    // Definindo a URL do servidor (backend)
+    const serverUrl = 'http://localhost:3000/login'; // URL para o seu servidor Express
+  
+    // Selecionando o botão de login
+    const loginButton = document.querySelector('#loginButton');
+    
+    loginButton.addEventListener('click', async (event) => {
+  event.preventDefault(); // Previne o envio do formulário tradicional
+
+  // Pegando os valores de nome de usuário e senha
+  const username = document.querySelector('#username').value;
+  const password = document.querySelector('#password').value;
+
+  // Verifica se os campos estão preenchidos
+  if (!username || !password) {
+    alert('Por favor, preencha ambos os campos.');
+    return;
+  }
+
+  // Envia a requisição POST para o backend Express
+  try {
+    const response = await fetch('/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email: username, password }),
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      // Redireciona o usuário para a página especificada pelo servidor
+      window.location.href = data.redirectUrl; // Aqui ocorre o redirecionamento
+    } else {
+      alert('Erro de login: ' + data.message);
+    }
+  } catch (error) {
+    console.error('Erro na requisição:', error);
+    alert('Ocorreu um erro ao tentar fazer login. Tente novamente.');
+  }
+});
+
+
+
+  </script>
+  
+</body>
+</html>

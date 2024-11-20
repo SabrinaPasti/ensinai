@@ -7,141 +7,230 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/CSS/index.css">
-    <title>HOME</title>
+    <link rel="stylesheet" href="/CSS/splide.min.css">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <title>Decole no aprendizado da sua equipe!</title>
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="header-web">
+        <nav class="wrapper">
             <div class="logo">
-                <img src="./assets/IMG/ensinaí.svg" alt="">
+                <img src="/IMG/ensinaí.svg" alt="">
                  <!-- <span class="azul">ensin</span><span class="laranja">Aí</span>&#8203; -->
             </div>
 
-            <ul class="links-nav">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Passo-a-Passo</a></li>
-                <li><a href="#">Quem somos</a></li>
-            </ul>
-            <div class="botoes">
-                <button class="botao-contato">Contato</button>
-                <button class="botao-iniciar">Iniciar jornada</button>
+            <div class="content">
+                <ul class="links-nav">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#passo">Passo-a-Passo</a></li>
+                    <li><a href="#quemsomos">Quem somos</a></li>
+                </ul>
+                <div class="botoes">
+                    <button class="botao-contato">Contato</button>
+                    <button class="botao-iniciar">Iniciar jornada</button>
+                </div>
             </div>
         </nav>
     </header>
-
-    <main class="main main-inicio">
-        <div class="col-1">
-            <img src="./assets/IMG/img-boneca-2.png" alt="" class="img-boneca-1">
-        </div>
-        <div class="col-2">
-            <div class="linha-1-col-2">
-                <h1>Decole no aprendizado da sua equipe!</h1>
-                <p>Com nossa plataforma LMS, você cria treinamentos rápidos, práticos e envolventes. Tudo o que sua
-                    empresa precisa para alcançar novos horizontes no ensino.</p>
-                <button class="botao-iniciarjornada">Iniciar Jornada</button>
+    <main class="main main-inicio" id="inicio">
+        <div class="wrapper">
+            <div class="col-1">
+                <img src="/IMG/boneca-1-svg.svg" alt="" class="img-boneca-1">
             </div>
-            <div class="linha-2-col-2">
-                <p class="texto">Aulas objetivas com vídeos do seu jeito!</p>
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen
-                    class="iframe"></iframe>
-            </div>
-        </div>
-    </main>
-
-    <main class="main-comofunciona">
-        <h1 class="titulo-comofunciona">Como funciona? Simples assim!</h1>
-
-        <div class="caixa-texto-parte2">
-            <h1 class="num1">1</h1>
-
-            <div class="texto-parte1">
-                <h3>De o primeiro passo!</h3>
-                <p>Faça seu cadastro rapidinho e já estaremos prontos para ajudar.</p>
-            </div>
-            <h1 class="num2">2</h1>
-            <div class="texto-parte2">
-                <h3>Conteúdo nas nossas mãos</h3>
-                <p>Entramos em contato com você, você nos envia seus vídeos e lições... e pronto! Cuidamos de tudo.
-                </p>
-            </div>
-            <h1 class="num3">3</h1>
-            <div class="texto-parte3">
-                <h3>Tudo pronto para decolar</h3>
-                <p>Nós cadastramos o conteúdo na plataforma e liberamos o acesso para seus alunos. Agora é só assistir ao sucesso da sua equipe decolar!</p>
-            </div>
-        </div>
-
-        <div class="caixa-img-boneca-2"><img class="img-boneca-2" src="./assets/IMG/img-boneca-1.png" alt=""></div>
-
-        <div class="caixa-botao-comofunciona">
-            <button class="botao-comofunciona">Iniciar Jornada</button>
-        </div>
-    </main>
-
-    <main class="main-quemsomos">
-        <div class="parte-azul">
-            <h1 class="txt-quemsomos">Quem Somos?</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas rerum ad temporibus id repudiandae, sequi
-                ratione, nesciunt, corporis expedita pariatur amet suscipit et. Maiores, sequi iure? Praesentium
-                reprehenderit laborum necessitatibus?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas accusantium quis quasi libero dolor ut
-                voluptatem assumenda, at eveniet doloribus itaque? Commodi deserunt inventore sit maiores corrupti,
-                numquam ea ipsum.
-            </p>
-        </div>
-        <div class="parte-branca">
-            <div class="caixa-cards">
-                <div class="card">
-                    <p>Maria Acyole</p>
-                    <img src="" alt="" class="img-card">
+            <div class="col-2">
+                <div class="linha-1-col-2">
+                    <h1>Decole no aprendizado da sua equipe!</h1>
+                    <p>Com nossa plataforma LMS, você cria treinamentos rápidos, práticos e envolventes. Tudo o que sua
+                        empresa precisa para alcançar novos horizontes no ensino.</p>
+                    <button class="botao-iniciarjornada">Iniciar Jornada
+                        <img src="/IMG/mdi-light_arrow-up.svg" alt="Seta para cima">
+                    </button>
                 </div>
-                <div class="card">
-                    <p>Sabrina Pasti</p>
-                    <img src="" alt="" class="img-card">
-                </div>
-                <div class="card">
-                    <p>Jefferson</p>
-                    <img src="" alt="" class="img-card">
-                </div>
-                <div class="card">
-                    <p>Felipe</p>
-                    <img src="" alt="" class="img-card">
-                </div>
-                <div class="card">
-                    <p>Carlos</p>
-                    <img src="" alt="" class="img-card">
-                </div>
-            </div>
-        </div>
-
-        <div class="caixa-contato">
-            <h2 class="titulo-contato">Entre em contato com a gente</h2>
-            <p class="texto-contato">Lorem ipsum dolor sit amet consectetur adipisicing elit...
-            </p>
-
-            <div class="caixa-inputs">
-                <div class="linha-inputs">
-                    <input type="text" placeholder="Nome" class="input-menor">
-                    <input type="email" placeholder="Email" class="input-menor">
-                    <input type="number" placeholder="Telefone" class="input-menor">
-                </div>
-                <div class="linha-inputs-caixa">
-                    <input type="text" placeholder="Deixe sua mensagem" size="100">
-                    <button class="botao-quemsomos">Iniciar jornada</button>
+                <div class="linha-2-col-2">
+                    <p class="texto">Aulas objetivas com vídeos <strong>do seu jeito!</strong></p>
+                    <div class="video-home">
+                        <!-- Aqui vai o vídeo -->
+                         <img src="/IMG/image-thumb-home.png" alt="Thumb Vídeo">
+                        <div class="player-mask">
+                            <img src="/IMG/basil_play-solid.svg" alt="Botão de player">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
+    <section class="como-funciona" id="passo">
+        <div class="wrapper">
+            <h2>Como funciona? Simples assim!</h2>
+            <div class="como-funciona content">
+                <div class="passos">
+                    <ul>
+                        <span>1</span>
+                        <li>
+                            <strong>Dê o primeiro passo!</strong>
+                            <p>Faça seu cadastro rapidinho e já estaremos prontos para ajudar.</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <span>2</span>
+                        <li>
+                            <strong>Conteúdo nas Nossas Mãos</strong>
+                            <p>Entramos em contato com você, você nos envia seus vídeos e lições... e pronto! Cuidamos de tudo.</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <span>3</span>
+                        <li>
+                            <strong>Tudo Pronto para decolar!</strong>
+                            <p>Nós cadastramos o conteúdo na plataforma e liberamos o acesso para seus alunos. Agora é só assistir ao sucesso da sua equipe decolar!</p>
+                        </li>
+                    </ul>
+                </div>
+                <img src="/IMG/boneca-2.svg" alt="Boneca estudando">
+            </div>
+            <a href="#">
+                Iniciar Jornada
+                <img src="/IMG/mdi-light_arrow-up.svg" alt="Seta para cima">
+            </a>
+        </div>
+    </section>
+   
+    <section class="quem-somos" id="quemsomos">
+        <div class="wrapper">
+            <div class="content">
+                <h2>Quem somos</h2>
+                <div class="text">
+                    <p>Somos uma empresa nascida do <strong>Instituto da Oportunidade Social (IOS)</strong>, com o objetivo de tornar o aprendizado acessível e eficiente para empresas de todos os tamanhos.</p>
+                    <p>Nossa missão é simplificar o processo de ensino, oferecendo uma plataforma prática e intuitiva, onde sua equipe pode adquirir conhecimento de forma rápida, dinâmica e adaptada às suas necessidades. </p>
+                </div>
+                <div class="box-content">
+                    <h3>Educação com respeito, inclusão e transformação</h3>
+                    <h3>Automatização que simplifica processos e potencializa resultados.</h3>
+                </div>
+            </div>
+            <div class="slide-time splide-home splide">
+                <div class="slide-time content">
+                    <h2>Nosso Time</h2>
+                    <div class="arrows splide__arrows">
+                        <button class="arrow left splide__arrow--prev">
+                            <img src="/IMG/iconamoon_arrow-up-2-left.svg" alt="Seta esquerda">
+                        </button>
+                        <button class="arrow right splide__arrow--next">
+                            <img src="/IMG/iconamoon_arrow-up-2-light.svg" alt="Seta direita">
+                        </button>
+                    </div>
+                </div>
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <figure>
+                                <img src="/IMG/foto-padrao.png" alt="Integrante do Grupo">
+                                <div class="box-texto">
+                                    <div class="pic-texto">
+                                        <figcaption>Sabrina Pasti</figcaption>
+                                        <p>Designer, Líder e Programadora</p>  
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, adipisci.
+                                        </div>
+                                    </div>
+                                    <img src="/IMG/mdi-light_arrow-up.svg" alt="Seta para cima" class="open">
+                                </div>
+                            </figure>
+                        </li>
+                        <li class="splide__slide">
+                            <figure>
+                                <img src="/IMG/foto-padrao.png" alt="Integrante do Grupo">
+                                <div class="box-texto">
+                                    <div class="pic-texto">
+                                        <figcaption>Sabrina Pasti</figcaption>
+                                        <p>Designer, Líder e Programadora</p>  
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, adipisci.
+                                        </div>
+                                    </div>
+                                    <img src="/IMG/mdi-light_arrow-up.svg" alt="Seta para cima" class="open">
+                                </div>
+                            </figure>
+                        </li>
+                        <li class="splide__slide">
+                            <figure>
+                                <img src="/IMG/foto-padrao.png" alt="Integrante do Grupo">
+                                <div class="box-texto">
+                                    <div class="pic-texto">
+                                        <figcaption>Sabrina Pasti</figcaption>
+                                        <p>Designer, Líder e Programadora</p>  
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, adipisci.
+                                        </div>
+                                    </div>
+                                    <img src="/IMG/mdi-light_arrow-up.svg" alt="Seta para cima" class="open">
+                                </div>
+                            </figure>
+                        </li>
+                        <li class="splide__slide">
+                            <figure>
+                                <img src="/IMG/foto-padrao.png" alt="Integrante do Grupo">
+                                <div class="box-texto">
+                                    <div class="pic-texto">
+                                        <figcaption>Sabrina Pasti</figcaption>
+                                        <p>Designer, Líder e Programadora</p>  
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, adipisci.
+                                        </div>
+                                    </div>
+                                    <img src="/IMG/mdi-light_arrow-up.svg" alt="Seta para cima" class="open">
+                                </div>
+                            </figure>
+                        </li>
+                        <li class="splide__slide">
+                            <figure>
+                                <img src="/IMG/foto-padrao.png" alt="Integrante do Grupo">
+                                <div class="box-texto">
+                                    <div class="pic-texto">
+                                        <figcaption>Sabrina Pasti</figcaption>
+                                        <p>Designer, Líder e Programadora</p>  
+                                        <div class="text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, adipisci.
+                                        </div>
+                                    </div>
+                                    <img src="/IMG/mdi-light_arrow-up.svg" alt="Seta para cima" class="open">
+                                </div>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="contato">
+        <form action="" class="form-home">
+            <div class="wrapper">
+                <h2>Entre em Contato com a Gente!</h2>
+                <p>Tem alguma dúvida ou quer saber mais sobre como nossa plataforma pode ajudar sua empresa a decolar no aprendizado? Estamos aqui para te ajudar!</p>
+                <div class="campos">
+                    <input type="text" placeholder="Nome:">
+                    <input type="text" placeholder="E-mail:">
+                    <input type="number" placeholder="Telefone:">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Deixe sua Mensagem:"></textarea>
+                <button class="button-form">Enviar Mensagem</button>
+            </div>
+        </form>
+    </section>
     <footer>
-        <img src="./assets/IMG/logo.svg" alt="" class="logo-footer">
-        <p><strong>Pronto para decolar no aprendizado?</strong> Junte-se a nós e transforme o ensino na sua empresa!</p>
-        &copy; Ensinai Todos os direitos reservados
+        <div class="wrapper">
+            <img src="/IMG/logo.svg" alt="" class="logo-footer">
+            <p><strong>Pronto para decolar no aprendizado?</strong> Junte-se a nós e transforme o ensino na sua empresa!
+            &copy; Ensinai Todos os direitos reservados</p>
+        </div>
+        
     </footer>
+
 </body>
+<script src="/LIB/splide.min.js"></script>
+<script src="/JS/home.js"></script>
 
 </html>
