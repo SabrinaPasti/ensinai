@@ -28,6 +28,7 @@ body {
   flex-direction: column;
   padding-left: 20px;
   padding-right: 100px;
+  padding-bottom: 68px;
 }
 
 .container-perfil {
@@ -760,7 +761,6 @@ header .current-date {
 
   .activy-container {
     display: flex;
-    width: 100%;
     overflow: hidden;
     justify-content: space-between;
     height: 238px;
@@ -844,44 +844,35 @@ header .current-date {
     position: relative;
     width: 50px;
     height: 50px;
-  }
-
-  .circle {
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.6s ease;
   }
 
   .outer-circle {
     width: 50px;
     height: 50px;
     background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .inner-circle {
     width: 40px;
     height: 40px;
     background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .nav-icon {
     width: 20px;
     height: 20px;
-    transition: transform 0.3s ease;
   }
 
-  .nav-item.active .outer-circle {
-    transform: scale(1.2);
+  .nav-item.active .circle-container {
+    transform: translateY(-10px);
   }
-
-  .nav-item.active .inner-circle {
-    transform: scale(1.5);
-  }
-
-  .nav-item.active .nav-icon {
-    transform: scale(1.3) translateY(-10px);
-  }
-
 }
