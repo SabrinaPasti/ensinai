@@ -33,7 +33,7 @@ body {
 .container-perfil {
   display: flex;
   width: 280px;
-  background-color: orange;
+  background-color: #FF8E47;
   margin-left: 40px;
   margin-top: 20px;
   margin-bottom: 70px;
@@ -255,7 +255,7 @@ body {
   flex-wrap: wrap;
   height: 164px;
   width: 1px;
-  background-color: orange;
+  background-color: #FF8E47;
   margin-left: 20px;
 }
 
@@ -296,7 +296,7 @@ body {
 
 .graphs {
   width: 49px;
-  background-color: orange;
+  background-color: #FF8E47;
   border-radius: 8px;
   height: 40px;
   transform: translateY(28px);
@@ -320,7 +320,7 @@ body {
 .wrapper {
   width: 450px;
   background: #fff;
-  border: 1px solid orange;
+  border: 1px solid #FF8E47;
   border-radius: 20px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
@@ -460,7 +460,7 @@ header .current-date {
   height: 20px;
   background-color: #eee;
   border-radius: 50%;
-  border: 1px solid orange;
+  border: 1px solid #FF8E47;
   display: inline-block;
   position: relative;
   transition: background-color 0.3s ease;
@@ -477,7 +477,7 @@ header .current-date {
   left: 50%;
   width: 10px;
   height: 10px;
-  background-color: orange;
+  background-color: #FF8E47;
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
@@ -534,7 +534,6 @@ header .current-date {
 
 .widget4 {
   width: calc(100% - 20px);
-  padding-bottom: 90px;
   display: flex;
   flex-direction: column;
 }
@@ -733,6 +732,7 @@ header .current-date {
     padding-right: 0px;
     max-width: 927px;
     padding-bottom: 68px;
+    height: auto;
   }
 
   .content-area {
@@ -806,7 +806,7 @@ header .current-date {
   .head-mobile {
     display: flex;
     justify-content: space-between;
-    background-color: orange;
+    background-color: #FF8E47;
     width: 100%;
     height: 70px;
     align-items: center;
@@ -816,8 +816,9 @@ header .current-date {
   }
 
   .head-mobile img {
-    height: 10px;
+    height: 80px;
   }
+
 
   .bottom-nav {
     display: flex;
