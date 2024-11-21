@@ -28,7 +28,6 @@ body {
   flex-direction: column;
   padding-left: 20px;
   padding-right: 100px;
-  padding-bottom: 68px;
 }
 
 .container-perfil {
@@ -724,6 +723,7 @@ header .current-date {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+
   }
 
   .container-main {
@@ -732,6 +732,7 @@ header .current-date {
     padding-left: 0px;
     padding-right: 0px;
     max-width: 927px;
+    padding-bottom: 68px;
   }
 
   .content-area {
@@ -826,17 +827,20 @@ header .current-date {
     bottom: 0;
     width: 100%;
     height: 60px;
-    background-color: orange;
+    background-color: #ffe3d1;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
+    border-radius: 10%;
   }
+
+
 
   .nav-item {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    transition: transform 0.3s ease;
+    transition: transform 0.6s ease;
     cursor: pointer;
   }
 
@@ -848,23 +852,23 @@ header .current-date {
   }
 
   .outer-circle {
-    width: 50px;
-    height: 50px;
-    background-color: white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
 
   .inner-circle {
+    position: relative;
     width: 40px;
     height: 40px;
-    background-color: orange;
+    background-color: #FF8E47;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
   }
 
   .nav-icon {
@@ -872,7 +876,18 @@ header .current-date {
     height: 20px;
   }
 
+  .nav-item.active .outer-circle {
+    opacity: 1;
+    transform: translateY(-10px);
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    opacity: 1;
+    transition: opacity 0.3s ease, transform 0.6s ease;
+  }
+
   .nav-item.active .circle-container {
     transform: translateY(-10px);
   }
+
 }

@@ -1,0 +1,226 @@
+body::-webkit-scrollbar{
+    width: .5rem;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: #ff8d4779;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #090830;
+}
+/* Menu */
+
+aside{
+    position:sticky;
+    background-color: #FF8E47;
+    display: flex;
+    width: 280px;
+    height: 92vh;
+    border-radius: 1.8rem;
+}
+
+aside > div{
+    width: 92.7rem;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav .content{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+nav .content ul{
+    margin: 3.5rem 0;
+}
+
+nav .content ul li a{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.4rem;
+}
+
+nav .content ul li a> img{
+    margin-right: .8rem;
+}
+
+nav .content ul li:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+nav .content ul li:last-child > h2{
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 400;
+
+}
+
+aside > nav > .content ul li a img{
+    width: 3.2rem;
+    border-radius: 50px;
+}
+
+aside > nav > .content ul li h2{
+    margin-bottom: 1.4rem;
+}
+
+.setting ul li a{
+    color: white;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.setting ul li a img{
+    margin-right: .8rem;
+}
+
+.setting ul li:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+/* Busca */
+
+article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+article input{
+    outline: none;
+    border:none;
+    padding: 1.2rem 3.3rem;
+    border-radius: 132px;
+    color: #090830;
+    width: 63rem;
+    height: 5rem;
+}
+
+article input::placeholder{
+    color: #090830;
+}
+
+article div{
+    display: flex;
+}
+
+article div > button{
+    background: none;
+    padding: 0;
+    max-height: 5rem;
+    margin-left: -5rem;
+}
+
+article button{
+    background: none;
+    display: flex;
+    align-items: center;
+}
+
+article .notifications{
+    position: relative;
+}
+
+article .notifications .notifications-button span{
+    margin-left: -4rem;
+    font-size: 1.4rem;
+}
+
+article .notifications .notifications-button img{
+    background-color: #FFDAC3;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+article .notifications .notifications-content{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    min-width: 270px;
+    max-height: 0;
+    overflow: hidden;
+    border: 1px solid #FF8E47;
+    background: #fff;
+    border-radius: 2rem;
+    opacity: 0;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    transition: .3s ease;
+ 
+}
+
+article .notifications .notifications-content .content::-webkit-scrollbar{
+    width: 9px;
+}
+
+article .notifications .notifications-content .content::-webkit-scrollbar-track{
+    background: #fff;
+    border: 1px solid #090830;
+    border-radius: 20px;
+}
+
+article .notifications .notifications-content .content::-webkit-scrollbar-thumb {
+    background: #090830;
+    border-radius: 20px;
+}
+
+article .notifications .notifications-content.open{
+    max-height: 35vh;
+    opacity: 1;
+}
+
+article .notifications .notifications-content .content{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    overflow-y: scroll;
+    border-radius: 1.85rem;
+    width: 100%;
+}
+
+article .notifications .notifications-content .content .notification{
+    display: flex;
+    gap: .9rem;
+    padding: 1.3rem;
+}
+
+article .notifications .notifications-content .content li:not(:last-child){
+    border-bottom: 1px solid #090830;
+}
+
+article .notifications .notifications-content .content .notification.notread{
+    background: #09083033;
+}
+
+article .notifications .notifications-content .content .notification{
+    display: flex;
+    gap: .9rem;
+    padding: 2rem;
+}
+
+article .notifications .notifications-content .content .notification .notification-icon{
+    width: 3.2rem;
+}
+
+article .notifications .notifications-content .content .notification p{
+    font-size: 1.2rem;
+    color: #090830;
+    max-width: 132px;
+}
+
+article .notifications .notifications-content .content .notification span{
+    display: block;
+    color: #FF8E47;
+    font-size: .8rem;
+}
+
+
