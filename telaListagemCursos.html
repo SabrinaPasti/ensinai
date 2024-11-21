@@ -2,124 +2,243 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="assets/CSS/dashbord.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/CSS/splide.min.css">
+  <link rel="stylesheet" href="./assets/CSS/index.css">
+  <link rel="stylesheet" href="./assets/CSS/dashbord.css">
+  <link rel="stylesheet" href="./assets/CSS/certificados.css">
+  <link rel="stylesheet" href="./assets/CSS/telaListagemAulas.css">
   <link rel="stylesheet" href="./assets/CSS/telaListagemCursos.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Press+Start+2P&display=swap"
-    rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/CSS/main.css">
   
 
-  <style>
-
-  </style>
+  <title>Listagem Aulas</title>
 </head>
 
+
 <body>
-  <div class="container-grid">
-    <div class="col-1">
-      <div class="container-perfil">
-        <div class="perfil">
-          <img src="./assets/IMG/logo-escrita.svg" alt="" class="logo-escrita">
-          <p><img src="assets/IMG/proicons_home.svg" alt="" />Dashbord</p>
-          <p><img src="assets/IMG/humbleicons_book.svg" alt="" />Meus Cursos</p>
-
-          <p><img src="assets/IMG/iconamoon_clock-light.svg" alt="" />Historico</p>
-          <p><img src="assets/IMG/Vector.svg" alt="" />Certfificados</p>
-          <p><img src="assets/IMG/Group.svg" alt="" />Perfil</p>
-
-          <h4>Perfil</h4>
-
-          <div class="linha-perfil">
-            <img src="./assets/IMG/image.svg" alt="">
-            <p>Meu perfil</p>
-            <img src="./assets/IMG/iconamoon_arrow-up-2-light.svg" alt="">
+<main class="main-certificados">
+    <aside>
+        <nav>
+            <div class="content">
+                <img src="/assets/IMG/llogo-certificados.svg" alt="Logomarca">
+                <ul>
+                    <li>
+                        <a href="dashbord.html">
+                            <img src="/assets/IMG/certificados-home.svg" alt="Ícone de menu">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="telaListagemCursos.html">
+                            <img src="/assets/IMG/menu-book-certificados.svg" alt="Ícone de menu">
+                            Meus Cursos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/assets/IMG/menu-clock-certificados.svg" alt="Ícone de menu">
+                            Histórico
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Perfil</h2>
+                        <a href="certificadosPerfil.html">
+                            <img src="/assets/IMG/foto-perfil.png" alt="Imagem de perfil">
+                            Certificados
+                            <img src="/assets/IMG/arrow-right-certificados.svg" alt="Seta para direita">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="setting">
+                <ul>
+                    <li>
+                        <a href=""> 
+                            <img src="/assets/IMG/guidance_settings.svg" alt="Ícone de configurações">Configurações
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="/assets/IMG/weui_help-outlined.svg" alt="Ícone de FAQ"> Ajuda FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""> 
+                            <img src="/assets/IMG/lets-icons_out-light.svg" alt="Ícone de sair">Sair
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+    <section class="listagem-cursos">
+      <article>
+        <div>
+            <input type="text" placeholder="Buscar por curso ou aula">
+            <button><img src="/assets/IMG/material-symbols-light_search.svg" alt="Ícone de pesquisa"></button>
+        </div>
+        <div class="notifications">
+            <button class="notifications-button">
+                <span>Notificações</span>
+                <img src="/assets/IMG/fluent_alert-12-regular.svg" alt="Ícone de alerta">
+            </button>
+            <div class="notifications-content">
+                <ul class="content">
+                    <li>
+                       <a href="#" class="notification notread">
+                            <figure class="notification-icon">
+                                <img src="/assets/IMG/alert-icon.png" alt="alert">
+                            </figure>
+                            <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                            <span class="time">01h22</span>
+                       </a>
+                    </li>
+                    <li>
+                        <a href="#" class="notification">
+                             <figure class="notification-icon">
+                                 <img src="/assets/IMG/alert-icon.png" alt="alert">
+                             </figure>
+                             <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                             <span class="time">01h22</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="notification">
+                             <figure class="notification-icon">
+                                 <img src="/assets/IMG/alert-icon.png" alt="alert">
+                             </figure>
+                             <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                             <span class="time">01h22</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="notification">
+                             <figure class="notification-icon">
+                                 <img src="/assets/IMG/alert-icon.png" alt="alert">
+                             </figure>
+                             <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                             <span class="time">01h22</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="notification">
+                             <figure class="notification-icon">
+                                 <img src="/assets/IMG/alert-icon.png" alt="alert">
+                             </figure>
+                             <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                             <span class="time">01h22</span>
+                        </a>
+                     </li>-
+                </ul>
+            </div>
+        </div>
+      </article>
+      <div class="listagem-cursos-content">
+        <h2>Meus Cursos</h2>
+        <div class="box-ultimas-aulas">
+          <div>
+            <h3>Últimas Aulas</h3>
+            <p>Aqui estão listadas suas próximas aulasm tudo muito rápido e simples!</p>
+          </div>
+          <div class="slide__aulas">
+            <div class="splide__track">
+              <div class="cursos-arrow">
+                <button class="splide__arrow--prev">
+                  <img src="/assets/IMG/iconamoon_arrow-up-2-left.svg" alt="Seta para o lado esquerdo">
+                </button>
+              </div>
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div>
+                    <h3>Aula 01</h3>
+                    <p>Lorem ipsum dolor sit amet. Eum Quis voluptas et quia excepturi est iure quis ea laudantium earum ab itaque odio qui eius</p>
+                  </div>
+                  <a href="">
+                    <span>07:35</span>
+                    <img src="/assets/IMG/arrow-listagem-aula.svg" alt="Seta para o lado direito">
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <div>
+                    <h3>Aula 01</h3>
+                    <p>Lorem ipsum dolor sit amet. Eum Quis voluptas et quia excepturi est iure quis ea laudantium earum ab itaque odio qui eius</p>
+                  </div>
+                  <a href="">
+                    <span>07:35</span>
+                    <img src="/assets/IMG/arrow-listagem-aula.svg" alt="Seta para o lado direito">
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <div>
+                    <h3>Aula 01</h3>
+                    <p>Lorem ipsum dolor sit amet. Eum Quis voluptas et quia excepturi est iure quis ea laudantium earum ab itaque odio qui eius</p>
+                  </div>
+                  <a href="">
+                    <span>07:35</span>
+                    <img src="/assets/IMG/arrow-listagem-aula.svg" alt="Seta para o lado direito">
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <div>
+                    <h3>Aula 01</h3>
+                    <p>Lorem ipsum dolor sit amet. Eum Quis voluptas et quia excepturi est iure quis ea laudantium earum ab itaque odio qui eius</p>
+                  </div>
+                  <a href="">
+                    <span>07:35</span>
+                    <img src="/assets/IMG/arrow-listagem-aula.svg" alt="Seta para o lado direito">
+                  </a>
+                </li>
+              </ul>
+              <div class="cursos-arrow">
+                <button class="splide__arrow--next">
+                  <img src="/assets/IMG/iconamoon_arrow-up-2-light.svg" alt="Seta para o lado direito">
+                </button>
+              </div>
+            </div>
           </div>
 
-          <div class="inferior-menulateral">
-            <p><img src="assets/IMG/guidance_settings.svg" alt="" />Configurações</p>
-            <p><img src="assets/IMG/weui_help-outlined.svg" alt="" />Ajuda FAQ</p>
-            <p><img src="assets/IMG/lets-icons_out-light.svg" alt="" />Sair </p>
+          
+          
+        </div>
+      </div>
+      <div class="cards-cursos">
+        <div class="curso-principal">
+          <img src="/assets/IMG/mulher-curso.png" alt="Thumb do curso">
+          <div class="curso-principal-texto">
+            <h2>Curso Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet. Eum Quis voluptas et quia excepturi est iure quis ea laudantium earum ab itaque odio qui eius</p>
+            <a href="telaListagemAulas.html">Continuar</a>
+          </div>
+        </div>
+        <div class="mais-cursos">
+          <div class="card">
+            <h4>Curso 02 Lorem Ipsum dolor</h4>
+            <a href="#">Começar</a>
+          </div>
+          <div class="card">
+            <h4>Curso 02 Lorem Ipsum dolor</h4>
+            <a href="#">Começar</a>
+          </div>
+          <div class="card">
+            <h4>Curso 02 Lorem Ipsum dolor</h4>
+            <a href="#">Começar</a>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container-search">
-      <input type="text" class="search-input" placeholder="Digite sua busca...">
-      <button class="search-button"><img src="./assets/IMG/lupa.svg" alt=""></button>
-    </div>
 
-    <main class="container-cursos">
-      <div class="container-ultimas-aulas">
-        <div class="ultimas-aulas">
-          <div class="texto-antes-dos-cards" style="width: 20%;">
-            <div class="">
-              <h5 class="">Últimas Aulas</h5>
-              <p class="">Aqui estão listadas suas próximas aulasm tudo muito rápido e simples!</p>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-corpo">
-              <h5 class="card-titulo">Título do card</h5>
-              <p class="card-texto">Um exemplo de texto rápido para construir o título do card e fazer preencher o
-                conteúdo do card.</p>
+    </section>
+</main>
+<script src="/assets/LIB/splide.min.js"></script>
+<script src="/assets/JS/main.js"></script>
+<script src="/assets/JS/tela-cursos.js"></script>
 
-         
-            </div>
-            <div class="card-footer">
-              <button href="#" class="botao-horario">Visitar</button>
-              <p href="#" class="botao-visualizar-aula">
-                <a href="#"><img src="./assets/IMG/seta.svg" alt=""></a>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-corpo">
-              <h5 class="card-titulo">Título do card</h5>
-              <p class="card-texto">Um exemplo de texto rápido para construir o título do card e fazer preencher o
-                conteúdo do card.</p>
-
-         
-            </div>
-            <div class="card-footer">
-              <button href="#" class="botao-horario">Visitar</button>
-              <p href="#" class="botao-visualizar-aula">
-                <a href="#"><img src="./assets/IMG/seta.svg" alt=""></a>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-corpo">
-              <h5 class="card-titulo">Título do card</h5>
-              <p class="card-texto">Um exemplo de texto rápido para construir o título do card e fazer preencher o
-                conteúdo do card.</p>
-
-         
-            </div>
-            <div class="card-footer">
-              <button href="#" class="botao-horario">Visitar</button>
-              <p href="#" class="botao-visualizar-aula">
-                <a href="#"><img src="./assets/IMG/seta.svg" alt=""></a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> 
-      <div class="caixas-cursos">
-        <div class="banner-curso-1"></div>
-        <div class="banner-curso-2"></div>
-        <div class="banner-curso-3"></div>
-        <div class="banner-curso-4"></div>
-
-      </div>
-
-    </main>
-  </div>
 </body>
 
 </html>
