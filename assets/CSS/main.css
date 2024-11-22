@@ -176,6 +176,7 @@ article .notifications .notifications-content .content::-webkit-scrollbar-thumb 
 article .notifications .notifications-content.open{
     max-height: 35vh;
     opacity: 1;
+    z-index: 5;
 }
 
 article .notifications .notifications-content .content{
@@ -223,3 +224,37 @@ article .notifications .notifications-content .content .notification span{
     font-size: .8rem;
 }
 
+@media (max-width: 1100px) {
+    article input{
+        width: 32rem;
+    }
+
+    article{
+        justify-content: flex-start;
+    }
+
+    article .notifications{
+        margin-left: 15rem;
+    }
+}
+
+
+@media (max-width: 425px) {
+
+    aside{
+        display: none;
+    }
+
+    article{
+        width: 80%;
+        display: block;
+    }
+
+    article input{
+        width: 100%;
+    }
+
+    article .notifications{
+        display: none;
+    }
+}

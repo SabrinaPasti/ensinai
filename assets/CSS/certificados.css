@@ -203,3 +203,23 @@ body{
 article .notifications .notifications-content.open{
     z-index: 1;
 }
+
+/*  Responsivo */
+
+@media (max-width: 1100px) {
+    .dashboard-certificados .widget {
+        width: 62.7rem;
+    }
+
+    .dashboard-certificados .graphs{
+        width: 4.2rem;
+    }
+
+    .profile img:first-child{
+        width: 20%;
+    }
+
+    .profile{
+        flex-direction: column;
+    }
+}
