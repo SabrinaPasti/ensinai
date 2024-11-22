@@ -4,50 +4,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List in Three Columns</title>
-    <link rel="stylesheet" href="CSS/historico.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/splide.min.css">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/dashbord.css">
+    <link rel="stylesheet" href="/CSS/certificados.css">
+    <link rel="stylesheet" href="/CSS/telaListagemAulas.css">
+    <link rel="stylesheet" href="/CSS/telaListagemCursos.css">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="/CSS/historico.css">
+
 </head>
 
 <body>
     <div class="container">
         <!-- Primeira coluna -->
         <div class="column1">
-            <h2>Column 1</h2>
-            <p>Content for the first column.</p>
+            <aside>
+                <nav>
+                    <div class="content">
+                        <img src="/IMG/llogo-certificados.svg" alt="Logomarca">
+                        <ul>
+                            <li>
+                                <a href="dashbord.html">
+                                    <img src="/IMG/certificados-home.svg" alt="Ícone de menu">
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li>
+                                <a href="telaListagemCursos.html">
+                                    <img src="/IMG/menu-book-certificados.svg" alt="Ícone de menu">
+                                    Meus Cursos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/IMG/menu-clock-certificados.svg" alt="Ícone de menu">
+                                    Histórico
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h2>Perfil</h2>
+                                <a href="certificadosPerfil.html">
+                                    <img src="/IMG/foto-perfil.png" alt="Imagem de perfil">
+                                    Certificados
+                                    <img src="/IMG/arrow-right-certificados.svg" alt="Seta para direita">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="setting">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="/IMG/guidance_settings.svg" alt="Ícone de configurações">Configurações
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="/IMG/weui_help-outlined.svg" alt="Ícone de FAQ"> Ajuda FAQ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="/IMG/lets-icons_out-light.svg" alt="Ícone de sair">Sair
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </aside>
         </div>
 
-            <!-- Segunda coluna -->
-            <div class="column2">
-                <h2>Column 2</h2>
-                <p>Content for the second column.</p>
-                <div id="divBusca">
-                    <input type="text" id="txtBusca" placeholder="Buscar..." />
-                    <img src="search3.png" id="btnBusca" alt="Buscar" />
-                </div>
+        <!-- Segunda coluna -->
+        <div class="column2">
+            <article>
                 <div>
+                    <input type="text" placeholder="Buscar por curso ou aula">
+                    <button><img src="/IMG/material-symbols-light_search.svg" alt="Ícone de pesquisa"></button>
+                </div>
+                <div class="notifications">
+                    <button class="notifications-button">
+                        <span>Notificações</span>
+                        <img src="/IMG/fluent_alert-12-regular.svg" alt="Ícone de alerta">
+                    </button>
+                    <div class="notifications-content">
+                        <ul class="content">
+                            <li>
+                                <a href="#" class="notification notread">
+                                    <figure class="notification-icon">
+                                        <img src="/IMG/alert-icon.png" alt="alert">
+                                    </figure>
+                                    <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                                    <span class="time">01h22</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="notification">
+                                    <figure class="notification-icon">
+                                        <img src="/IMG/alert-icon.png" alt="alert">
+                                    </figure>
+                                    <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                                    <span class="time">01h22</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="notification">
+                                    <figure class="notification-icon">
+                                        <img src="/IMG/alert-icon.png" alt="alert">
+                                    </figure>
+                                    <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                                    <span class="time">01h22</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="notification">
+                                    <figure class="notification-icon">
+                                        <img src="/IMG/alert-icon.png" alt="alert">
+                                    </figure>
+                                    <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                                    <span class="time">01h22</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="notification">
+                                    <figure class="notification-icon">
+                                        <img src="/IMG/alert-icon.png" alt="alert">
+                                    </figure>
+                                    <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                                    <span class="time">01h22</span>
+                                </a>
+                            </li>-
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <div class="caixa-atv">
+                <div class="atv-pendentes">
                     <h2> Atividades Pendentes </h2>
-                    <div>
-                        <P class="Amarelo"><a href="https://blog.idrsolutions.com/what-is-a-pdf/"><img src="/TCC/icons8-pdf-48 .png" id="PDFAM" alt=".PDF"/></a> Aula 03 - Como aprender JavaScript </P>
-                        <P class="Amarelo"><a href="https://blog.idrsolutions.com/what-is-a-pdf/"><img src="/TCC/icons8-doc-48.png" id="DOCAM" alt=".PDF"/></a> Aula 04 - Como aprender JavaScript </P>
-                        <P class="Amarelo"><a href="https://blog.idrsolutions.com/what-is-a-pdf/"><img src="/TCC/icons8-doc-48.png" id="DOCAM" alt=".PDF"/></a> Aula 04 - Como aprender JavaScript </P>
-                    </div>
+                    <P class="Amarelo">
+                        <a href="" id="DOCAM" class="link-pdf">Pdf
+                        </a>
+                        Aula 03 - Como aprender JavaScript
+                    </P>
+                    <P class="Amarelo">
+                        <a href="" id="DOCAM" class="link-pdf">Pdf
+                        </a>
+                        Aula 03 - Como aprender JavaScript
+                    </P>
+                    <P class="Amarelo">
+                        <a href="" id="DOCAM" class="link-pdf">Pdf
+                        </a>
+                        Aula 03 - Como aprender JavaScript
+                    </P>
                 </div>
-                <div>
+                <div class="atv-vencidas">
                     <h2> Atividades Vencidas </h2>
-                    <div>
-                        <P class="Vermelho"><a href="https://blog.idrsolutions.com/what-is-a-pdf/"><img src="/TCC/icons8-pdf-48 .png" id="PDFVM" alt=".PDF"/></a>  Aula 03 - Como aprender JavaScript </P>
-                        <P class="Vermelho"><a href="https://blog.idrsolutions.com/what-is-a-pdf/"><img src="/TCC/icons8-doc-48.png" id="DOCVM" alt=".PDF"/></a> Aula 04 - Como aprender JavaScript </P>
-                    </div>
+                    <P class="Vermelho">
+                        <a href="" id="DOCVM" class="link-pdf">Pdf
+                        </a>
+                        Aula 03 - Como aprender JavaScript
+                    </P>
+                    <P class="Vermelho">
+                        <a href="" id="DOCVM" class="link-pdf">Pdf
+                        </a>
+                        Aula 03 - Como aprender JavaScript
+                    </P>
+
                 </div>
-                <div>
+                <div class="atv-entregues">
                     <h2> Atividades Entregues </h2>
-                    <div>
-                        <P class="Verde"><a href="https://blog.idrsolutions.com/what-is-a-pdf/"><img src="/TCC/icons8-pdf-48 .png" id="PDFVD" alt=".PDF"/></a>  Aula 03 - Como aprender JavaScript </P>
-                        <P class="Verde"><a href="https://blog.idrsolutions.com/what-is-a-pdf/"><img src="/TCC/icons8-doc-48.png" id="DOCVD" alt=".PDF"/></a> Aula 04 - Como aprender JavaScript </P>
-                    </div>
+
+                    <P class="Verde">
+                        <a href="" id="DOCVD" class="link-pdf">Pdf
+                        </a>
+                        Aula 03 - Como aprender JavaScript
+                    </P>
+                    <P class="Verde">
+                        <a href="" id="DOCVD" class="link-pdf">Pdf
+                        </a>
+                        Aula 03 - Como aprender JavaScript
+                    </P>
+
                 </div>
             </div>
-            <div class="main">
+        </div>
+
+        <div class="column3">
 
 
             <!-- Terceira coluna: To-Do List -->
@@ -58,7 +206,7 @@
                     <div class="todo-list" id="todoList"></div>
                     <div class="todo-input-container">
                         <input type="text" id="todoInput" class="todo-input" placeholder="Add a new task">
-                        <button class="add-btn" onclick="addTodo()">Add</button>
+                        <button class="add-btn" onclick="addTodo()">Adicionar</button>
                     </div>
                 </div>
             </div>
@@ -66,8 +214,10 @@
         </div>
 
     </div>
-
-    <script src="script.js"></script>
+    <script src="/LIB/splide.min.js"></script>
+    <script src="/JS/main.js"></script>
+    <script src="/JS/tela-cursos.js"></script>
+    <script src="/JS/todo-list.js"></script>
 </body>
 
 </html>
