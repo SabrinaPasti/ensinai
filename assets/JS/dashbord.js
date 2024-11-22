@@ -14,8 +14,8 @@ window.onclick = function (event) {
 };
 
 // Função para buscar dados (simulação de chamada ao banco de dados)
-function fetchData(option) {
-  console.log("Buscando dados para: " + option);
+// function fetchData(option) {
+//   console.log("Buscando dados para: " + option);
   // Aqui você pode chamar uma função de backend para obter os dados de acordo com a opção
   // Exemplo usando fetch:
   /*
@@ -27,7 +27,7 @@ function fetchData(option) {
     })
     .catch(error => console.error("Erro ao buscar dados:", error));
   */
-}
+// }
 // grafico
 // window.addEventListener("DOMContentLoaded", () => {
 //   const timeData = JSON.parse(localStorage.getItem("timeSpent")) || {};

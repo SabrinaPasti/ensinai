@@ -5,7 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="assets/CSS/dashbord.css" />
+  <link rel="stylesheet" href="assets/CSS/dashbord.css">
+  <link rel="stylesheet" href="/assets/CSS/splide.min.css">
+  <link rel="stylesheet" href="./assets/CSS/certificados.css">
+  <link rel="stylesheet" href="./assets/CSS/telaListagemAulas.css">
+<link rel="stylesheet" href="assets/CSS/main.css">
+  <link rel="stylesheet" href="assets/CSS/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -21,31 +26,64 @@
 
 
   <!-- barra do lado -->
-  <div class="container-perfil">
-    <div class="perfil">
-      <svg width="124" height="29" viewBox="0 0 124 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g clip-path="url(#clip0_208_29)">
-          <path
-            d="M0.557129 18.5295C0.557129 13.0347 4.41491 8.3459 10.2199 8.3459C16.1352 8.3459 19.6991 12.7051 19.6991 18.5661V19.8482H5.77431C6.17846 22.4124 7.72157 24.4638 10.5139 24.4638C12.3509 24.4638 13.7471 23.5846 14.7023 22.0461L19.2949 23.5114C17.8988 26.9914 14.1145 28.7863 10.4771 28.7863C4.63535 28.7863 0.557129 24.3905 0.557129 18.5295ZM10.2199 12.3021C7.75831 12.3021 6.28868 14.1337 5.8478 16.4049H14.4084C14.0777 14.1337 12.6816 12.3021 10.2199 12.3021ZM22.8914 8.89538H27.631L27.778 11.3863C28.9904 9.33496 31.1581 8.3459 33.5095 8.3459C38.2858 8.3459 40.6005 12.119 40.6005 16.6246V28.2369H35.4568V17.284C35.4568 15.0495 34.5383 12.9615 32.0031 12.9615C29.615 12.9615 28.0351 14.7564 28.0351 17.1375V28.2369H22.8914V8.89538ZM43.5306 23.4015L48.1599 22.4124C48.711 24.0242 50.1072 24.8667 51.7605 24.8667C53.0464 24.8667 54.6263 24.3539 54.6263 22.8154C54.6263 21.2768 52.7525 20.8373 51.54 20.6541L50.5113 20.471C47.2781 19.9215 44.0817 18.3097 44.0817 14.6099C44.0817 10.4705 47.719 8.3459 51.5768 8.3459C55.0304 8.3459 58.4106 9.99432 59.2556 13.6208L54.663 14.5733C54.1486 13.1446 53.1199 12.2289 51.54 12.2289C50.3643 12.2289 48.9314 12.815 48.9314 14.1703C48.9314 15.5623 51.0624 16.0019 52.0912 16.1851L53.1199 16.3682C56.3898 16.9543 59.5495 18.5661 59.5495 22.3025C59.5495 26.5884 55.655 28.7863 51.687 28.7863C48.1599 28.7863 44.5226 27.0646 43.5306 23.4015ZM62.7538 28.2369V8.89538H67.8975V28.2369H62.7538ZM65.3256 6.58759C63.709 6.58759 62.3864 5.30548 62.3864 3.65706C62.3864 2.00864 63.6356 0.726532 65.3256 0.726532C67.0157 0.726532 68.2649 1.93538 68.2649 3.65706C68.2649 5.30548 67.0157 6.58759 65.3256 6.58759ZM72.0107 8.89538H76.7505L76.8975 11.3863C78.1099 9.33496 80.2776 8.3459 82.6291 8.3459C87.4053 8.3459 89.72 12.119 89.72 16.6246V28.2369H84.5763V17.284C84.5763 15.0495 83.6578 12.9615 81.1227 12.9615C78.7345 12.9615 77.1547 14.7564 77.1547 17.1375V28.2369H72.0107V8.89538Z"
-            fill="white" />
-          <path
-            d="M99.8145 28.7863C96.2874 28.7863 92.9072 26.5884 92.9072 22.7421C92.9072 18.4196 97.0222 16.5514 100.88 16.5514C102.497 16.5514 103.782 16.8444 105.289 17.3939V16.2583C105.289 14.0971 104.04 12.5585 101.798 12.5585C100.219 12.5585 98.749 13.3278 98.1979 14.8663L93.6053 13.9505C94.4503 10.2508 98.3081 8.34591 101.872 8.34591C106.722 8.34591 110.286 11.4596 110.286 16.5148V28.2369H105.693L105.546 25.9657C104.37 27.9072 102.019 28.7863 99.8145 28.7863ZM97.9775 22.4857C97.9775 24.1341 99.6308 24.8301 101.064 24.8301C103.305 24.8301 105.289 23.2916 105.289 20.9105V20.7274C104.738 20.5076 104.187 20.3244 103.562 20.1779C102.937 20.068 102.35 19.9948 101.725 19.9948C100.145 19.9948 97.9775 20.5442 97.9775 22.4857ZM114.384 28.2369V8.89538H119.528V28.2369H114.384ZM113.429 6.14801L117.618 0.909698H123.349L118.279 6.14801H113.429Z"
-            fill="#090830" />
-        </g>
-        <defs>
-          <clipPath id="clip0_208_29">
-            <rect width="124" height="29" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
+    <aside>
+      <nav>
+        <div class="content">
+          <img src="assets/IMG/llogo-certificados.svg
+          " alt="Logomarca">
+          <ul>
+            <li>
+              <a href="dashbord.html">
+                <img src="assets/IMG/certificados-home.svg" alt="Ícone de menu">
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="telaListagemCursos.html">
+                <img src="assets/IMG/menu-book-certificados.svg" alt="Ícone de menu">
+                Meus Cursos
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/IMG/menu-clock-certificados.svg" alt="Ícone de menu">
+                Histórico
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h2>Perfil</h2>
+              <a href="certificadosPerfil.html">
+                <img src="assets/IMG/foto-perfil.png" alt="Imagem de perfil">
+                Certificados
+                <img src="./assets/IMG/arrow-right-certificados.svg" alt="Seta para direita">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="setting">
+          <ul>
+            <li>
+              <a href="">
+                <img src="./assets/IMG/guidance_settings.svg" alt="Ícone de configurações">Configurações
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./assets/IMG/weui_help-outlined.svg" alt="Ícone de FAQ"> Ajuda FAQ
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./assets/IMG/lets-icons_out-light.svg" alt="Ícone de sair">Sair
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
 
-      <div class="perfil2">
-        <a href="#"><img src="assets/IMG/home.png" />Dashboard</a>
-        <a href="#"><img src="assets/IMG/Curso.png" />Meus Cursos</a>
-        <a href="#"><img src="assets/IMG/histoi.png" />Historico</a>
-      </div>
-    </div>
-  </div>
 
   <div class="container-main">
 
@@ -68,21 +106,67 @@
     </div>
 
     <!-- Barra de pesquisa -->
-    <div class="search-conteiner">
-      <div class="input-conteiner">
-        <span class="icon">
-          <img src="assets/IMG/procurar.png" />
-        </span>
-        <input type="text" class="search" placeholder="Buscar Cursos" />
+    <article>
+      <div>
+        <input type="text" placeholder="Buscar por curso ou aula">
+        <button><img src="./assets/IMG/material-symbols-light_search.svg" alt="Ícone de pesquisa"></button>
       </div>
-      <!-- Notificação -->
-      <div class="noti">
-        <p>Notificação</p>
-        <div class="border-noti">
-          <img src="assets/IMG/fluent_alert-12-regular.svg" />
+      <div class="notifications">
+        <button class="notifications-button">
+          <span>Notificações</span>
+          <img src="./assets/IMG/fluent_alert-12-regular.svg" alt="Ícone de alerta">
+        </button>
+        <div class="notifications-content">
+          <ul class="content">
+            <li>
+              <a href="#" class="notification notread">
+                <figure class="notification-icon">
+                  <img src="/assets/IMG/alert-icon.png" alt="alert">
+                </figure>
+                <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                <span class="time">01h22</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="notification">
+                <figure class="notification-icon">
+                  <img src="/assets/IMG/alert-icon.png" alt="alert">
+                </figure>
+                <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                <span class="time">01h22</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="notification">
+                <figure class="notification-icon">
+                  <img src="/assets/IMG/alert-icon.png" alt="alert">
+                </figure>
+                <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                <span class="time">01h22</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="notification">
+                <figure class="notification-icon">
+                  <img src="/assets/IMG/alert-icon.png" alt="alert">
+                </figure>
+                <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                <span class="time">01h22</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="notification">
+                <figure class="notification-icon">
+                  <img src="/assets/IMG/alert-icon.png" alt="alert">
+                </figure>
+                <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                <span class="time">01h22</span>
+              </a>
+            </li>-
+          </ul>
         </div>
       </div>
-    </div>
+    </article>
 
     <!-- Header da dashbord -->
     <div class="DashHeader">
@@ -363,7 +447,10 @@
       </div>
     </div>
   </div>
-  <script src="assets/JS/dashbord.js"></script>
 </body>
+<script src="assets/JS/dashbord.js"></script>
+<script src="./assets/LIB/splide.min.js"></script>
+<script src="./assets/JS/certificados.js"></script>
+<script src="./assets/JS/main.js"></script>
 
 </html>
