@@ -161,6 +161,7 @@ article .notifications .notifications-content {
     padding: 1.5rem;
     margin-top: 2rem;
     transition: .3s ease;
+    z-index: 2;
 
 }
 
@@ -306,5 +307,40 @@ article .notifications .notifications-content .content .notification span {
 
     .nav-item.active .circle-container {
         transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 1100px) {
+    article input{
+        width: 32rem;
+    }
+
+    article{
+        justify-content: flex-start;
+        display: none;
+    }
+
+    article .notifications{
+        margin-left: 15rem;
+    }
+}
+
+
+@media (max-width: 425px) {
+
+    aside{
+        display: none;
+    }
+
+    article{
+        display: none;
+    }
+
+    article input{
+        width: 100%;
+    }
+
+    article .notifications{
+        display: none;
     }
 }
