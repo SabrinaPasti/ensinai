@@ -165,6 +165,11 @@ article .notifications .notifications-content {
 
 }
 
+.sumir {
+    margin: 0;
+    padding: 0;
+}
+
 article .notifications .notifications-content .content::-webkit-scrollbar {
     width: 9px;
 }
@@ -308,39 +313,24 @@ article .notifications .notifications-content .content .notification span {
     .nav-item.active .circle-container {
         transform: translateY(-10px);
     }
-}
 
-@media (max-width: 1100px) {
-    article input{
-        width: 32rem;
+    article:nth-of-type(2) {
+        display: none !important;
     }
 
-    article{
-        justify-content: flex-start;
+    .sumir {
         display: none;
     }
 
-    article .notifications{
-        margin-left: 15rem;
+    article .notifications .notifications-button img {
+        padding: 1rem;
+        border-radius: 50%;
+        margin-left: 1rem;
     }
-}
-
-
-@media (max-width: 425px) {
-
-    aside{
-        display: none;
+    article {
+        width: 2rem;
     }
-
-    article{
-        display: none;
-    }
-
-    article input{
-        width: 100%;
-    }
-
-    article .notifications{
-        display: none;
-    }
+        article .notifications{
+            margin-left: none;
+        }
 }

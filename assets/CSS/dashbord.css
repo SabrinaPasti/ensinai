@@ -217,7 +217,7 @@ body {
 }
 
 .wrapper {
-  width: 450px;
+  width: 37.4rem;
   background: #fff;
   border: 1px solid #FF8E47;
   border-radius: 20px;
@@ -229,6 +229,8 @@ body {
   align-items: center;
   padding: 15px 20px 5px;
   justify-content: space-between;
+  background-color: white;
+  border-radius: 20px;
 }
 
 header .icons {
@@ -278,7 +280,7 @@ header .current-date {
 .calendar li {
   color: #333;
   width: calc(100% / 7);
-  font-size: 1.07rem;
+  font-size: 1.57rem;
 }
 
 .calendar .weeks li {
@@ -290,7 +292,7 @@ header .current-date {
   z-index: 1;
   cursor: pointer;
   position: relative;
-  margin-top: 10px;
+  margin-top: 21px;
 }
 
 .days li.inactive {
@@ -664,6 +666,7 @@ header .current-date {
     display: flex;
     justify-content: space-between;
     height: 238px;
+    margin-right: 17px;
   }
 
   .time-container {
@@ -718,9 +721,9 @@ header .current-date {
     height: 80px;
   }
 
-.widget2 {
-display: none;
-}
+  .widget2 {
+    display: none;
+  }
 
 
 }
