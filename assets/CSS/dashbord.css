@@ -195,69 +195,41 @@ body {
   position: relative;
 }
 
-
-
-.graph-wrapper:nth-child(1) .graphs {
+.graphs {
   width: 49px;
   background-color: #FF8E47;
   border-radius: 8px;
   height: 0;
   transform: translateY(28px);
+}
+
+
+.graph-wrapper:nth-child(1) .graphs {
   animation: expand 2s ease-out forwards;
 }
 
 .graph-wrapper:nth-child(2) .graphs {
-  width: 49px;
-  background-color: #FF8E47;
-  border-radius: 8px;
-  height: 0;
-  transform: translateY(28px);
   animation: expand 2s ease-out forwards;
 }
 
 .graph-wrapper:nth-child(3) .graphs {
-  width: 49px;
-  background-color: #FF8E47;
-  border-radius: 8px;
-  height: 20%;
-  transform: translateY(28px);
   animation: expand 2s ease-out forwards;
 }
 
 
 .graph-wrapper:nth-child(4) .graphs {
-  width: 49px;
-  background-color: #FF8E47;
-  border-radius: 8px;
-  height: 0;
-  transform: translateY(28px);
   animation: expand 2s ease-out forwards;
 }
 
 .graph-wrapper:nth-child(5) .graphs {
-  width: 49px;
-  background-color: #FF8E47;
-  border-radius: 8px;
-  height: 0;
-  transform: translateY(28px);
   animation: expand 2s ease-out forwards;
 }
 
 .graph-wrapper:nth-child(6) .graphs {
-  width: 49px;
-  background-color: #FF8E47;
-  border-radius: 8px;
-  height: 0;
-  transform: translateY(28px);
   animation: expand 2s ease-out forwards;
 }
 
 .graph-wrapper:nth-child(7) .graphs {
-  width: 49px;
-  background-color: #FF8E47;
-  border-radius: 8px;
-  height: 0;
-  transform: translateY(28px);
   animation: expand 2s ease-out forwards;
 }
 
