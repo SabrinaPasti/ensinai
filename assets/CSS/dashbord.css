@@ -174,6 +174,8 @@ body {
   padding-left: 20px;
 }
 
+
+
 #graphs-container {
   display: flex;
   flex-direction: row;
@@ -193,7 +195,9 @@ body {
   position: relative;
 }
 
-.graphs {
+
+
+.graph-wrapper:nth-child(1) .graphs {
   width: 49px;
   background-color: #FF8E47;
   border-radius: 8px;
@@ -201,6 +205,62 @@ body {
   transform: translateY(28px);
   animation: expand 2s ease-out forwards;
 }
+
+.graph-wrapper:nth-child(2) .graphs {
+  width: 49px;
+  background-color: #FF8E47;
+  border-radius: 8px;
+  height: 0;
+  transform: translateY(28px);
+  animation: expand 2s ease-out forwards;
+}
+
+.graph-wrapper:nth-child(3) .graphs {
+  width: 49px;
+  background-color: #FF8E47;
+  border-radius: 8px;
+  height: 20%;
+  transform: translateY(28px);
+  animation: expand 2s ease-out forwards;
+}
+
+
+.graph-wrapper:nth-child(4) .graphs {
+  width: 49px;
+  background-color: #FF8E47;
+  border-radius: 8px;
+  height: 0;
+  transform: translateY(28px);
+  animation: expand 2s ease-out forwards;
+}
+
+.graph-wrapper:nth-child(5) .graphs {
+  width: 49px;
+  background-color: #FF8E47;
+  border-radius: 8px;
+  height: 0;
+  transform: translateY(28px);
+  animation: expand 2s ease-out forwards;
+}
+
+.graph-wrapper:nth-child(6) .graphs {
+  width: 49px;
+  background-color: #FF8E47;
+  border-radius: 8px;
+  height: 0;
+  transform: translateY(28px);
+  animation: expand 2s ease-out forwards;
+}
+
+.graph-wrapper:nth-child(7) .graphs {
+  width: 49px;
+  background-color: #FF8E47;
+  border-radius: 8px;
+  height: 0;
+  transform: translateY(28px);
+  animation: expand 2s ease-out forwards;
+}
+
 
 .graph-wrapper p {
   margin-top: 10px;
@@ -393,11 +453,30 @@ header .current-date {
   margin-top: 4px;
 }
 
+
 .progress-bar .progress {
   height: 100%;
   background-color: #ff8e47;
-  animation: expand-wid 3s ease-out forwards;
+  width: 0;
 }
+
+
+.widget3-container2:nth-child(2) .progress {
+  width: 60%;
+  animation: expandProgress 2s ease-out forwards;
+}
+
+.widget3-container2:nth-child(3) .progress {
+  width: 80%;
+  animation: expandProgress 2s ease-out forwards;
+}
+
+
+.widget3-container2:nth-child(4) .progress {
+  width: 40%;
+  animation: expandProgress 2s ease-out forwards;
+}
+
 
 .widget4-square {
   background-color: #FFDAC3;
@@ -414,7 +493,7 @@ header .current-date {
   font-size: 20px;
   color: #FF8E47;
   font-weight: 700;
-  
+
 }
 
 .container-widget3-4 {
@@ -541,11 +620,8 @@ header .current-date {
   position: relative;
   top: 38px;
   float: left;
-  /* Faz o texto contornar a imagem pela esquerda */
   margin-right: 10px;
-  /* Adiciona espaço entre a imagem e o texto */
   width: 150px;
-  /* Ajuste a largura conforme necessário */
 }
 
 .text-container2 h1 {
@@ -600,7 +676,7 @@ header .current-date {
   border: 0px solid #fff1e9;
   border-radius: 18px;
   margin-top: 10px;
-  gap:8px
+  gap: 8px
 }
 
 .widget4-container img {
@@ -681,6 +757,14 @@ header .current-date {
     border: none;
   }
 
+  .widget3-container2 p {
+    width: 300px;
+  }
+
+  .progress-bar {
+    width: 314px;
+  }
+
   .activy-container {
     display: flex;
     justify-content: space-between;
@@ -698,7 +782,32 @@ header .current-date {
     margin-left: 24px;
   }
 
-  .graphs {
+  .graph-wrapper:nth-child(1) .graphs {
+    width: 31px;
+  }
+
+  .graph-wrapper:nth-child(2) .graphs {
+    width: 31px;
+  }
+
+  .graph-wrapper:nth-child(3) .graphs {
+    width: 31px;
+  }
+
+
+  .graph-wrapper:nth-child(4) .graphs {
+    width: 31px;
+  }
+
+  .graph-wrapper:nth-child(5) .graphs {
+    width: 31px;
+  }
+
+  .graph-wrapper:nth-child(6) .graphs {
+    width: 31px;
+  }
+
+  .graph-wrapper:nth-child(7) .graphs {
     width: 31px;
   }
 
@@ -736,25 +845,37 @@ header .current-date {
 
   }
 
-  .head-mobile img {
-    height: 80px;
-  }
+
 
   .widget2 {
     display: none;
   }
 
+  .text-block1 img {
+    left: 0px
+  }
 
 }
 
-@keyframes expand {
+
+
+@keyframes expandProgress {
+  from {
+    width: 0;
+  }
+
   to {
-    height: 80px;
+    width: 100%;
   }
 }
 
-@keyframes expand-wid {
-  to {
-    width: 50%;
+
+@keyframes expand {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: var(--target-height);
   }
 }
