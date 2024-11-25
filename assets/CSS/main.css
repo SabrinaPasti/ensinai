@@ -15,7 +15,8 @@ aside{
     position:sticky;
     background-color: #FF8E47;
     display: flex;
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
     height: 92vh;
     border-radius: 1.8rem;
 }
@@ -238,6 +239,11 @@ article .notifications .notifications-content .content .notification span{
     }
 }
 
+@media (max-width: 800px) {
+    aside{
+        display: none;
+    }
+}
 
 @media (max-width: 425px) {
 

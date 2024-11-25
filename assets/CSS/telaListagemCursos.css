@@ -1,5 +1,9 @@
 /* Meus Cursos */
 
+.listagem-cursos{
+  width: 100%;
+}
+
 .listagem-cursos-content{
   margin-top: 2.8rem;
 }
@@ -16,15 +20,25 @@
   border-radius: 18px;
   border: 20px solid #fff1e9;
   display: flex;
+  justify-content: space-between;
   padding: 2.4rem;
   align-items: flex-end;
 }
 
 .box-ultimas-aulas h3{
   font-size: 2rem;
+  line-height: 2rem;
   color: #090830;
   font-weight: 600;
   margin-bottom: 1rem;
+}
+
+.box-ultimas-aulas > div > p{
+  font-size: 1.4rem;
+  color: #090830;
+  line-height: 1.9rem;
+  max-width: 16.2rem;
+
 }
 
 .box-ultimas-aulas p{
@@ -34,11 +48,6 @@
   max-width: 18.2rem;
 
 }
-
-.box-ultimas-aulas .splide__slide{
-  margin-left: 1.5rem;
-}
-
 
 .box-ultimas-aulas .splide__slide h3{
   color: #fff;
@@ -56,13 +65,8 @@
 .box-ultimas-aulas .splide__slide div{
   background-color: #090830;
   padding: 2rem 1.6rem;
-  max-width: 21.3rem;
   border-top-left-radius: 1.3rem;
   border-top-right-radius: 1.3rem;
-}
-
-.box-ultimas-aulas .splide__slide:not(:last-child){
-  margin-right: 1.3rem;
 }
 
 .box-ultimas-aulas .splide__slide a{
@@ -84,9 +88,49 @@
   border-radius: 100px;
 }
 
-.box-ultimas-aulas .splide__track{
+.box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow{
+  top: unset;
+  bottom: 0;
+  transform: none;
+  background-color:  #000;
+  opacity: 1;
+}
+
+.box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow:disabled{
+  opacity: .42;
+}
+
+
+.box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow{
+  top: unset;
+  bottom: 0;
+  transform: none;
+  background-color:  #000;
+  opacity: 1;
+}
+
+.box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow svg{
+  height: 1rem;
+  fill: #fff;
+}
+
+
+.box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow--prev{
+  left: 0;
+}
+
+.box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow--next{
+  right: 0;
+}
+
+.box-ultimas-aulas .slide__aulas{
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
+  max-width: 763px;
+}
+
+.box-ultimas-aulas .splide__track{
+  max-width: 87.155963%;
 }
 
 /* Cardss cursos */
@@ -94,8 +138,8 @@
 .cards-cursos{
   display: flex;
   margin-top: 3.8rem;
+  gap: 2rem;
   justify-content: space-between;
-  align-items: center;
 }
 
 .curso-principal{
@@ -104,7 +148,8 @@
   position: relative;
   display: flex;
   padding-right: 2rem;
-  height: 100%;
+  width: 100%;
+  max-width: 729px;
 }
 
 .curso-principal img{
@@ -138,6 +183,7 @@
   padding: 1.2rem 2.2rem;
   border-radius: 50px;
 }
+
 
 /* Demais cursos */
 
@@ -180,19 +226,36 @@
 
 @media (max-width: 1100px) {
   .box-ultimas-aulas{
-    max-width: 65rem;
+    flex-direction: column;
+    align-items: unset;
+    gap: 2rem;
+  }
+
+  .box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow{
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .cards-cursos{
-    max-width: 65rem;
-    align-items: flex-start
+    gap: unset;
+    flex-direction: column;
+  }
+
+  .mais-cursos{
+    width: 100%;
+  }
+
+  
+  .mais-cursos .card{
+    max-width: none;
+    width: 100%;
   }
 
   .curso-principal{
     display: flex;
     flex-direction: column-reverse;
-    max-width: 60%;
-    margin-right: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 0;
   }
 
   .curso-principal img{
@@ -221,26 +284,10 @@
   }
 
   .box-ultimas-aulas {
-    max-width: 42rem;
+
   }
 
-  .cards-cursos{
-    flex-direction: column;
-  }
 
-  .curso-principal{
-    max-width: 42rem;
-    margin-bottom: 2rem;
-    margin-left: 0;
-  }
-
-  .mais-cursos{
-    width: 42rem;
-  }
-
-  .mais-cursos .card{
-    max-width: none;
-  }
 
 }
 

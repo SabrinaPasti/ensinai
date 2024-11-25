@@ -1,6 +1,7 @@
 body{
     display: block;
     max-width: 1360px;
+    width: 90%;
     margin: 0 auto;
     
 }
@@ -8,7 +9,7 @@ body{
 .main-certificados{
     display: flex;
     gap: 3.8rem;  
-    padding: 4rem;
+    padding: 4rem 0;
 }
 
 /* Meu perfil */
@@ -221,5 +222,42 @@ article .notifications .notifications-content.open{
 
     .profile{
         flex-direction: column;
+    }
+
+    div#splide01-track{
+        width: 70%;
+    }
+
+    .certificados .arrow{
+        width: 80%;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .certificados .card a img{
+        width: 3rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .meu-perfil h1{
+        font-size: 2rem;
+    }
+
+    .profile img:first-child{
+        width: 15%;
+    }
+    
+    .profile div{
+        margin-left: 0;
+        max-width: 80%;
+    }
+
+    .profile a img{
+        width: 3rem !important;
     }
 }
