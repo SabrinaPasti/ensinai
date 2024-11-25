@@ -1,0 +1,173 @@
+.video-aula{
+    margin-top: 2.6rem;
+    margin-bottom: 3.2rem;
+}
+
+.video-aula video{
+    border-radius: 1.3rem;
+}
+
+h1{
+    font-size: 3.2rem;
+    line-height: 2.6rem;
+    color: #090830;
+    font-weight: 100;
+    margin-bottom: 3.6rem;
+}
+
+.box-conteudos{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.container-aula{
+    max-width: 630px;
+}
+
+.container-aula__atividade .arquivo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #FFF1E9;
+    border-radius: 1.8rem;
+    padding: 1.3rem 1.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.container-aula__atividade .arquivo > div{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    width: 100%;
+
+}
+
+.container-aula__atividade .arquivo > div > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.2rem;
+    aspect-ratio: 1 / 1;
+    background: #FFDAC3;
+    border-radius: .5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FF8E47;
+}
+
+.container-aula__atividade .arquivo > div > p{
+    font-size: 1.4rem;
+}
+
+.container-aula__atividade .arquivo > p{
+    font-size: 1.4rem;
+    white-space: nowrap;
+}
+
+.container-aula .container-aula__descricao h2{
+    font-size: 2rem;
+    color: #090830;
+    line-height: 2.6rem;
+    margin-bottom: .3rem;
+}
+
+.container-aula .container-aula__descricao p{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+}
+
+.container-aula__atividade h2{
+    margin-top: 2.8rem;
+    font-size: 2rem;
+    color: #090830;
+    line-height: 2.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.container-aula__atividade .upload{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFF1E9;
+    border-radius: 1.8rem;
+    padding: 3.1rem 2.7rem;
+    border: 2px solid #FF8E47;
+}
+
+.container-aula__atividade .upload input{
+    padding: unset;
+    background: unset;
+    border: none;
+    border-radius: unset;
+    width: 100%;
+}
+
+.proximas-aulas {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 100%;
+    max-width: 356px;
+}
+
+.proximas-aulas h3{
+    color: #fff;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.proximas-aulas p{
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    margin-top: 1rem;
+}
+
+.proximas-aulas > div > .card-aula{
+    background-color: #090830;
+    padding: 2rem 1.6rem;
+    border-top-left-radius: 1.3rem;
+    border-top-right-radius: 1.3rem;
+}
+
+.proximas-aulas > div > a{
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    padding: 1.7rem;
+    border: 1px solid #090830;
+    border-bottom-left-radius: 1.3rem;
+    border-bottom-right-radius: 1.3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.proximas-aulas > div > a > span{
+    background-color: #FF8E47;
+    color: #090830;
+    padding: 1.5rem 2rem;
+    border-radius: 100px;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 1100px) {
+    .box-conteudos{
+        flex-direction: column;
+    }    
+
+    .proximas-aulas{
+        max-width: 100%;
+    }
+
+    .container-aula{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .box-conteudos img {
+        width: unset;
+    }
+}

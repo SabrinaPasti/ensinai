@@ -173,3 +173,60 @@
     max-width: 24.2rem;
     color: #fff;
 }
+
+/* Responsivo */
+
+@media (max-width: 800px) {
+    .listagem-content {
+        flex-direction: column;
+    }
+
+    .listagem-aulas{
+        width: 100%;
+    }
+
+    .listagem-banner img{
+        width: 100%;
+    }
+
+    .listagem-banner ul li img{
+        width: 30%;
+    }
+
+    .listagem-card img{
+        width: 40%;
+    }
+
+    .widget2{
+        display: none;
+    }
+
+    .widget5{
+        margin-top: 5rem;
+    }
+
+    .listagem-infos{
+        margin: 0;
+    }
+
+    .text-block1{
+        width: 100%;
+    }
+    .text-block2{
+        width: 100%;
+    }
+    .text-block3{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .listagem-card{
+        flex-direction: column;
+    }
+
+    .listagem-card img{
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}

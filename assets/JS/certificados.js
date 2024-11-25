@@ -6,7 +6,7 @@ new Splide('.splide-certificados', {
     pagination: false,
     gap: '2.2rem',
     breakpoints: {
-      800: {
+      1100: {
         perPage: 2,
       },
       600: {

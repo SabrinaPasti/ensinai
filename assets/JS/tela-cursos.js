@@ -1,12 +1,11 @@
-new Splide('.splide__aulas', {
+new Splide('.slide__aulas.splide', {
     type: 'slide',
     perPage: 3,
     perMove: 1,
-    start: 1,
     pagination: false,
-    gap: '2.2rem',
+    gap: '1.3rem',
     breakpoints: {
-      800: {
+      1100: {
         perPage: 2,
       },
       600: {
