@@ -14,11 +14,11 @@ window.onclick = function (event) {
 };
 
 // Função para buscar dados (simulação de chamada ao banco de dados)
-function fetchData(option) {
-  console.log("Buscando dados para: " + option);
-  // Aqui você pode chamar uma função de backend para obter os dados de acordo com a opção
-  // Exemplo usando fetch:
-  /*
+// function fetchData(option) {
+//   console.log("Buscando dados para: " + option);
+// Aqui você pode chamar uma função de backend para obter os dados de acordo com a opção
+// Exemplo usando fetch:
+/*
   fetch(`/api/dados?intervalo=${option}`)
     .then(response => response.json())
     .then(data => {
@@ -27,7 +27,7 @@ function fetchData(option) {
     })
     .catch(error => console.error("Erro ao buscar dados:", error));
   */
-}
+// }
 // grafico
 // window.addEventListener("DOMContentLoaded", () => {
 //   const timeData = JSON.parse(localStorage.getItem("timeSpent")) || {};
@@ -116,3 +116,40 @@ prevNextIcon.forEach((icon) => {
     renderCalendar(); // calling renderCalendar function
   });
 });
+
+function handleClick(element) {
+  document.querySelectorAll(".nav-item").forEach((item) => {
+    item.classList.remove("active");
+  });
+
+  element.classList.add("active");
+}
+
+const percentages = [30, 50, 75, 100, 60, 90, 45];
+
+const maxHeight = 164;
+
+const bars = document.querySelectorAll(".graphs");
+
+bars.forEach((bar, index) => {
+  const targetHeight = (percentages[index] / 100) * maxHeight;
+
+  bar.style.setProperty("--target-height", `${targetHeight}px`);
+});
+
+const diaDaSemana = new Date().getDay();
+
+function atualizarCores() {
+  const graphWrappers = document.querySelectorAll(".graph-wrapper .graphs");
+
+  graphWrappers.forEach((graph, index) => {
+    if (index === diaDaSemana) {
+      graph.style.backgroundColor = "#FF8E47";
+    } else {
+
+      graph.style.backgroundColor = "#FFF1E9"; 
+    }
+  });
+}
+
+atualizarCores();

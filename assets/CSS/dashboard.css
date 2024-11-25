@@ -6,8 +6,8 @@
 
 html,
 body {
-  width: 100%;
-  margin: 0;
+  max-width: 1368px;
+  margin: 0 auto;
   overflow-x: hidden !important;
   padding: 0;
   font-family: "Instrument Sans";
@@ -16,123 +16,26 @@ body {
   position: relative;
   caret-color: transparent;
   display: flex;
+  padding-top: 2rem;
+}
+
+.head-mobile {
+  display: none;
 }
 
 .container-main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
-.container-perfil {
-  display: flex;
-  width: 280px;
-  background-color: orange;
-  margin-left: 40px;
-  margin-top: 20px;
-  margin-bottom: 70px;
-  padding: 10px;
-  border-radius: 18px;
-  justify-content: space-between;
-  flex-direction: column;
-}
 
-.perfil {
-  display: flex;
-  flex-direction: column;
-  padding: 25px;
-  gap: 8px;
-}
-
-.perfil2 {
-  display: flex;
-  flex-direction: column;
-  padding-top: 30px;
-  gap: 20px;
-}
-
-.perfil a {
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  color: #fff;
-  line-height: 26px;
-  font-weight: 400;
-  line-height: 26px;
-  text-decoration: none;
-  width: auto;
-}
-
-.perfil a img {
-  width: 32px;
-  height: 32px;
-  margin-right: 8px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.search-conteiner {
-  color: black;
-  padding-left: 20px;
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.input-conteiner {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  caret-color: auto;
-  flex-direction: row-reverse;
-}
-
-.search {
-  box-sizing: border-box;
-  flex-direction: column;
-  width: 830px;
-  height: 60px;
-  background: #fff1e9;
-  border-radius: 51px;
-  border: none;
-  padding: 10px 10px 10px 40px;
-}
-
-.border-noti {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: #ffdac3;
-  height: 50px;
-  width: 50px;
-  flex-direction: column;
-}
-
-.border-noti img {
-  width: 30px;
-  height: 30px;
-}
 
 
 .DashHeader {
-  padding: 10px 20px 0px;
+  padding: 2rem
 }
 
-.icon {
-  position: absolute;
-  right: 20px;
-}
-
-.noti {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 
 .container-grid {
   display: grid;
@@ -146,22 +49,22 @@ body {
 .content-area {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 10px 20px 0px;
+  gap: 1rem;
+  padding: 1.2rem;
   width: 100%;
 }
 
 .widget {
   border: 25px solid #fff1e9;
   border-radius: 34px;
-  height: 300px;
   width: calc(100% - 20px);
-
 }
+
+
 
 .activy-border {
   width: 100%;
-  height: 238px;
+  height: 250px;
   display: flex;
   flex-direction: column;
 }
@@ -250,7 +153,7 @@ body {
   flex-wrap: wrap;
   height: 164px;
   width: 1px;
-  background-color: orange;
+  background-color: #FF8E47;
   margin-left: 20px;
 }
 
@@ -271,33 +174,71 @@ body {
   padding-left: 20px;
 }
 
+
+
 #graphs-container {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  gap: 30px;
-  padding-left: 40px;
+  gap: 2.5rem;
+  padding-left: 3rem;
+  padding-right: 2rem;
+  justify-content: center;
+  height: 164px;
 }
 
 .graph-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 70px;
+  position: relative;
 }
 
 .graphs {
   width: 49px;
-  background-color: orange;
+  background-color: #FF8E47;
   border-radius: 8px;
-  height: 40px;
+  height: 0;
+  transform: translateY(28px);
 }
 
+
+.graph-wrapper:nth-child(1) .graphs {
+  animation: expand 2s ease-out forwards;
+}
+
+.graph-wrapper:nth-child(2) .graphs {
+  animation: expand 2s ease-out forwards;
+}
+
+.graph-wrapper:nth-child(3) .graphs {
+  animation: expand 2s ease-out forwards;
+}
+
+
+.graph-wrapper:nth-child(4) .graphs {
+  animation: expand 2s ease-out forwards;
+}
+
+.graph-wrapper:nth-child(5) .graphs {
+  animation: expand 2s ease-out forwards;
+}
+
+.graph-wrapper:nth-child(6) .graphs {
+  animation: expand 2s ease-out forwards;
+}
+
+.graph-wrapper:nth-child(7) .graphs {
+  animation: expand 2s ease-out forwards;
+}
+
+
 .graph-wrapper p {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  position: absolute;
-  margin-top: 50px;
+  margin-top: 10px;
+  transform: translateY(20px);
+  text-align: center;
+  font-size: 14px;
 }
 
 /* calendario */
@@ -309,9 +250,9 @@ body {
 }
 
 .wrapper {
-  width: 450px;
+  width: 37.4rem;
   background: #fff;
-  border: 1px solid orange;
+  border: 1px solid #FF8E47;
   border-radius: 20px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
@@ -321,6 +262,8 @@ body {
   align-items: center;
   padding: 15px 20px 5px;
   justify-content: space-between;
+  background-color: white;
+  border-radius: 20px;
 }
 
 header .icons {
@@ -370,7 +313,7 @@ header .current-date {
 .calendar li {
   color: #333;
   width: calc(100% / 7);
-  font-size: 1.07rem;
+  font-size: 1.57rem;
 }
 
 .calendar .weeks li {
@@ -382,7 +325,7 @@ header .current-date {
   z-index: 1;
   cursor: pointer;
   position: relative;
-  margin-top: 10px;
+  margin-top: 21px;
 }
 
 .days li.inactive {
@@ -451,7 +394,7 @@ header .current-date {
   height: 20px;
   background-color: #eee;
   border-radius: 50%;
-  border: 1px solid orange;
+  border: 1px solid #FF8E47;
   display: inline-block;
   position: relative;
   transition: background-color 0.3s ease;
@@ -468,7 +411,7 @@ header .current-date {
   left: 50%;
   width: 10px;
   height: 10px;
-  background-color: orange;
+  background-color: #FF8E47;
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
@@ -479,17 +422,50 @@ header .current-date {
   background-color: #eee;
   border-radius: 5px;
   overflow: hidden;
+  margin-top: 4px;
 }
+
 
 .progress-bar .progress {
   height: 100%;
-  width: 50%;
   background-color: #ff8e47;
-  transition: width 0.3s ease;
+  width: 0;
 }
 
-.prog-container {
-  margin-left: 20px;
+
+.widget3-container2:nth-child(2) .progress {
+  width: 60%;
+  animation: expandProgress 2s ease-out forwards;
+}
+
+.widget3-container2:nth-child(3) .progress {
+  width: 80%;
+  animation: expandProgress 2s ease-out forwards;
+}
+
+
+.widget3-container2:nth-child(4) .progress {
+  width: 40%;
+  animation: expandProgress 2s ease-out forwards;
+}
+
+
+.widget4-square {
+  background-color: #FFDAC3;
+  border-radius: 5px;
+  width: 70px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px
+}
+
+.widget4-square p {
+  font-size: 20px;
+  color: #FF8E47;
+  font-weight: 700;
+
 }
 
 .container-widget3-4 {
@@ -516,16 +492,19 @@ header .current-date {
   height: 18.57px;
 }
 
+
+
 .widget3-container2 p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 231px;
+  font-size: 13px;
+  padding-top: 2px;
 }
 
 .widget4 {
   width: calc(100% - 20px);
-  padding-bottom: 90px;
   display: flex;
   flex-direction: column;
 }
@@ -613,11 +592,8 @@ header .current-date {
   position: relative;
   top: 38px;
   float: left;
-  /* Faz o texto contornar a imagem pela esquerda */
   margin-right: 10px;
-  /* Adiciona espaço entre a imagem e o texto */
   width: 150px;
-  /* Ajuste a largura conforme necessário */
 }
 
 .text-container2 h1 {
@@ -672,6 +648,7 @@ header .current-date {
   border: 0px solid #fff1e9;
   border-radius: 18px;
   margin-top: 10px;
+  gap: 8px
 }
 
 .widget4-container img {
@@ -680,7 +657,7 @@ header .current-date {
   margin-left: 20px;
 }
 
-.widget4-container p {
+.mb {
   padding-right: 20px;
 }
 
@@ -691,6 +668,9 @@ header .current-date {
   width: calc(100% - 20px);
 }
 
+
+
+
 @media (max-width: 479px) {
   .container-perfil {
     display: none;
@@ -700,13 +680,9 @@ header .current-date {
   body {
     max-height: none;
     height: 100vh;
-    /* Garante que ocupe 100% da altura da tela */
     width: 100vw;
-    /* Garante que ocupe 100% da largura da tela */
     overflow-x: hidden;
-    /* Remove qualquer overflow horizontal */
     overflow-y: auto;
-    /* Permite rolagem vertical, se necessário */
     margin: 0;
     padding: 0;
     font-family: "Instrument Sans";
@@ -714,8 +690,8 @@ header .current-date {
     position: relative;
     display: flex;
     flex-direction: column;
-    /* Empilha widgets verticalmente no modo mobile */
     box-sizing: border-box;
+
   }
 
   .container-main {
@@ -723,6 +699,9 @@ header .current-date {
     flex-direction: column;
     padding-left: 0px;
     padding-right: 0px;
+    max-width: 927px;
+    padding-bottom: 68px;
+    height: auto;
   }
 
   .content-area {
@@ -750,11 +729,19 @@ header .current-date {
     border: none;
   }
 
+  .widget3-container2 p {
+    width: 300px;
+  }
+
+  .progress-bar {
+    width: 314px;
+  }
+
   .activy-container {
     display: flex;
-    justify-content: initial;
-    width: 100%;
-    overflow: hidden;
+    justify-content: space-between;
+    height: 238px;
+    margin-right: 17px;
   }
 
   .time-container {
@@ -762,12 +749,37 @@ header .current-date {
   }
 
   #graphs-container {
-    gap: 21px;
-    padding-left: 0px;
+    gap: 16px;
+    padding-left: 7px;
     margin-left: 24px;
   }
 
-  .graphs {
+  .graph-wrapper:nth-child(1) .graphs {
+    width: 31px;
+  }
+
+  .graph-wrapper:nth-child(2) .graphs {
+    width: 31px;
+  }
+
+  .graph-wrapper:nth-child(3) .graphs {
+    width: 31px;
+  }
+
+
+  .graph-wrapper:nth-child(4) .graphs {
+    width: 31px;
+  }
+
+  .graph-wrapper:nth-child(5) .graphs {
+    width: 31px;
+  }
+
+  .graph-wrapper:nth-child(6) .graphs {
+    width: 31px;
+  }
+
+  .graph-wrapper:nth-child(7) .graphs {
     width: 31px;
   }
 
@@ -790,5 +802,52 @@ header .current-date {
 
   .widget4 {
     padding-bottom: 0px;
+  }
+
+
+  .head-mobile {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF8E47;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+
+  }
+
+
+
+  .widget2 {
+    display: none;
+  }
+
+  .text-block1 img {
+    left: 0px
+  }
+
+}
+
+
+
+@keyframes expandProgress {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+
+@keyframes expand {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: var(--target-height);
   }
 }
