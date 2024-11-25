@@ -13,42 +13,6 @@ window.onclick = function (event) {
   }
 };
 
-// Função para buscar dados (simulação de chamada ao banco de dados)
-// function fetchData(option) {
-//   console.log("Buscando dados para: " + option);
-// Aqui você pode chamar uma função de backend para obter os dados de acordo com a opção
-// Exemplo usando fetch:
-/*
-  fetch(`/api/dados?intervalo=${option}`)
-    .then(response => response.json())
-    .then(data => {
-      // Processa os dados recebidos
-      console.log(data);
-    })
-    .catch(error => console.error("Erro ao buscar dados:", error));
-  */
-// }
-// grafico
-// window.addEventListener("DOMContentLoaded", () => {
-//   const timeData = JSON.parse(localStorage.getItem("timeSpent")) || {};
-
-//   // Define o tempo máximo para 8 horas (em segundos)
-//   const maxTime = 8 * 60 * 60; // 8 horas em segundos
-
-//   // Seleciona todos os elementos de barra de progresso
-//   const graphBars = document.querySelectorAll(".graphs");
-
-//   graphBars.forEach((bar, index) => {
-//     const timeSpent = timeData[index] || 0; // Tempo para o dia da semana correspondente
-//     const percentage = Math.max(1, (timeSpent / maxTime) * 100); // Calcula a altura da barra, com mínimo de 1%
-
-//     // Define a altura diretamente no style.height para simplificar
-//     bar.style.height = `${percentage}%`;
-//   });
-// });
-
-// calendario
-
 const daysTag = document.querySelector(".days"),
   currentDate = document.querySelector(".current-date"),
   prevNextIcon = document.querySelectorAll(".icons span");
@@ -146,10 +110,54 @@ function atualizarCores() {
     if (index === diaDaSemana) {
       graph.style.backgroundColor = "#FF8E47";
     } else {
-
-      graph.style.backgroundColor = "#FFF1E9"; 
+      graph.style.backgroundColor = "#FFF1E9";
     }
   });
 }
 
 atualizarCores();
+
+// const maxTimeInMinutes = 8 * 60;
+// const maxHeight = 164;
+
+// function carregarTempo() {
+//   fetch("/obter-tempo-cursos")
+//     .then((response) => response.json())
+//     .then((data) => {
+//       const timeSpent = data.timeSpent || 0;
+//       const percentage = Math.min((timeSpent / maxTimeInMinutes) * 100, 100);
+//       const targetHeight = (percentage / 100) * maxHeight;
+
+//       const bars = document.querySelectorAll(".graphs");
+//       bars.forEach((bar) => {
+//         bar.style.setProperty("--target-height", `${targetHeight}px`);
+//       });
+//     })
+//     .catch((error) => {
+//       console.error("Erro ao carregar o tempo:", error);
+//     });
+// }
+
+// carregarTempo();
+
+
+
+// app.get("/obter-tempo-cursos", async (req, res) => {
+//   try {
+//     const userId = req.user?.id || "user_placeholder"; // Substitua pelo sistema de autenticação real
+//     const { data, error } = await supabase
+//       .from("user_time")
+//       .select("time_spent")
+//       .eq("user_id", userId)
+//       .single();
+
+//     if (error) {
+//       throw error;
+//     }
+
+//     res.json({ timeSpent: data?.time_spent || 0 });
+//   } catch (err) {
+//     console.error("Erro ao buscar o tempo:", err);
+//     res.status(500).json({ message: "Erro ao buscar o tempo" });
+//   }
+// });

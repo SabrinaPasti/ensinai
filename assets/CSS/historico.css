@@ -6,15 +6,15 @@
 
 .wid {
   display: flex;
+  height: 88vh;
 }
 
 
 .header-todo {
-  background-color: #f4f4f4;
   text-align: center;
-  font-size: 24px;
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+  padding: 20px;
+  padding-right: 17rem;
 }
 
 .container {
@@ -26,7 +26,7 @@
 
 .note-box {
   width: 374px;
-  height: 784px;
+  height: 78.89vh;
   background-color: #FFF1E9;
   border: 2px solid orange;
   border-radius: 18px;
@@ -103,6 +103,12 @@
   font: inherit;
   outline: none;
   padding-left: 12px;
+}
+
+.saved-note {
+  padding-left: 20px;
+  padding-top: 8px;
+
 }
 
 @media (max-width: 479px) {
