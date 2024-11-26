@@ -21,6 +21,10 @@
 }
 
 
+.widget5{
+    padding-top: 60px;
+}
+
 .listagem-content{
     margin: 2.6rem 0;
 }
@@ -228,5 +232,8 @@
     .listagem-card img{
         width: 80%;
         margin-bottom: 2rem;
+    }
+    .widget5{
+        padding: 1rem;
     }
 }

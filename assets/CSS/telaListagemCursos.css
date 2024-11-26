@@ -1,21 +1,21 @@
 /* Meus Cursos */
 
-.listagem-cursos{
+.listagem-cursos {
   width: 100%;
 }
 
-.listagem-cursos-content{
+.listagem-cursos-content {
   margin-top: 2.8rem;
 }
 
-.listagem-cursos-content h2{
+.listagem-cursos-content h2 {
   font-weight: 400;
   font-size: 3.2rem;
   color: #090830;
   margin-bottom: 3rem;
 }
 
-.box-ultimas-aulas{
+.box-ultimas-aulas {
   background-color: #fff;
   border-radius: 18px;
   border: 20px solid #fff1e9;
@@ -25,7 +25,7 @@
   align-items: flex-end;
 }
 
-.box-ultimas-aulas h3{
+.box-ultimas-aulas h3 {
   font-size: 2rem;
   line-height: 2rem;
   color: #090830;
@@ -33,7 +33,7 @@
   margin-bottom: 1rem;
 }
 
-.box-ultimas-aulas > div > p{
+.box-ultimas-aulas>div>p {
   font-size: 1.4rem;
   color: #090830;
   line-height: 1.9rem;
@@ -41,7 +41,7 @@
 
 }
 
-.box-ultimas-aulas p{
+.box-ultimas-aulas p {
   font-size: 1.4rem;
   color: #090830;
   line-height: 1.9rem;
@@ -49,27 +49,27 @@
 
 }
 
-.box-ultimas-aulas .splide__slide h3{
+.box-ultimas-aulas .splide__slide h3 {
   color: #fff;
   font-weight: 400;
   font-size: 2rem;
 }
 
-.box-ultimas-aulas .splide__slide p{
+.box-ultimas-aulas .splide__slide p {
   color: #fff;
   font-size: 1.4rem;
   line-height: 1.9rem;
   margin-top: 1rem;
 }
 
-.box-ultimas-aulas .splide__slide div{
+.box-ultimas-aulas .splide__slide div {
   background-color: #090830;
   padding: 2rem 1.6rem;
   border-top-left-radius: 1.3rem;
   border-top-right-radius: 1.3rem;
 }
 
-.box-ultimas-aulas .splide__slide a{
+.box-ultimas-aulas .splide__slide a {
   background-color: #fff;
   display: flex;
   width: 100%;
@@ -81,68 +81,68 @@
   justify-content: space-between;
 }
 
-.box-ultimas-aulas .splide__slide a span{
+.box-ultimas-aulas .splide__slide a span {
   background-color: #FF8E47;
   color: #090830;
   padding: 1.5rem 2rem;
   border-radius: 100px;
 }
 
-.box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow{
+.box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow {
   top: unset;
   bottom: 0;
   transform: none;
-  background-color:  #000;
+  background-color: #000;
   opacity: 1;
 }
 
-.box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow:disabled{
+.box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow:disabled {
   opacity: .42;
 }
 
 
-.box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow{
+.box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow {
   top: unset;
   bottom: 0;
   transform: none;
-  background-color:  #000;
+  background-color: #000;
   opacity: 1;
 }
 
-.box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow svg{
+.box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow svg {
   height: 1rem;
   fill: #fff;
 }
 
 
-.box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow--prev{
+.box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow--prev {
   left: 0;
 }
 
-.box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow--next{
+.box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow--next {
   right: 0;
 }
 
-.box-ultimas-aulas .slide__aulas{
+.box-ultimas-aulas .slide__aulas {
   display: flex;
   justify-content: center;
   max-width: 763px;
 }
 
-.box-ultimas-aulas .splide__track{
+.box-ultimas-aulas .splide__track {
   max-width: 87.155963%;
 }
 
 /* Cardss cursos */
 /* Curso maior */
-.cards-cursos{
+.cards-cursos {
   display: flex;
   margin-top: 3.8rem;
   gap: 2rem;
   justify-content: space-between;
 }
 
-.curso-principal{
+.curso-principal {
   background-color: #FFB17F;
   border-radius: 1.8rem;
   position: relative;
@@ -152,18 +152,18 @@
   max-width: 729px;
 }
 
-.curso-principal img{
+.curso-principal img {
   margin-left: -4rem;
 }
 
-.curso-principal-texto{
+.curso-principal-texto {
   max-width: 27.7rem;
   color: #090830;
   margin-left: -17rem;
   margin-top: 4rem;
 }
 
-.curso-principal-texto h2{
+.curso-principal-texto h2 {
   font-size: 3.2rem;
   line-height: 2.6rem;
   margin-bottom: 1rem;
@@ -171,13 +171,13 @@
 
 }
 
-.curso-principal-texto p{
+.curso-principal-texto p {
   font-size: 1.4rem;
   line-height: 1.9rem;
   margin-bottom: 3rem;
 }
 
-.curso-principal-texto a{
+.curso-principal-texto a {
   background-color: #090830;
   color: #fff;
   padding: 1.2rem 2.2rem;
@@ -187,33 +187,33 @@
 
 /* Demais cursos */
 
-.mais-cursos .card{
+.mais-cursos .card {
   background-color: #FFF1E9;
   padding: 1.9rem 2.1rem;
   border-radius: 1.8rem;
   max-width: 28.3rem;
 }
 
-.mais-cursos .card:nth-child(2){
+.mais-cursos .card:nth-child(2) {
   background-color: #FFB17F;
 }
 
-.mais-cursos .card:nth-child(3){
+.mais-cursos .card:nth-child(3) {
   background-color: #FF8E47;
 }
 
-.mais-cursos .card:not(:last-child){
+.mais-cursos .card:not(:last-child) {
   margin-bottom: 1.8rem;
 }
 
-.mais-cursos .card h4{
+.mais-cursos .card h4 {
   font-size: 2rem;
   line-height: 2.6rem;
   color: #090830;
   margin-bottom: .8rem;
 }
 
-.mais-cursos .card a{
+.mais-cursos .card a {
   display: block;
   background-color: #090830;
   color: #fff;
@@ -225,49 +225,49 @@
 /* Responsivo Desktop */
 
 @media (max-width: 1100px) {
-  .box-ultimas-aulas{
+  .box-ultimas-aulas {
     flex-direction: column;
     align-items: unset;
     gap: 2rem;
   }
 
-  .box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow{
+  .box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow {
     top: 50%;
     transform: translateY(-50%);
   }
 
-  .cards-cursos{
+  .cards-cursos {
     gap: unset;
     flex-direction: column;
   }
 
-  .mais-cursos{
+  .mais-cursos {
     width: 100%;
   }
 
-  
-  .mais-cursos .card{
+
+  .mais-cursos .card {
     max-width: none;
     width: 100%;
   }
 
-  .curso-principal{
+  .curso-principal {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 2rem;
     margin-left: 0;
   }
 
-  .curso-principal img{
+  .curso-principal img {
     margin-top: 2rem;
     width: 80%;
   }
 
-  .curso-principal-texto{
+  .curso-principal-texto {
     margin-left: 4rem;
   }
 
- 
+
 
 
 }
@@ -275,17 +275,15 @@
 /* Tablet */
 
 @media (max-width: 900px) {
-  .slide__aulas .splide__slide img{
+  .slide__aulas .splide__slide img {
     width: 2.2rem;
   }
 
-  .setting ul li a img{
+  .setting ul li a img {
     width: 3.2rem;
   }
 
-  .box-ultimas-aulas {
-
-  }
+  .box-ultimas-aulas {}
 
 
 
@@ -294,43 +292,86 @@
 /*  mobile */
 
 @media (max-width: 425px) {
-  .listagem-cursos-content h2{
+  .listagem-cursos-content h2 {
     font-size: 2.4rem;
     margin-bottom: 2.6rem;
   }
 
-  .box-ultimas-aulas{
+  .box-ultimas-aulas {
     border: none;
     padding: 0;
     flex-direction: column;
   }
 
-  .box-ultimas-aulas p{
+  .box-ultimas-aulas p {
     max-width: none;
     margin-bottom: 2.1rem;
   }
 
-  .cursos-arrow{
+  .cursos-arrow {
     display: none;
   }
 
-  .box-ultimas-aulas .splide__slide{
+  .box-ultimas-aulas .splide__slide {
     margin: 0;
   }
 
-  .curso-principal{
+  .curso-principal {
     max-width: 35rem;
   }
 
-  .cards-cursos{
+  .cards-cursos {
     max-width: 35rem;
   }
 
-  .mais-cursos{
+  .mais-cursos {
     max-width: 35rem;
   }
-  body, html {
+
+  body,
+  html {
     padding-bottom: 3rem;
-    
+
+  }
+
+  .splide__arrows {
+    display: flex;
+    justify-content: space-between;
+    /* Garante que os botões fiquem nos extremos */
+  }
+
+  .splide__arrow--prev {
+    left: 0;
+    /* Mantém o botão "anterior" na esquerda */
+    right: auto;
+  }
+
+  .splide__arrow--next {
+    right: 0;
+    /* Mantém o botão "próximo" na direita */
+    left: auto;
+  }
+
+  .splide__slide {
+    width: 150%;
+    /* Permite que o próximo slide apareça parcialmente */
+  }
+
+  .slide__aulas {
+    position: relative;
+    /* Para posicionar o botão abaixo */
+  }
+
+  .splide__arrows {
+    position: absolute;
+    bottom: -2rem;
+    /* Espaço abaixo do slider */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+  .box-ultimas-aulas>div>p {
+    max-width: none
   }
 }

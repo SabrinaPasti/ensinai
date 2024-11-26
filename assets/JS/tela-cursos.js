@@ -11,6 +11,7 @@ new Splide(".slide__aulas.splide", {
     },
     600: {
       perPage: 1,
+      arrows: true,
     },
   },
 }).mount();

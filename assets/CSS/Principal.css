@@ -1,0 +1,14 @@
+html,
+body {
+    max-width: 1368px;
+    margin: 0 auto;
+    overflow-x: hidden !important;
+    padding: 0;
+    font-family: "Instrument Sans";
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+    caret-color: transparent;
+    display: flex;
+    padding-top: 2rem;
+}

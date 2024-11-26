@@ -12,6 +12,10 @@ body::-webkit-scrollbar-thumb {
 
 /* Menu */
 
+.head-mobile {
+    display: none;
+}
+
 aside {
     position: sticky;
     background-color: #FF8E47;
@@ -242,6 +246,17 @@ article .notifications .notifications-content .content .notification span {
         display: none;
     }
 
+    .head-mobile {
+        display: flex;
+        justify-content: space-between;
+        background-color: #FF8E47;
+        width: 100%;
+        height: 70px;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
 
     .bottom-nav {
         display: flex;
