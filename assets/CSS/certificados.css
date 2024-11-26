@@ -260,4 +260,8 @@ article .notifications .notifications-content.open{
     .profile a img{
         width: 3rem !important;
     }
+    body{
+        width: 100%;
+        overflow: auto;
+    }
 }
