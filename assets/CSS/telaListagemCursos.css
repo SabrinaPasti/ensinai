@@ -322,6 +322,8 @@
 
   .cards-cursos {
     max-width: 35rem;
+    margin: 0 auto;
+    padding-top: 8rem;
   }
 
   .mais-cursos {
@@ -368,6 +370,10 @@
     /* Espaço abaixo do slider */
     left: 50%;
     transform: translateX(-50%);
+  }
+
+    .listagem-cursos-content{
+    padding-left: 3rem;
   }
 
 
