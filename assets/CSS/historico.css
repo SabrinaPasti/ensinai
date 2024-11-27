@@ -124,6 +124,9 @@
     width: 342px;
     height: 393px;
   }
+  .header-todo{
+    padding-right: 0px;
+  }
 }
 
 @keyframes fadeLeft {

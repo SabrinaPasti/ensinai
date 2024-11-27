@@ -229,6 +229,11 @@
         flex-direction: column;
     }
 
+    .widget5{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
     .listagem-card img{
         width: 80%;
         margin-bottom: 2rem;
