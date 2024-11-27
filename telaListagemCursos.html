@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/CSS/popup.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -14,6 +16,8 @@
   <link rel="stylesheet" href="./assets/CSS/telaListagemAulas.css">
   <link rel="stylesheet" href="./assets/CSS/telaListagemCursos.css">
   <link rel="stylesheet" href="/assets/CSS/main.css">
+
+
   <link
     href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Press+Start+2P&display=swap"
     rel="stylesheet" />
@@ -99,6 +103,65 @@
     </article>
 
   </div>
+  <!-- Pop-up Faq us -->
+  <div id="backdrop" class="hidden"></div>
+
+  <div id="popup" class="hidden">
+    <div class="popup-content">
+      <div class="faq-conteiner">
+        <div class="faq-title">
+          <h1>Perguntas Frequentes</h1>
+          <button id="close-popup1">&times;</button>
+        </div>
+        <div class="container-faq1">
+          <h3 class="popup-title">Como funciona a plataforma?</h3>
+          <p>A EnsinAÍ oferece cursos gratuitos focados em habilidades interpessoais (soft skills). Você só precisa
+            criar uma conta,
+            acessar os conteúdos disponíveis e começar a aprender no seu próprio ritmo.</p>
+        </div>
+        <div class="container-faq2">
+          <h3 class="popup-title">Informações de Contato</h3>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:contato@ensinaí.com.br">contato@ensinaí.com.br</a></p>
+          <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/55XXXXXXXXXXX" target="_blank">+55 (XX)
+              XXXXX-XXXX</a></p>
+          <p><i class="fas fa-globe"></i> <a href="https://www.ensinaí.com.br" target="_blank">www.ensinaí.com.br</a>
+          </p>
+          <p><i class="fas fa-map-marker-alt"></i> Rua do Conhecimento, 123, São Paulo - SP, Brasil</p>
+          <p><i class="fas fa-clock"></i> Horário de atendimento: Segunda a Sexta: 9h às 18h (Horário de Brasília)</p>
+          <p><i class="fas fa-rocket"></i> Fale com a gente e decole no aprendizado!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pop-up Faq us -->
+  <!-- Pop-up settings -->
+  <div id="popup2" class="hidden">
+    <div class="faq-conteiner">
+      <div class="faq-title">
+        <h1>Configurações</h1>
+        <button id="close-popup2">&times;</button>
+      </div>
+      <div class="container-faq1">
+        <p>EnsinAÍ é uma plataforma inovadora de ensino dedicada a facilitar o aprendizado de forma prática, rápida e
+          acessível.
+          Nosso foco é oferecer soluções personalizadas para empresas, tornando o ensino corporativo mais dinâmico e
+          eficiente.</p>
+        <div class="container-faq1">
+          <h3 class="popup-title">Quem somos</h3>
+          <p>Somos uma empresa nascida do Instituto da Oportunidade Social (IOS), com o objetivo de tornar o aprendizado
+            acessível e
+            eficiente para empresas de todos os tamanhos.</p>
+          <div class="container-faq1">
+            <h3 class="popup-title">Nossa Missão</h3>
+            <p>Nossa missão é simplificar o processo de ensino, oferecendo uma plataforma prática e intuitiva, onde sua
+              equipe pode
+              adquirir conhecimento de forma rápida, dinâmica e adaptada às suas necessidades..</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <main class="main-certificados">
     <aside>
       <nav>
@@ -138,12 +201,12 @@
         <div class="setting">
           <ul>
             <li>
-              <a href="">
+              <a id="settings">
                 <img src="/assets/IMG/guidance_settings.svg" alt="Ícone de configurações">Configurações
               </a>
             </li>
             <li>
-              <a href="">
+              <a id="faq-link">
                 <img src="/assets/IMG/weui_help-outlined.svg" alt="Ícone de FAQ"> Ajuda FAQ
               </a>
             </li>
@@ -384,5 +447,6 @@
 <script src="./assets/LIB/splide.min.js"></script>
 <script src="./assets/JS/main.js"></script>
 <script src="./assets/JS/tela-cursos.js"></script>
+<script src="assets/JS/popup.js"></script>
 
 </html>

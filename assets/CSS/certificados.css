@@ -9,7 +9,7 @@ body{
 .main-certificados{
     display: flex;
     gap: 3.8rem;  
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 /* Meu perfil */
@@ -202,7 +202,7 @@ body{
 
 
 article .notifications .notifications-content.open{
-    z-index: 1;
+    z-index: 2;
 }
 
 /*  Responsivo */
