@@ -1,23 +1,24 @@
-body{
+body {
     display: block;
     max-width: 1360px;
+    width: 90%;
     margin: 0 auto;
-    
+
 }
 
-.main-certificados{
+.main-certificados {
     display: flex;
-    gap: 3.8rem;  
-    padding: 4rem;
+    gap: 3.8rem;
+    padding: 2rem 0;
 }
 
 /* Meu perfil */
 
-.meu-perfil{
+.meu-perfil {
     margin-top: 2.8rem;
 }
 
-.meu-perfil h1{
+.meu-perfil h1 {
     font-size: 3.2rem;
     color: #090830;
     line-height: 2.6rem;
@@ -25,23 +26,23 @@ body{
     font-weight: 400;
 }
 
-.profile{
+.profile {
     display: flex;
 }
 
-.profile img{
+.profile img {
     border-radius: 50%;
     object-fit: cover;
     background-color: #FFF1E9;
     padding: 2rem;
 }
 
-.profile div{
+.profile div {
     margin-left: 2.9rem;
     max-width: 420px;
 }
 
-.profile span{
+.profile span {
     font-size: 2rem;
     line-height: 2.6rem;
     color: #090830;
@@ -49,20 +50,20 @@ body{
     font-weight: 600;
 }
 
-.profile p{
+.profile p {
     font-size: 1.4rem;
     line-height: 2.6rem;
     color: #090830;
     margin-bottom: 1rem;
 }
 
-.profile a img{
+.profile a img {
     background: none;
     padding: 0;
     margin-right: 1rem;
 }
 
-.profile a{
+.profile a {
     font-size: 1.4rem;
     line-height: 2.6rem;
     display: flex;
@@ -71,54 +72,54 @@ body{
 
 /*  Dashboard */
 
-.dashboard-certificados{
+.dashboard-certificados {
     margin-top: 2.8rem;
 }
 
-.dashboard-certificados .widget{
+.dashboard-certificados .widget {
     width: 92.7rem;
 }
 
-.dashboard-certificados .graphs{
+.dashboard-certificados .graphs {
     background-color: #FF8E47;
     width: 8.2rem;
 }
 
-.dashboard-certificados .activy-border{
+.dashboard-certificados .activy-border {
     width: 100%;
 }
 
-.dashboard-certificados .activy-header{
+.dashboard-certificados .activy-header {
     width: 100%;
 }
 
-.dashboard-certificados .graph-wrapper{
+.dashboard-certificados .graph-wrapper {
     padding-bottom: 1.5rem;
 }
 
 /* Certificados Slide */
 
-.certificados{
+.certificados {
     margin-top: 2.5rem;
     /*display: flex;*/
 }
 
-.content-certificados{
+.content-certificados {
     max-width: 927px;
 }
 
-.certificados .content{
+.certificados .content {
     display: flex;
     flex-direction: column;
 }
 
-.certificados .card{
+.certificados .card {
     border: #FF8E47 2px solid;
     border-radius: 1.9rem;
     overflow: hidden;
 }
 
-.certificados .card > .content{
+.certificados .card>.content {
     font-size: 2rem;
     line-height: 2.6rem;
     background-color: #FF8E47;
@@ -132,24 +133,24 @@ body{
 
 }
 
-.certificados .content h3{
+.certificados .content h3 {
     color: #FFF;
     font-weight: 400;
     margin-bottom: 4.4rem;
 }
 
-.certificados .card .content div p{
+.certificados .card .content div p {
     font-size: 1.4rem;
     color: #fff;
     margin-left: .9rem;
 }
 
-.certificados .card .content div{
+.certificados .card .content div {
     display: flex;
     align-items: center;
 }
 
-.certificados .card .content div span{
+.certificados .card .content div span {
     background-color: #090830;
     color: #fff;
     padding: .8rem 2.5rem;
@@ -158,13 +159,13 @@ body{
 
 }
 
-.certificados .card .content div p{
+.certificados .card .content div p {
     font-size: 1.4rem;
     color: #fff;
     margin-left: .9rem;
 }
 
-.certificados .card a{
+.certificados .card a {
     font-size: 1.4rem;
     padding: 3rem;
     display: flex;
@@ -173,7 +174,7 @@ body{
     width: 100%;
 }
 
-.certificados .arrow{
+.certificados .arrow {
     display: flex;
     justify-content: end;
     align-items: flex-end;
@@ -181,7 +182,7 @@ body{
     margin-bottom: 2rem;
 }
 
-.certificados .arrow > button{
+.certificados .arrow>button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,14 +195,14 @@ body{
     transition: .3s ease;
 }
 
-.certificados .arrow > button:disabled{
+.certificados .arrow>button:disabled {
     background-color: #0908307d;
     cursor: default;
 }
 
 
-article .notifications .notifications-content.open{
-    z-index: 1;
+article .notifications .notifications-content.open {
+    z-index: 2;
 }
 
 /*  Responsivo */
@@ -211,15 +212,64 @@ article .notifications .notifications-content.open{
         width: 62.7rem;
     }
 
-    .dashboard-certificados .graphs{
+    .dashboard-certificados .graphs {
         width: 4.2rem;
     }
 
-    .profile img:first-child{
+    .profile img:first-child {
         width: 20%;
     }
 
-    .profile{
+    .profile {
         flex-direction: column;
+    }
+
+    div#splide01-track {
+        width: 70%;
+    }
+
+    .certificados .arrow {
+        width: 80%;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .certificados .card a img {
+        width: 3rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .main-certificados {
+        display: flex;
+        gap: 3.8rem;
+        padding: 2rem 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .meu-perfil h1 {
+        font-size: 2rem;
+    }
+
+    .profile img:first-child {
+        width: 15%;
+    }
+
+    .profile div {
+        margin-left: 0;
+        max-width: 80%;
+    }
+
+    .profile a img {
+        width: 3rem !important;
+    }
+
+    body {
+        width: 100%;
+        overflow: auto;
     }
 }

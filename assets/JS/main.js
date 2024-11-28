@@ -1,21 +1,36 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const notificationsButton = document.querySelector('.notifications-button');
-    const notificationsContent = document.querySelector('.notifications-content');
+document.addEventListener("DOMContentLoaded", () => {
+  const notificationsButtons = document.querySelectorAll(
+    ".notifications-button"
+  );
+  const notificationsContents = document.querySelectorAll(
+    ".notifications-content"
+  );
 
-    notificationsButton.addEventListener('click', (event) => {
-        event.stopPropagation();
-        notificationsContent.classList.toggle('open');
-    });
+  notificationsButtons.forEach((notificationsButton, index) => {
+    const notificationsContent = notificationsContents[index];
 
-    document.addEventListener('click', (event) => {
-        if (!notificationsContent.contains(event.target) && !notificationsButton.contains(event.target)) {
-            notificationsContent.classList.remove('open');
-        }
-    });
+    notificationsButton.addEventListener("click", (event) => {
+      event.stopPropagation();
 
-    window.addEventListener('scroll', () => {
-        if (!notificationsContent.matches(':hover')) {
-            notificationsContent.classList.remove('open');
-        }
+      notificationsContent.classList.toggle("open");
     });
+  });
+
+  // Fechar notificações se clicar fora
+  document.addEventListener("click", (event) => {
+    notificationsContents.forEach((notificationsContent) => {
+      if (
+        !notificationsContent.contains(event.target) &&
+        !event.target.closest(".notifications-button")
+      ) {
+        notificationsContent.classList.remove("open"); 
+      }
+    });
+  });
 });
+
+
+
+function handleClick(page) {
+  window.location.href = page;
+}
