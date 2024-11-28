@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./assets/CSS/certificados.css">
     <link rel="stylesheet" href="./assets/CSS/telaListagemAulas.css">
     <link rel="stylesheet" href="/assets/CSS/main.css">
+    <link rel="stylesheet" href="/assets/CSS/quiz.css">
 
 
 
@@ -315,7 +316,7 @@
                             </div>
                             <p>46 mb</p>
                         </a>
-                        <div class="upload">
+                        <div class="upload" id="uploadButton">
                             <p>Fazer atividade (Você só tem 1 tentativa)</p>
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -419,12 +420,22 @@
             </div>
         </div>
     </div>
+    <div id="quizPopup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close-btn" id="closeQuiz">&times;</span>
+            <h2>Quiz</h2>
+            <div id="quizContainer"></div>
+            <button id="nextQuestion" class="hidden">Next</button>
+            <button id="showResult" class="hidden">Show Result</button>
+        </div>
+    </div>
 </body>
 <script src="./assets/JS/dashbord.js"></script>
 <script src="./assets/LIB/splide.min.js"></script>
 <script src="./assets/JS/certificados.js"></script>
 <script src="./assets/JS/main.js"></script>
 <script src="assets/JS/popup.js"></script>
+<script src="assets/JS/quiz.js"></script>
 
 
 
