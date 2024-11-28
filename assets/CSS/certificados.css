@@ -272,4 +272,10 @@ article .notifications .notifications-content.open {
         width: 100%;
         overflow: auto;
     }
+    .content-certificados{
+        max-width: 100%;
+    }
+    .main-certificados{
+        padding-bottom: 8rem;
+    }
 }

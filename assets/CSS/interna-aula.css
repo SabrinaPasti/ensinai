@@ -95,6 +95,10 @@ h1{
     padding: 3.1rem 2.7rem;
     border: 2px solid #FF8E47;
 }
+.upload p{ 
+    font-size: 14px;
+    
+}
 
 .container-aula__atividade .upload input{
     padding: unset;
