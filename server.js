@@ -170,7 +170,7 @@ app.get('/:id/cursos', async (req, res) => {
             return aulas;
         }));
 
-        // Passar para o template
+        
         res.render('telaListagemCursos', { cursos, aulas, id_aluno });
     } catch (error) {
         console.error('Erro inesperado:', error);
