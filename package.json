@@ -13,6 +13,10 @@
     "@supabase/supabase-js": "^2.46.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
+<<<<<<< HEAD
+=======
+    "ejs": "^3.1.10",
+>>>>>>> 4e467998eae76f2f04a3e433814ea5c7f5f2bf16
     "ensinai---tcc": "file:",
     "express": "^4.21.1"
   }

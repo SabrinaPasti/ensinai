@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/popup.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/splide.min.css">
+    <link rel="stylesheet" href="/CSS/interna-aula.css">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/dashbord.css">
+    <link rel="stylesheet" href="/CSS/certificados.css">
+    <link rel="stylesheet" href="/CSS/telaListagemAulas.css">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="/CSS/quiz.css">
+
+    <title>Listagem Aulas</title>
+</head>
+
+<body>
+    <div class="head-mobile">
+        <svg width="103" height="25" viewBox="0 0 103 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M0.462891 15.3914C0.462891 10.8272 3.66734 6.93248 8.48926 6.93248C13.4027 6.93248 16.363 10.5534 16.363 15.4218V16.4868H4.79652C5.13222 18.6168 6.414 20.3207 8.73341 20.3207C10.2593 20.3207 11.419 19.5905 12.2125 18.3125L16.0273 19.5296C14.8676 22.4202 11.7242 23.9112 8.70289 23.9112C3.85045 23.9112 0.462891 20.2599 0.462891 15.3914ZM8.48926 10.2187C6.44452 10.2187 5.22378 11.7401 4.85756 13.6266H11.9684C11.6937 11.7401 10.534 10.2187 8.48926 10.2187ZM19.0148 7.3889H22.9517L23.0737 9.45799C24.0809 7.75403 25.8814 6.93248 27.8346 6.93248C31.802 6.93248 33.7247 10.0665 33.7247 13.8092V23.4548H29.4521V14.3569C29.4521 12.5008 28.6891 10.7664 26.5834 10.7664C24.5997 10.7664 23.2874 12.2573 23.2874 14.2352V23.4548H19.0148V7.3889ZM36.1586 19.4383L40.0039 18.6168C40.4617 19.9556 41.6214 20.6554 42.9947 20.6554C44.0629 20.6554 45.3751 20.2294 45.3751 18.9515C45.3751 17.6735 43.8187 17.3084 42.8116 17.1562L41.9571 17.0041C39.2714 16.5477 36.6163 15.2089 36.6163 12.1356C36.6163 8.69729 39.6377 6.93248 42.8421 6.93248C45.7109 6.93248 48.5186 8.30173 49.2205 11.3141L45.4057 12.1052C44.9784 10.9185 44.1239 10.1578 42.8116 10.1578C41.835 10.1578 40.6448 10.6447 40.6448 11.7705C40.6448 12.9268 42.4149 13.2919 43.2694 13.444L44.1239 13.5962C46.84 14.083 49.4646 15.4218 49.4646 18.5255C49.4646 22.0855 46.2297 23.9112 42.9337 23.9112C40.0039 23.9112 36.9826 22.4811 36.1586 19.4383ZM52.1262 23.4548V7.3889H56.3988V23.4548H52.1262ZM54.2625 5.47194C52.9197 5.47194 51.821 4.40697 51.821 3.03771C51.821 1.66846 52.8587 0.603485 54.2625 0.603485C55.6664 0.603485 56.704 1.60761 56.704 3.03771C56.704 4.40697 55.6664 5.47194 54.2625 5.47194ZM59.8154 7.3889H63.7526L63.8746 9.45799C64.8818 7.75403 66.6824 6.93248 68.6355 6.93248C72.6029 6.93248 74.5256 10.0665 74.5256 13.8092V23.4548H70.253V14.3569C70.253 12.5008 69.4901 10.7664 67.3843 10.7664C65.4006 10.7664 64.0883 12.2573 64.0883 14.2352V23.4548H59.8154V7.3889Z"
+                fill="white" />
+            <path
+                d="M82.9106 23.9112C79.9808 23.9112 77.1731 22.0855 77.1731 18.8906C77.1731 15.3001 80.5912 13.7483 83.7956 13.7483C85.1384 13.7483 86.2066 13.9917 87.4578 14.4481V13.5049C87.4578 11.7096 86.4202 10.4317 84.5586 10.4317C83.2463 10.4317 82.0255 11.0707 81.5678 12.3486L77.7529 11.5879C78.4549 8.51472 81.6593 6.93247 84.6196 6.93247C88.6481 6.93247 91.6084 9.51883 91.6084 13.7179V23.4548H87.7935L87.6715 21.5683C86.6949 23.1809 84.7417 23.9112 82.9106 23.9112ZM81.3847 18.6776C81.3847 20.0469 82.758 20.625 83.9482 20.625C85.8098 20.625 87.4578 19.347 87.4578 17.3692V17.2171C87.0001 17.0345 86.5423 16.8824 86.0235 16.7607C85.5047 16.6694 85.0164 16.6085 84.4975 16.6085C83.1852 16.6085 81.3847 17.0649 81.3847 18.6776ZM95.0131 23.4548V7.38889H99.2857V23.4548H95.0131ZM94.2196 5.1068L97.6987 0.755615H102.46L98.248 5.1068H94.2196Z"
+                fill="#090830" />
+        </svg>
+        <article style="padding-left: 2rem;">
+            <div class="notifications">
+                <button class="notifications-button">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M24.367 17.8176C24.2908 17.6673 24.2508 17.5013 24.25 17.3328C24.25 17.3326 24.25 17.3325 24.25 17.3323L24.25 13.3333C24.25 11.1453 23.3808 9.04687 21.8337 7.49969C20.2865 5.95252 18.1881 5.08332 16 5.08332C13.812 5.08332 11.7136 5.95252 10.1664 7.49969C8.61923 9.04687 7.75004 11.1453 7.75004 13.3333V17.3333C7.75004 17.3333 7.75004 17.3333 7.75004 17.3333C7.75002 17.5018 7.7107 17.668 7.6352 17.8186L7.63503 17.819L5.93636 21.2217L5.75581 21.5833H6.16004H25.8454H26.2499L26.069 21.2215L24.3676 17.8189L24.367 17.8176ZM10.9167 24V23.75H10.6667H4.00004C3.81531 23.75 3.63364 23.7027 3.47231 23.6127C3.31097 23.5227 3.17533 23.393 3.07828 23.2358C2.98123 23.0786 2.92599 22.8992 2.91781 22.7146C2.90963 22.5301 2.94878 22.3465 3.03155 22.1813L3.03164 22.1811L5.55698 17.1305L5.58337 17.0777V17.0187V13.3333C5.58337 10.5707 6.68084 7.92113 8.63434 5.96763C10.5878 4.01412 13.2374 2.91666 16 2.91666C18.7627 2.91666 21.4122 4.01412 23.3657 5.96763C25.3192 7.92113 26.4167 10.5707 26.4167 13.3333V17.0187V17.0777L26.4431 17.1305L28.9684 22.1811L28.9685 22.1813C29.0513 22.3465 29.0904 22.5301 29.0823 22.7146C29.0741 22.8992 29.0188 23.0786 28.9218 23.2358C28.8247 23.393 28.6891 23.5227 28.5278 23.6127C28.3664 23.7027 28.1848 23.75 28 23.75H21.3334H21.0834V24C21.0834 25.3482 20.5478 26.6411 19.5945 27.5944C18.6412 28.5478 17.3482 29.0833 16 29.0833C14.6519 29.0833 13.3589 28.5478 12.4056 27.5944C11.4523 26.6411 10.9167 25.3482 10.9167 24ZM18.9167 24V23.75H18.6667H13.3334H13.0834V24C13.0834 24.7735 13.3907 25.5154 13.9376 26.0624C14.4846 26.6094 15.2265 26.9167 16 26.9167C16.7736 26.9167 17.5154 26.6094 18.0624 26.0624C18.6094 25.5154 18.9167 24.7735 18.9167 24Z"
+                            fill="white" stroke="#FF8E47" stroke-width="0.5" />
+                    </svg>
+
+                </button>
+                <div class="notifications-content">
+                    <ul class="content">
+                        <li>
+                            <a href="#" class="notification notread">
+                                <figure class="notification-icon">
+                                    <img src="/IMG/alert-icon.png" alt="alert">
+                                </figure>
+                                <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                                <span class="time">01h22</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="notification">
+                                <figure class="notification-icon">
+                                    <img src="/IMG/alert-icon.png" alt="alert">
+                                </figure>
+                                <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                                <span class="time">01h22</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="notification">
+                                <figure class="notification-icon">
+                                    <img src="/IMG/alert-icon.png" alt="alert">
+                                </figure>
+                                <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                                <span class="time">01h22</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="notification">
+                                <figure class="notification-icon">
+                                    <img src="/IMG/alert-icon.png" alt="alert">
+                                </figure>
+                                <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                                <span class="time">01h22</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="notification">
+                                <figure class="notification-icon">
+                                    <img src="/IMG/alert-icon.png" alt="alert">
+                                </figure>
+                                <p>A atividade “Aula 02 - JavaScript” irá expirar em 14h</p>
+                                <span class="time">01h22</span>
+                            </a>
+                        </li>-
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+    </div>
+    <main class="main-certificados" > 
+        <aside>
+            <nav>
+                <div class="content">
+                    <img src="/IMG/llogo-certificados.svg" alt="Logomarca">
+                    <ul>
+                        <li>
+                            <a href="../../dashboard">
+                                <img src="/IMG/certificados-home.svg" alt="Ícone de menu">
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../cursos">
+                                <img src="/IMG/menu-book-certificados.svg" alt="Ícone de menu">
+                                Meus Cursos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/IMG/menu-clock-certificados.svg" alt="Ícone de menu">
+                                Histórico
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h2>Perfil</h2>
+                            <a href="certificadosPerfil.html">
+                                <img src="/IMG/foto-perfil.png" alt="Imagem de perfil">
+                                Certificados
+                                <img src="/IMG/arrow-right-certificados.svg" alt="Seta para direita">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="setting">
+                    <ul>
+                        <li>
+                            <a id="settings">
+                                <img src="/IMG/guidance_settings.svg" alt="Ícone de configurações">Configurações
+                            </a>
+                        </li>
+                        <li>
+                            <a id="faq-link">
+                                <img src="/IMG/weui_help-outlined.svg" alt="Ícone de FAQ"> Ajuda FAQ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/IMG/lets-icons_out-light.svg" alt="Ícone de sai">Sair
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+        <!-- Pop-up Faq us -->
+        <div id="backdrop" class="hidden"></div>
+
+        <div id="popup" class="hidden">
+            <div class="popup-content">
+                <div class="faq-conteiner">
+                    <div class="faq-title">
+                        <h1>Perguntas Frequentes</h1>
+                        <button id="close-popup1">&times;</button>
+                    </div>
+                    <div class="container-faq1">
+                        <h3 class="popup-title">Como funciona a plataforma?</h3>
+                        <p>A EnsinAÍ oferece cursos gratuitos focados em habilidades interpessoais (soft skills). Você
+                            só
+                            precisa
+                            criar uma conta,
+                            acessar os conteúdos disponíveis e começar a aprender no seu próprio ritmo.</p>
+                    </div>
+                    <div class="container-faq2">
+                        <h3 class="popup-title">Informações de Contato</h3>
+                        <p><i class="fas fa-envelope"></i> <a
+                                href="mailto:contato@ensinaí.com.br">contato@ensinaí.com.br</a>
+                        </p>
+                        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/55XXXXXXXXXXX" target="_blank">+55
+                                (XX)
+                                XXXXX-XXXX</a></p>
+                        <p><i class="fas fa-globe"></i> <a href="https://www.ensinaí.com.br"
+                                target="_blank">www.ensinaí.com.br</a>
+                        </p>
+                        <p><i class="fas fa-map-marker-alt"></i> Rua do Conhecimento, 123, São Paulo - SP, Brasil</p>
+                        <p><i class="fas fa-clock"></i> Horário de atendimento: Segunda a Sexta: 9h às 18h (Horário de
+                            Brasília)
+                        </p>
+                        <p><i class="fas fa-rocket"></i> Fale com a gente e decole no aprendizado!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pop-up Faq us -->
+        <!-- Pop-up settings -->
+        <div id="popup2" class="hidden">
+            <div class="faq-conteiner">
+                <div class="faq-title">
+                    <h1>Configurações</h1>
+                    <button id="close-popup2">&times;</button>
+                </div>
+                <div class="container-faq1">
+                    <p>EnsinAÍ é uma plataforma inovadora de ensino dedicada a facilitar o aprendizado de forma prática,
+                        rápida
+                        e
+                        acessível.
+                        Nosso foco é oferecer soluções personalizadas para empresas, tornando o ensino corporativo mais
+                        dinâmico
+                        e
+                        eficiente.</p>
+                    <div class="container-faq1">
+                        <h3 class="popup-title">Quem somos</h3>
+                        <p>Somos uma empresa nascida do Instituto da Oportunidade Social (IOS), com o objetivo de tornar
+                            o
+                            aprendizado
+                            acessível e
+                            eficiente para empresas de todos os tamanhos.</p>
+                        <div class="container-faq1">
+                            <h3 class="popup-title">Nossa Missão</h3>
+                            <p>Nossa missão é simplificar o processo de ensino, oferecendo uma plataforma prática e
+                                intuitiva,
+                                onde sua
+                                equipe pode
+                                adquirir conhecimento de forma rápida, dinâmica e adaptada às suas necessidades..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pop-up settings -->
+        <section class="content-aula">
+            <div class="video-aula">
+                <video width="100%" height="100%" controls="controls">
+                    <source src="<%= aula.video || '/IMG/video-tester.mp4' %>" type="video/mp4">
+                </video>
+            </div>
+            
+            <h1><%= aula.titulo || 'Título da Aula' %></h1>
+            <div class="box-conteudos">
+                <div class="container-aula">
+                    <div class="container-aula__descricao">
+                        <h2>Descrição</h2>
+                        <p><%= aula.conteudo || 'Descrição não disponível.' %></p>
+                    </div>
+                    <div class="container-aula__atividade">
+                        <h2>Atividade</h2>
+                        <% if (arquivoUrl) { %>
+                            <a href="<%= arquivoUrl %>" download class="arquivo">
+                                <div>
+                                    <span><%= aula.arquivo ? aula.arquivo.split('.').pop().toUpperCase() : 'N/A' %></span>
+                                    <p><%= aula.titulo %> - Baixar arquivo</p>
+                                </div>
+                            </a>
+                        <% } else { %>
+                            <p>Não há arquivo associado a esta aula.</p>
+                        <% } %>
+
+
+                    </div>
+                </div>
+        
+                <div class="proximas-aulas">
+                    <div>
+                        <div class="card-aula">
+                            <h3><%= aula.titulo %></h3>
+                            <p><%= aula.conteudo || 'Descrição não disponível' %></p>
+                        </div>
+                        <a href="">
+                            <span>07:35</span>
+                            <img src="/IMG/arrow-up.svg" alt="Seta para cima">
+                        </a>
+
+                        <div class="upload" id="uploadButton">
+                            <p>Fazer atividade (Você só tem 1 tentativa)</p>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 16L24.3333 16M24.3333 16L19.6667 20M24.3333 16L19.6667 12"
+                                    stroke="#FF8E47" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <div class="bottom-nav">
+        <div class="nav-item active" onclick="handleClick('dashboard.html')">
+            <div class="circle-container">
+                <div class="outer-circle">
+                    <div class="inner-circle">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.9786 27.5506H7.59196C5.97596 27.5506 4.66663 26.2413 4.66663 24.6253V16.02C4.66761 15.3931 4.80255 14.7736 5.06239 14.2031C5.32224 13.6326 5.70099 13.1242 6.17329 12.712L14.08 5.82532C14.6124 5.36215 15.2943 5.10706 16 5.10706C16.7056 5.10706 17.3875 5.36215 17.92 5.82532L25.8266 12.7133C26.2988 13.1254 26.6774 13.6336 26.9373 14.2038C27.1971 14.7741 27.3321 15.3933 27.3333 16.02V24.6253C27.3333 25.4009 27.0253 26.1448 26.477 26.6934C25.9286 27.2419 25.1849 27.5503 24.4093 27.5506H20.3866V18.776C20.3866 17.5653 19.4053 16.5826 18.1933 16.5826H14.1733C12.9613 16.5826 11.98 17.5653 11.98 18.776L11.9786 27.5506ZM11.9786 27.5506H20.388"
+                                stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-item" onclick="handleClick('curso.html')">
+            <div class="circle-container">
+                <div class="outer-circle">
+                    <div class="inner-circle">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 21.3334V5.33337H10.6667C9.95942 5.33337 9.28115 5.61433 8.78105 6.11442C8.28095 6.61452 8 7.2928 8 8.00004V24"
+                                stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                            <path
+                                d="M24 26.6667H10.6667C9.95942 26.6667 9.28115 26.3858 8.78105 25.8857C8.28095 25.3856 8 24.7073 8 24C8 23.2928 8.28095 22.6145 8.78105 22.1144C9.28115 21.6143 9.95942 21.3334 10.6667 21.3334H24C23.1027 23.484 23.12 24.6507 24 26.6667Z"
+                                stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-item" onclick="handleClick('certificado.html')">
+            <div class="circle-container">
+                <div class="outer-circle">
+                    <div class="inner-circle">
+                        <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75H6C5.80109 12.75 5.61032 12.671 5.46967 12.5303C5.32902 12.3897 5.25 12.1989 5.25 12C5.25 11.8011 5.32902 11.6103 5.46967 11.4697C5.61032 11.329 5.80109 11.25 6 11.25H12C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12ZM12 7.25H6C5.80109 7.25 5.61032 7.32902 5.46967 7.46967C5.32902 7.61032 5.25 7.80109 5.25 8C5.25 8.19891 5.32902 8.38968 5.46967 8.53033C5.61032 8.67098 5.80109 8.75 6 8.75H12C12.1989 8.75 12.3897 8.67098 12.5303 8.53033C12.671 8.38968 12.75 8.19891 12.75 8C12.75 7.80109 12.671 7.61032 12.5303 7.46967C12.3897 7.32902 12.1989 7.25 12 7.25ZM25.75 15.0775V23C25.7503 23.1318 25.7159 23.2614 25.6502 23.3756C25.5845 23.4899 25.4898 23.5848 25.3758 23.6508C25.2617 23.7168 25.1322 23.7517 25.0004 23.7517C24.8686 23.7518 24.7391 23.7172 24.625 23.6513L21.5 21.8638L18.375 23.6513C18.2609 23.7172 18.1314 23.7518 17.9996 23.7517C17.8678 23.7517 17.7383 23.7168 17.6242 23.6508C17.5102 23.5848 17.4155 23.4899 17.3498 23.3756C17.2841 23.2614 17.2497 23.1318 17.25 23V19.75H2C1.53587 19.75 1.09075 19.5656 0.762563 19.2374C0.434375 18.9092 0.25 18.4641 0.25 18V2C0.25 1.53587 0.434375 1.09075 0.762563 0.762563C1.09075 0.434375 1.53587 0.25 2 0.25H24C24.4641 0.25 24.9092 0.434375 25.2374 0.762563C25.5656 1.09075 25.75 1.53587 25.75 2V5.9225C26.3807 6.50656 26.8839 7.21465 27.228 8.00236C27.5722 8.79007 27.7498 9.6404 27.7498 10.5C27.7498 11.3596 27.5722 12.2099 27.228 12.9976C26.8839 13.7853 26.3807 14.4934 25.75 15.0775ZM21.5 5.75C20.5605 5.75 19.6422 6.02858 18.861 6.55052C18.0799 7.07246 17.4711 7.8143 17.1116 8.68225C16.7521 9.5502 16.658 10.5053 16.8413 11.4267C17.0245 12.3481 17.4769 13.1945 18.1412 13.8588C18.8055 14.5231 19.6519 14.9754 20.5733 15.1587C21.4947 15.342 22.4498 15.2479 23.3177 14.8884C24.1857 14.5289 24.9275 13.9201 25.4495 13.139C25.9714 12.3578 26.25 11.4395 26.25 10.5C26.25 9.24022 25.7496 8.03204 24.8588 7.14124C23.968 6.25045 22.7598 5.75 21.5 5.75ZM17.25 18.25V15.0775C16.1556 14.0562 15.4642 12.676 15.3014 11.1879C15.1386 9.69989 15.5152 8.20284 16.3629 6.96904C17.2106 5.73525 18.4729 4.84666 19.9203 4.46489C21.3677 4.08312 22.9041 4.23352 24.25 4.88875V2C24.25 1.9337 24.2237 1.87011 24.1768 1.82322C24.1299 1.77634 24.0663 1.75 24 1.75H2C1.9337 1.75 1.87011 1.77634 1.82322 1.82322C1.77634 1.87011 1.75 1.9337 1.75 2V18C1.75 18.0663 1.77634 18.1299 1.82322 18.1768C1.87011 18.2237 1.9337 18.25 2 18.25H17.25ZM24.25 16.1112C23.3942 16.5315 22.4534 16.75 21.5 16.75C20.5466 16.75 19.6058 16.5315 18.75 16.1112V21.7075L21.125 20.3487C21.239 20.2829 21.3683 20.2483 21.5 20.2483C21.6317 20.2483 21.761 20.2829 21.875 20.3487L24.25 21.7075V16.1112Z"
+                                fill="white" />
+                        </svg>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-item" onclick="handleClick('historico.html')">
+            <div class="circle-container">
+                <div class="outer-circle">
+                    <div class="inner-circle">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M14.6666 10.6666V17.3333H21.3333" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="quizPopup" class="popup hidden">
+        <div class="pop-up">
+
+        </div>
+        <div class="popup-content">
+            <div class="quiz-title">
+                <h2>Quiz</h2>
+                <span class="close-btn" id="closeQuiz">&times;</span>
+            </div>
+            <div class="quest-container">
+                <div id="remainingQuestions" class="remaining-questions"></div>
+                <div id="quizContainer"></div>
+                <button id="nextQuestion">Next</button>
+                <button id="showResult" class="hidden">Show Result</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/JS/dashbord.js"></script>
+<script src="/LIB/splide.min.js"></script>
+<script src="/JS/certificados.js"></script>
+<script src="/JS/main.js"></script>
+<script src="/JS/popup.js"></script>
+
+
+
+</html>
