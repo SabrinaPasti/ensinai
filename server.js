@@ -163,6 +163,7 @@ app.get('/:id/cursos', async (req, res) => {
                 .select('*')
                 .eq('id_curso', curso.id_curso);
 
+                console.log(aulas)
             if (aulasError) {
                 console.error('Erro ao buscar aulas:', aulasError);
                 return [];
@@ -170,8 +171,10 @@ app.get('/:id/cursos', async (req, res) => {
             return aulas;
         }));
 
-        
-        res.render('telaListagemCursos', { cursos, aulas, id_aluno });
+        const aulasFlated = aulas.flat(); // Isso cria um array plano com todas as aulas.
+res.render('telaListagemCursos', { cursos, aulas: aulasFlated, id_aluno });
+
+  
     } catch (error) {
         console.error('Erro inesperado:', error);
         res.status(500).send('Erro interno do servidor.');
@@ -313,11 +316,40 @@ app.post('/concluir-aula/:idAula', async (req, res) => {
     }
 });
 
-app.get('/:id/historico', (req, res) => {
-    const id_aluno = parseInt(req.params.id);        // ID do aluno
+app.get('/:id/historico/', async (req, res) => {
+    try {
+        const id_aluno = parseInt(req.params.id);
 
-    res.render('historico', { id_aluno });
+        // Busca as atividades
+        const { data: atividades, error } = await supabase
+            .from('atividades')
+            .select('*')
+            .eq('id_aluno', id_aluno);
 
+        if (error) {
+            console.error('Erro ao buscar atividades:', error);
+            return res.status(500).send('Erro ao buscar atividades.');
+        }
+
+        // Processa as URLs para download
+        const supabaseUrl = "https://pdetagxchsstgsebwiky.supabase.co"; // URL base do seu Supabase
+        const atividadesComUrls = atividades.map(atv => ({
+            ...atv,
+            arquivoUrl: `${supabaseUrl}/storage/v1/object/public/ARQUIVOS/atividades/${atv.arquivo}`
+        }));
+
+        // Filtra as atividades por status
+        const pendentes = atividadesComUrls.filter(atv => atv.status === 'pendente');
+        const vencidas = atividadesComUrls.filter(atv => atv.status === 'vencida');
+        const entregues = atividadesComUrls.filter(atv => atv.status === 'entregue');
+
+        // Renderiza o EJS com os dados
+        res.render('historico', { pendentes, vencidas, entregues });
+
+    } catch (err) {
+        console.error('Erro inesperado:', err);
+        res.status(500).send('Erro interno do servidor.');
+    }
 });
 
 

@@ -3,11 +3,21 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background-color: #ff8d4779;
+    background-color: #e66f2679;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #090830;
+    background-color: orange;
+}
+
+*
+
+/* Cor do polegar e do trilho */
+* {
+    scrollbar-color: #FF8E47 transparent;
+    /* Polegar laranja, trilho transparente */
+    scrollbar-width: thin;
+    /* Polegar fino */
 }
 
 /* Menu */
@@ -20,7 +30,6 @@ aside {
     position: sticky;
     background-color: #FF8E47;
     display: flex;
-    width: 280px;
     height: 92vh;
     border-radius: 1.8rem;
 }

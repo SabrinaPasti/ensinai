@@ -1,5 +1,11 @@
 /* Meus Cursos */
 
+body {
+  overflow: hidden;
+}
+
+
+
 .listagem-cursos {
   width: 100%;
 }
@@ -60,6 +66,13 @@
   font-size: 1.4rem;
   line-height: 1.9rem;
   margin-top: 1rem;
+  width: 180px;
+  height: 95px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .box-ultimas-aulas .splide__slide div {
@@ -67,6 +80,7 @@
   padding: 2rem 1.6rem;
   border-top-left-radius: 1.3rem;
   border-top-right-radius: 1.3rem;
+  height: 165px;
 }
 
 .box-ultimas-aulas .splide__slide a {
@@ -150,6 +164,14 @@
   padding-right: 2rem;
   width: 100%;
   max-width: 729px;
+  animation: fadeRight 1s forwards
+}
+
+.curso-over {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 92vh
 }
 
 .curso-principal img {
@@ -192,25 +214,47 @@
   padding: 1.9rem 2.1rem;
   border-radius: 1.8rem;
   max-width: 28.3rem;
+  height: 146.2px;
+  width: 289px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mais-cursos .card:nth-child(1) {
+  animation: fadeRight 2s forwards;
 }
 
 .mais-cursos .card:nth-child(2) {
   background-color: #FFB17F;
+  animation: fadeRight 3s forwards;
 }
 
 .mais-cursos .card:nth-child(3) {
   background-color: #FF8E47;
+  animation: fadeRight 4s forwards;
 }
 
 .mais-cursos .card:not(:last-child) {
   margin-bottom: 1.8rem;
 }
 
-.mais-cursos .card h4 {
+.mais-cursos .card h2 {
   font-size: 2rem;
   line-height: 2.6rem;
   color: #090830;
   margin-bottom: .8rem;
+  height: 52px;
+  width: 241px;
+}
+
+.texto-curto {
+  width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  border: 1px solid #ccc;
+  padding: 5px;
 }
 
 .mais-cursos .card a {
@@ -220,6 +264,7 @@
   padding: 1.8rem 2.2rem;
   border-radius: 50px;
   max-width: 12.2rem;
+
 }
 
 /* Responsivo Desktop */
@@ -230,6 +275,8 @@
     align-items: unset;
     gap: 2rem;
   }
+
+
 
   .box-ultimas-aulas .slide__aulas .splide__arrows .splide__arrow {
     top: 50%;
@@ -283,7 +330,13 @@
     width: 3.2rem;
   }
 
-  .box-ultimas-aulas {}
+  .curso-over {
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    height: 100%;
+
+  }
 
 
 
@@ -333,6 +386,8 @@
   body,
   html {
     padding-bottom: 3rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
 
   }
 
@@ -372,7 +427,7 @@
     transform: translateX(-50%);
   }
 
-    .listagem-cursos-content{
+  .listagem-cursos-content {
     padding-left: 3rem;
   }
 
@@ -380,4 +435,55 @@
   .box-ultimas-aulas>div>p {
     max-width: none
   }
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes fadeLeftBlur {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+    filter: blur(10px);
+  }
+
+  50% {
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+
+  }
+}
+
+
+.fade-left {
+  opacity: 0;
+  animation: fadeLeftBlur ease-in-out forwards;
+}
+
+.delay-1s {
+  animation-duration: 1s;
+}
+
+.delay-2s {
+  animation-duration: 2s;
+}
+
+.delay-3s {
+  animation-duration: 3s;
 }

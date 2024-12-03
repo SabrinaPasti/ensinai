@@ -89,7 +89,14 @@
     line-height: 1.9rem;
     font-weight: 500;
     max-width: 29.5rem;
+    padding-top: 1rem;
     margin-bottom: 1.6rem;
+    height: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .listagem-card img{

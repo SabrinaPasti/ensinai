@@ -3,6 +3,7 @@ body {
     max-width: 1360px;
     width: 90%;
     margin: 0 auto;
+    overflow: hidden;
 
 }
 
@@ -26,6 +27,8 @@ body {
     font-weight: 400;
 }
 
+
+
 .profile {
     display: flex;
 }
@@ -35,6 +38,14 @@ body {
     object-fit: cover;
     background-color: #FFF1E9;
     padding: 2rem;
+}
+
+#scroll-bala {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 92vh;
 }
 
 .profile div {
@@ -101,6 +112,7 @@ body {
 
 .certificados {
     margin-top: 2.5rem;
+    margin-left: 2rem;
     /*display: flex;*/
 }
 
@@ -272,16 +284,20 @@ article .notifications .notifications-content.open {
         width: 100%;
         overflow: auto;
     }
-    .content-certificados{
+
+    .content-certificados {
         max-width: 100%;
     }
-    .main-certificados{
+
+    .main-certificados {
         padding-bottom: 8rem;
     }
-    .profile img{
+
+    .profile img {
         padding: 0px;
     }
-        .profile img:first-child {
-            width: 30%;
-        }
+
+    .profile img:first-child {
+        width: 30%;
+    }
 }

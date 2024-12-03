@@ -7,6 +7,7 @@
 .wid {
   display: flex;
   height: 88vh;
+  overflow-y: scroll;
 }
 
 
@@ -127,6 +128,12 @@
   .header-todo{
     padding-right: 0px;
   }
+
+    .wid {
+      display: flex;
+      height: 88vh;
+      overflow-y: hidden
+    }
 }
 
 @keyframes fadeLeft {

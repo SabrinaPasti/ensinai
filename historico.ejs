@@ -295,91 +295,82 @@
 
         <div class="wid">
             <div class="colu-wid">
+                <!-- Atividades Pendentes -->
                 <div class="widget4">
                     <div class="widget4-header" style="padding-top: 1.5rem; padding-bottom: 1rem;">
                         <h1>Atividades Pendentes</h1>
                         <p>Ver Todas</p>
                     </div>
-                    <div class="widget4-container" style="background-color: #ffefc4">
-                        <div class="widget4-square" style="background-color: #ffe399;">
-                            <p>.pdf</p>
-                        </div>
-                        <div class="widget4-container2">
-                            <p>Aula 04 - Como aprender JavaScript</p>
-                            <p class="mb">48mb</p>
-                        </div>
-                    </div>
-                    <div class="widget4-container" style="background-color: #ffefc4">
-                        <div class="widget4-square" style="background-color: #ffe399;">
-                            <p>doc</p>
-                        </div>
-                        <div class="widget4-container2">
-                            <p>Aula 03 - Como aprender JavaScript</p>
-                            <p class="mb">52mb</p>
-                        </div>
-                    </div>
-                    <div class="widget4-container" style="background-color: #ffefc4;">
-                        <div class="widget4-square" style="background-color: #ffe399;">
-                            <p>doc</p>
-                        </div>
-                        <div class="widget4-container2">
-                            <p>Aula 03 - Como aprender JavaScript</p>
-                            <p class="mb">52mb</p>
-                        </div>
-                    </div>
+                    <% if (pendentes.length > 0) { %>
+                        <% pendentes.forEach(atv => { %>
+                            <div class="widget4-container" style="background-color: #ffefc4;">
+                                <div class="widget4-square" style="background-color: #ffe399;">
+                                    <p><%= atv.arquivo.split('.').pop().toUpperCase() %></p>
+                                </div>
+                                <a href="<%= atv.arquivoUrl %>" download>
+                                    <div class="widget4-container2">
+                                        <p><%= atv.titulo %></p>
+                                        <p class="mb"><%= atv.tamanho_arquivo || 'N/A' %></p>
+                                    </div>
+                                </a>
+                            </div>
+                        <% }); %>
+                    <% } else { %>
+                        <p>Não há atividades pendentes.</p>
+                    <% } %>
                 </div>
+            
+                <!-- Atividades Vencidas -->
                 <div class="widget4">
                     <div class="widget4-header" style="padding-top: 1.5rem; padding-bottom: 1rem;">
                         <h1>Atividades Vencidas</h1>
                         <p>Ver Todas</p>
                     </div>
-                    <div class="widget4-container" style="background-color: #ffdfde;">
-                        <div class="widget4-square" style="background-color: #ff8680;">
-                            <p style="color: #FF0000;">.pdf</p>
-                        </div>
-                        <div class="widget4-container2">
-                            <p>Aula 04 - Como aprender JavaScript</p>
-                            <p class="mb">48mb</p>
-                        </div>
-                    </div>
-                    <div class="widget4-container" style="background-color: #ffdfde;">
-                        <div class="widget4-square" style="background-color: #ff8680">
-                            <p style="color: #FF0000;">doc</p>
-                        </div>
-                        <div class="widget4-container2">
-                            <p>Aula 03 - Como aprender JavaScript</p>
-                            <p class="mb">52mb</p>
-                        </div>
-                    </div>
+                    <% if (vencidas.length > 0) { %>
+                        <% vencidas.forEach(atv => { %>
+                            <div class="widget4-container" style="background-color: #ffdfde;">
+                                <div class="widget4-square" style="background-color: #ff8680;">
+                                    <p style="color: #FF0000;"><%= atv.arquivo.split('.').pop().toUpperCase() %></p>
+                                </div>
+                                <a href="<%= atv.arquivoUrl %>" download>
+                                    <div class="widget4-container2">
+                                        <p><%= atv.titulo %></p>
+                                        <p class="mb"><%= atv.tamanho_arquivo || 'N/A' %></p>
+                                    </div>
+                                </a>
+                            </div>
+                        <% }); %>
+                    <% } else { %>
+                        <p>Não há atividades vencidas.</p>
+                    <% } %>
                 </div>
+            
+                <!-- Atividades Entregues -->
                 <div class="widget4">
                     <div class="widget4-header" style="padding-top: 1.5rem; padding-bottom: 1rem;">
                         <h1>Atividades Entregues</h1>
                         <p>Ver Todas</p>
                     </div>
-                    <div class="widget4-container" style="background-color: #c3efce;">
-                        <div class="widget4-square" style="background-color: #6dd787;">
-                            <p style="color: #186E2E;">.pdf</p>
-                        </div>
-                        <div class="widget4-container2">
-                            <p>Aula 04 - Como aprender JavaScript</p>
-                            <p class="mb">48mb</p>
-                        </div>
-                    </div>
-                    <div class="widget4-container" style="background-color: #c3efce;">
-                        <div class="widget4-square" style="background-color: #6dd787;">
-                            <p style="color: #186E2E;">doc</p>
-                        </div>
-                        <div class="widget4-container2">
-                            <p>Aula 03 - Como aprender JavaScript</p>
-                            <p class="mb">52mb</p>
-                        </div>
-                    </div>
+                    <% if (entregues.length > 0) { %>
+                        <% entregues.forEach(atv => { %>
+                            <div class="widget4-container" style="background-color: #c3efce;">
+                                <div class="widget4-square" style="background-color: #6dd787;">
+                                    <p style="color: #186E2E;"><%= atv.arquivo.split('.').pop().toUpperCase() %></p>
+                                </div>
+                                <a href="<%= atv.arquivoUrl %>" download>
+                                    <div class="widget4-container2">
+                                        <p><%= atv.titulo %></p>
+                                        <p class="mb"><%= atv.tamanho_arquivo || 'N/A' %></p>
+                                    </div>
+                                </a>
+                            </div>
+                        <% }); %>
+                    <% } else { %>
+                        <p>Não há atividades entregues.</p>
+                    <% } %>
                 </div>
             </div>
-
-
-
+            
             <div class="container">
                 <div class="header-todo">
                     Minhas Anotaçoes
@@ -393,6 +384,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="saved-notes"></div>
 
         </div>
