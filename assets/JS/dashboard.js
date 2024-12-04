@@ -108,56 +108,11 @@ function atualizarCores() {
 
   graphWrappers.forEach((graph, index) => {
     if (index === diaDaSemana) {
-      graph.style.backgroundColor = "#FF8E47";
+      graph.style.backgroundColor = "#055FCF";
     } else {
-      graph.style.backgroundColor = "#FFF1E9";
+      graph.style.backgroundColor = "#d9edfa";
     }
   });
 }
 
 atualizarCores();
-
-// const maxTimeInMinutes = 8 * 60;
-// const maxHeight = 164;
-
-// function carregarTempo() {
-//   fetch("/obter-tempo-cursos")
-//     .then((response) => response.json())
-//     .then((data) => {
-//       const timeSpent = data.timeSpent || 0;
-//       const percentage = Math.min((timeSpent / maxTimeInMinutes) * 100, 100);
-//       const targetHeight = (percentage / 100) * maxHeight;
-
-//       const bars = document.querySelectorAll(".graphs");
-//       bars.forEach((bar) => {
-//         bar.style.setProperty("--target-height", `${targetHeight}px`);
-//       });
-//     })
-//     .catch((error) => {
-//       console.error("Erro ao carregar o tempo:", error);
-//     });
-// }
-
-// carregarTempo();
-
-
-
-// app.get("/obter-tempo-cursos", async (req, res) => {
-//   try {
-//     const userId = req.user?.id || "user_placeholder"; // Substitua pelo sistema de autenticação real
-//     const { data, error } = await supabase
-//       .from("user_time")
-//       .select("time_spent")
-//       .eq("user_id", userId)
-//       .single();
-
-//     if (error) {
-//       throw error;
-//     }
-
-//     res.json({ timeSpent: data?.time_spent || 0 });
-//   } catch (err) {
-//     console.error("Erro ao buscar o tempo:", err);
-//     res.status(500).json({ message: "Erro ao buscar o tempo" });
-//   }
-// });

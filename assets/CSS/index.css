@@ -14,7 +14,7 @@ body::-webkit-scrollbar-thumb {
 /* Variáveis globais e estilo geral */
 :root {
   --fundo: rgba(250, 115, 30, 0.4);
-  --cor-primaria: #FF8E47;
+  --cor-primaria: #055fcf;
   --cor-secundaria: purple;
   --amarelo: #E8A346;
   --azul: #090830;
@@ -76,7 +76,7 @@ ol {
 
 input,
 textarea {
-  background: #FDC7A580;
+  background: #d9edfa;
   border: 1px solid #090830;
   padding: 1%;
   border-radius: 10px;
@@ -1055,7 +1055,7 @@ footer img {
 
   100% {
     opacity: 1;
- 
+
     transform: translateY(0);
 
   }
@@ -1065,7 +1065,7 @@ footer img {
 .fade-down {
   opacity: 0;
   transform: translateY(-20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .fade-down.active {
