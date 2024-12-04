@@ -31,7 +31,7 @@
         <img src="/IMG/llogo-certificados.svg" alt="Logomarca">
         <ul>
           <li>
-            <a href="./dashboard">
+            <a href="/<%= aluno.id_aluno %>/dashboard">
               <img src="/IMG/certificados-home.svg" alt="Ícone de menu">
               Dashboard
             </a>
@@ -304,11 +304,6 @@
               <button id="dropdownButton" class="dropdown-btn">
                 Semanal <span class="arrow">&#9662;</span>
               </button>
-              <div id="dropdownContent" class="dropdown-content">
-                <div class="dropdown-option" onclick="fetchData('mensal')">
-                  Mensal
-                </div>
-              </div>
             </div>
           </div>
 
