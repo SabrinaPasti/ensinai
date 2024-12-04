@@ -30,36 +30,36 @@
       <div class="content">
         <img src="/IMG/llogo-certificados.svg" alt="Logomarca">
         <ul>
-            <li>
-                <a href="./dashboard">
-                    <img src="/IMG/certificados-home.svg" alt="Ícone de menu">
-                    Dashboard
-                </a>
-            </li>
-            <li>
-                <a href="./cursos">
-                    <img src="/IMG/menu-book-certificados.svg" alt="Ícone de menu" >
-                    Meus Cursos
-                </a>
-            </li>
-            <li>
-                <a href="./historico">
-                    <img src="/IMG/menu-clock-certificados.svg" >
-                    Histórico
-                </a>
-            </li>
+          <li>
+            <a href="./dashboard">
+              <img src="/IMG/certificados-home.svg" alt="Ícone de menu">
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="/<%= aluno.id_aluno %>/cursos">
+              <img src="/IMG/menu-book-certificados.svg" alt="Ícone de menu">
+              Meus Cursos
+            </a>
+          </li>
+          <li>
+            <a href="/<%= aluno.id_aluno %>/historico">
+              <img src="/IMG/menu-clock-certificados.svg">
+              Histórico
+            </a>
+          </li>
         </ul>
         <ul>
-            <li>
-                <h2>Perfil</h2>
-                <a href="./perfil">
-                    <img src="/IMG/foto-perfil.png" alt="Imagem de perfil">
-                    Certificados
-                    <img src="/IMG/arrow-right-certificados.svg" alt="Seta para direita">
-                </a>
-            </li>
+          <li>
+            <h2>Perfil</h2>
+            <a href="/<%= aluno.id_aluno %>/perfil">
+              <img src="/IMG/foto-perfil.png" alt="Imagem de perfil">
+              Certificados
+              <img src="/IMG/arrow-right-certificados.svg" alt="Seta para direita">
+            </a>
+          </li>
         </ul>
-    </div>
+      </div>
       <div class="setting">
         <ul>
           <li>
@@ -113,8 +113,8 @@
       </div>
     </div>
   </div>
-<!-- Pop-up Faq us -->
-<!-- Pop-up settings -->
+  <!-- Pop-up Faq us -->
+  <!-- Pop-up settings -->
   <div id="popup2" class="hidden">
     <div class="faq-conteiner">
       <div class="faq-title">
@@ -141,7 +141,7 @@
       </div>
     </div>
   </div>
-<!-- Pop-up settings -->
+  <!-- Pop-up settings -->
 
 
 
@@ -288,7 +288,8 @@
 
     <!-- Header da dashbord -->
     <div class="DashHeader">
-      <h1>Olá, <%= aluno.nome %></h1>
+      <h1>Olá, <%= aluno.nome %>
+      </h1>
     </div>
 
     <!-- Os widget da dashbord -->
@@ -449,13 +450,13 @@
           </div>
           <a href="#" style="cursor: pointer;">
             <div class="widget4-container">
-                <div class="widget4-square">
-                  <p>.pdf</p>
-                </div>
-                <div class="widget4-container2">
-                  <p> Aula 04 - Como aprender JavaScript</p>
-                  <p class="mb">48mb</p>
-                </div>
+              <div class="widget4-square">
+                <p>.pdf</p>
+              </div>
+              <div class="widget4-container2">
+                <p> Aula 04 - Como aprender JavaScript</p>
+                <p class="mb">48mb</p>
+              </div>
             </div>
           </a>
 
@@ -509,21 +510,24 @@
     </div>
   </div>
   <div class="bottom-nav">
-    <div class="nav-item active" onclick="handleClick(this)">
-      <div class="circle-container">
-        <div class="outer-circle">
-          <div class="inner-circle">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M11.9786 27.5506H7.59196C5.97596 27.5506 4.66663 26.2413 4.66663 24.6253V16.02C4.66761 15.3931 4.80255 14.7736 5.06239 14.2031C5.32224 13.6326 5.70099 13.1242 6.17329 12.712L14.08 5.82532C14.6124 5.36215 15.2943 5.10706 16 5.10706C16.7056 5.10706 17.3875 5.36215 17.92 5.82532L25.8266 12.7133C26.2988 13.1254 26.6774 13.6336 26.9373 14.2038C27.1971 14.7741 27.3321 15.3933 27.3333 16.02V24.6253C27.3333 25.4009 27.0253 26.1448 26.477 26.6934C25.9286 27.2419 25.1849 27.5503 24.4093 27.5506H20.3866V18.776C20.3866 17.5653 19.4053 16.5826 18.1933 16.5826H14.1733C12.9613 16.5826 11.98 17.5653 11.98 18.776L11.9786 27.5506ZM11.9786 27.5506H20.388"
-                stroke="white" stroke-width="1.5" stroke-linejoin="round" />
-            </svg>
+    <a href="./dashboard">
+      <div class="nav-item active">
+        <div class="circle-container">
+          <div class="outer-circle">
+            <div class="inner-circle">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.9786 27.5506H7.59196C5.97596 27.5506 4.66663 26.2413 4.66663 24.6253V16.02C4.66761 15.3931 4.80255 14.7736 5.06239 14.2031C5.32224 13.6326 5.70099 13.1242 6.17329 12.712L14.08 5.82532C14.6124 5.36215 15.2943 5.10706 16 5.10706C16.7056 5.10706 17.3875 5.36215 17.92 5.82532L25.8266 12.7133C26.2988 13.1254 26.6774 13.6336 26.9373 14.2038C27.1971 14.7741 27.3321 15.3933 27.3333 16.02V24.6253C27.3333 25.4009 27.0253 26.1448 26.477 26.6934C25.9286 27.2419 25.1849 27.5503 24.4093 27.5506H20.3866V18.776C20.3866 17.5653 19.4053 16.5826 18.1933 16.5826H14.1733C12.9613 16.5826 11.98 17.5653 11.98 18.776L11.9786 27.5506ZM11.9786 27.5506H20.388"
+                  stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+              </svg>
 
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="nav-item" onclick="handleClick(this)">
+    </a>
+    <a href="./cursos">
+    <div class="nav-item">
       <div class="circle-container">
         <div class="outer-circle">
           <div class="inner-circle">
@@ -540,7 +544,9 @@
         </div>
       </div>
     </div>
-    <div class="nav-item" onclick="handleClick(this)">
+    </a>
+    <a href="./perfil">
+    <div class="nav-item">
       <div class="circle-container">
         <div class="outer-circle">
           <div class="inner-circle">
@@ -555,7 +561,9 @@
         </div>
       </div>
     </div>
-    <div class="nav-item" onclick="handleClick(this)">
+    </a>
+    <a href="./historico">
+    <div class="nav-item">
       <div class="circle-container">
         <div class="outer-circle">
           <div class="inner-circle">
@@ -573,6 +581,7 @@
         </div>
       </div>
     </div>
+    </a>
   </div>
 </body>
 <script src="/JS/dashboard.js"></script>
