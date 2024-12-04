@@ -16,8 +16,8 @@
     <header class="header-web">
         <nav class="wrapper">
             <div class="logo">
-                <img src="/IMG/ensinaí.svg" >
-                 <!-- <span class="azul">ensin</span><span class="laranja">Aí</span>&#8203; -->
+                <img src="/IMG/ensinaí.svg">
+                <!-- <span class="azul">ensin</span><span class="laranja">Aí</span>&#8203; -->
             </div>
 
             <div class="content">
@@ -29,7 +29,7 @@
                 <div class="botoes">
                     <a href="/esqueci-senha" class="botao-contato">Cadastre-se</a>
                     <a href="/login" class="botao-iniciar">Iniciar Jornada</a>
-                </div>  
+                </div>
             </div>
         </nav>
     </header>
@@ -43,7 +43,8 @@
                     <h1>Decole no aprendizado da sua equipe!</h1>
                     <p>Com nossa plataforma LMS, você cria treinamentos rápidos, práticos e envolventes. Tudo o que sua
                         empresa precisa para alcançar novos horizontes no ensino.</p>
-                    <button class="botao-iniciarjornada" ><a class="botao-iniciarjornada" href="/login">Iniciar Jornada</a>
+                    <button class="botao-iniciarjornada"><a class="botao-iniciarjornada" href="/login">Iniciar
+                            Jornada</a>
                         <img src="./IMG/mdi-light_arrow-up.svg" alt="Seta para cima">
                     </button>
                 </div>
@@ -51,10 +52,26 @@
                     <p class="texto">Aulas objetivas com vídeos <strong>do seu jeito!</strong></p>
                     <div class="video-home">
                         <!-- Aqui vai o vídeo -->
-                         <img src="./IMG/image-thumb-home.png" alt="Thumb Vídeo">
-                        <div class="player-mask">
-                            <img src="./IMG/basil_play-solid.svg" alt="Botão de player">
+                        <div class="video-thumb-container">
+                            <iframe width="929" height="526" src="https://www.youtube.com/embed/8V3NXuIMd_c"
+                                title="Apresentação Ensinai" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video-thumb"
+                                onclick="openVideoModal()">
+                            </iframe>
                         </div>
+
+                        <!-- Modal do vídeo -->
+                        <div id="videoModal" class="video-modal">
+                            <div class="video-content">
+                                <button class="close-btn" onclick="closeVideoModal()">×</button>
+                                <iframe src="https://www.youtube.com/embed/8V3NXuIMd_c" frameborder="0"
+                                    allow="autoplay; encrypted-media" allowfullscreen class="video-player">
+                                </iframe>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -68,7 +85,7 @@
                 <div class="passos">
                     <ul class="fade-right">
                         <span>1</span>
-                        <li >
+                        <li>
                             <strong>Dê o primeiro passo!</strong>
                             <p>Faça seu cadastro rapidinho e já estaremos prontos para ajudar.</p>
                         </li>
@@ -77,14 +94,16 @@
                         <span>2</span>
                         <li>
                             <strong>Conteúdo nas Nossas Mãos</strong>
-                            <p>Entramos em contato com você, você nos envia seus vídeos e lições... e pronto! Cuidamos de tudo.</p>
+                            <p>Entramos em contato com você, você nos envia seus vídeos e lições... e pronto! Cuidamos
+                                de tudo.</p>
                         </li>
                     </ul>
                     <ul class="fade-right">
                         <span>3</span>
                         <li>
                             <strong>Tudo Pronto para decolar!</strong>
-                            <p>Nós cadastramos o conteúdo na plataforma e liberamos o acesso para seus alunos. Agora é só assistir ao sucesso da sua equipe decolar!</p>
+                            <p>Nós cadastramos o conteúdo na plataforma e liberamos o acesso para seus alunos. Agora é
+                                só assistir ao sucesso da sua equipe decolar!</p>
                         </li>
                     </ul>
                 </div>
@@ -96,14 +115,17 @@
             </a>
         </div>
     </section>
-   
+
     <section class="quem-somos" id="quemsomos">
         <div class="wrapper">
             <div class="content fade-down">
                 <h2>Quem somos</h2>
                 <div class="text">
-                    <p>Somos uma empresa nascida do <strong>Instituto da Oportunidade Social (IOS)</strong>, com o objetivo de tornar o aprendizado acessível e eficiente para empresas de todos os tamanhos.</p>
-                    <p>Nossa missão é simplificar o processo de ensino, oferecendo uma plataforma prática e intuitiva, onde sua equipe pode adquirir conhecimento de forma rápida, dinâmica e adaptada às suas necessidades. </p>
+                    <p>Somos uma empresa nascida do <strong>Instituto da Oportunidade Social (IOS)</strong>, com o
+                        objetivo de tornar o aprendizado acessível e eficiente para empresas de todos os tamanhos.</p>
+                    <p>Nossa missão é simplificar o processo de ensino, oferecendo uma plataforma prática e intuitiva,
+                        onde sua equipe pode adquirir conhecimento de forma rápida, dinâmica e adaptada às suas
+                        necessidades. </p>
                 </div>
                 <div class="box-content">
                     <h3>Educação com respeito, inclusão e transformação</h3>
@@ -130,7 +152,7 @@
                                 <div class="box-texto">
                                     <div class="pic-texto">
                                         <figcaption>Sabrina Pasti</figcaption>
-                                        <p>Designer, Líder e Programadora Front-end</p>  
+                                        <p>Designer, Líder e Programadora Front-end</p>
                                         <div class="text">
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, adipisci.
                                         </div>
@@ -145,7 +167,7 @@
                                 <div class="box-texto">
                                     <div class="pic-texto">
                                         <figcaption>Maria Eduarda</figcaption>
-                                        <p>Programadora Back-end</p>  
+                                        <p>Programadora Back-end</p>
                                         <div class="text">
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, adipisci.
                                         </div>
@@ -160,7 +182,7 @@
                                 <div class="box-texto">
                                     <div class="pic-texto">
                                         <figcaption>Carlos</figcaption>
-                                        <p>Programador Front-end</p>  
+                                        <p>Programador Front-end</p>
                                         <div class="text">
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, adipisci.
                                         </div>
@@ -175,7 +197,7 @@
                                 <div class="box-texto">
                                     <div class="pic-texto">
                                         <figcaption>Sabrina Pasti</figcaption>
-                                        <p>Designer, Líder e Programadora</p>  
+                                        <p>Designer, Líder e Programadora</p>
                                         <div class="text">
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, adipisci.
                                         </div>
@@ -190,7 +212,7 @@
                                 <div class="box-texto">
                                     <div class="pic-texto">
                                         <figcaption>Sabrina Pasti</figcaption>
-                                        <p>Designer, Líder e Programadora</p>  
+                                        <p>Designer, Líder e Programadora</p>
                                         <div class="text">
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, adipisci.
                                         </div>
@@ -209,7 +231,8 @@
         <form action="" class="form-home">
             <div class="wrapper">
                 <h2>Entre em Contato com a Gente!</h2>
-                <p>Tem alguma dúvida ou quer saber mais sobre como nossa plataforma pode ajudar sua empresa a decolar no aprendizado? Estamos aqui para te ajudar!</p>
+                <p>Tem alguma dúvida ou quer saber mais sobre como nossa plataforma pode ajudar sua empresa a decolar no
+                    aprendizado? Estamos aqui para te ajudar!</p>
                 <div class="campos">
                     <input type="text" placeholder="Nome:">
                     <input type="text" placeholder="E-mail:">
@@ -224,9 +247,9 @@
         <div class="wrapper">
             <img src="./IMG/logo.svg" alt="" class="logo-footer">
             <p><strong>Pronto para decolar no aprendizado?</strong> Junte-se a nós e transforme o ensino na sua empresa!
-            &copy; Ensinai Todos os direitos reservados</p>
+                &copy; Ensinai Todos os direitos reservados</p>
         </div>
-        
+
     </footer>
 
 </body>
