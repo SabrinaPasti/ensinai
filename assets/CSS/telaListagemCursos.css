@@ -250,11 +250,15 @@ body {
 
 .texto-curto {
   width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   border: 1px solid #ccc;
   padding: 5px;
+}
+
+.widget4-container2{
+  flex-direction: column;
 }
 
 .mais-cursos .card a {
