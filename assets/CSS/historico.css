@@ -134,15 +134,19 @@
     width: 342px;
     height: 393px;
   }
-  .header-todo{
+
+  .header-todo {
     padding-right: 0px;
   }
 
-    .wid {
-      display: flex;
-      height: 88vh;
-      overflow-y: hidden
-    }
+  .wid {
+    display: flex;
+    height: 88vh;
+  }
+
+  .widget4-container2 p {
+    width: 222px;
+  }
 }
 
 @keyframes fadeLeft {
