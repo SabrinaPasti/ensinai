@@ -13,7 +13,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Variáveis globais e estilo geral */
 :root {
-  --fundo: rgba(250, 115, 30, 0.4);
+  --fundo: #9ec6ee;
   --cor-primaria: #055fcf;
   --cor-secundaria: purple;
   --amarelo: #E8A346;
@@ -606,7 +606,6 @@ nav {
   border-radius: 16px;
   padding: 1.8rem 2.8rem;
   font-size: 1.8rem;
-  background: #FDC7A580;
   border: 1px solid #090830;
   color: var(--azul);
   margin-top: 1.5rem;

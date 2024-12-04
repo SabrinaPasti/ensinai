@@ -6,7 +6,7 @@ body {
   width: 100%;
   overflow-x: hidden !important;
   font-family: "Instrument Sans";
-  background: linear-gradient(to right, white 50%, #fdc7a5 50%);
+  background: linear-gradient(to right, white 50%, #9ec6ee 50%);
   margin: 0;
   padding: 0;
   z-index: -1;
@@ -80,7 +80,7 @@ body {
 }
 
 #ai {
-  color: orange;
+  color: #a5e1fd;
 }
 
 #img1 {
@@ -130,9 +130,9 @@ button {
   margin-top: 20px;
   width: 324px;
   height: 56px;
-  background: #fa731e;
+  background: #055fcf;
   border-radius: 70px;
-  background: #fa731e;
+  background: #055fcf;
   border-radius: 70px;
   font-size: 18px;
   color: white;
@@ -170,6 +170,8 @@ button {
     max-height: none;
     overflow: hidden !important;
   }
+
+
 
   #logo {
     width: 160px;
