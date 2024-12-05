@@ -266,7 +266,7 @@ app.get("/:id/:idcurso/:idaula/interna-aula", async (req, res) => {
       // Retorna a página de erro
       return res
         .status(500)
-        .sendFile(path.join(__dirname, "public", "erro.html"));
+        .sendFile(path.join(__dirname, "public", "/erro.html"));
     }
 
     if (!aula) {
@@ -357,6 +357,25 @@ app.get("/:id/historico/", async (req, res) => {
     res.status(500).send("Erro interno do servidor.");
   }
 });
+
+// Middleware para tratar erros
+app.use((err, req, res, next) => {
+  console.error(err.stack); // Log do erro no console
+  res.status(err.status || 500);
+  res.render("error", { message: err.message || "Erro interno do servidor" });
+});
+
+// Middleware para tratar erros
+app.use((err, req, res, next) => {
+  console.error(err.stack); // Log do erro no console
+  res.status(err.status || 500).sendFile(path.join(__dirname, "public", "error.html"));
+});
+
+// Middleware para rotas não encontradas
+app.use((req, res) => {
+  res.status(404).sendFile(path.join(__dirname, "public", "erro.html"));
+});
+
 
 // Iniciar o servidor
 const PORT = process.env.PORT || 3000;
