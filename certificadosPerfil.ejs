@@ -287,156 +287,158 @@
                     </div>
                 </article>
             </div>
-            <section class="meu-perfil">
-                <h1>Meu Perfil</h1>
-                <div class="profile">
-                    <img src="/IMG/foto-perfil.png" alt="Foto de perfil">
-                    <div>
-                        <span>
-                            <%= aluno.nome %>
-                        </span>
-                        <p>Aprenda no seu ritmo, onde e quando quiser. Cursos interativos, conteúdo de qualidade e
-                            certificação para levar sua carreira e habilidades ao próximo nível. 🌱</p>
-                        <a href="">
-                            <img src="/IMG/weui_email-outlined.svg" alt="Ícone de email">
-                            <%= aluno.email %>
-                        </a>
+            <div class="wid2">
+                <section class="meu-perfil">
+                    <h1>Meu Perfil</h1>
+                    <div class="profile">
+                        <img src="/IMG/foto-perfil.png" alt="Foto de perfil">
+                        <div>
+                            <span>
+                                <%= aluno.nome %>
+                            </span>
+                            <p>Aprenda no seu ritmo, onde e quando quiser. Cursos interativos, conteúdo de qualidade e
+                                certificação para levar sua carreira e habilidades ao próximo nível. 🌱</p>
+                            <a href="">
+                                <img src="/IMG/weui_email-outlined.svg" alt="Ícone de email">
+                                <%= aluno.email %>
+                            </a>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="dashboard-certificados">
-                <div class="widget">
-                    <div class="activy-border">
-                        <div class="activy-header">
-                            <h3>Tempo de Atividade</h3>
-                            <div class="dropdown">
-                                <button id="dropdownButton" class="dropdown-btn">
-                                    Semanal <span class="arrow">&#9662;</span>
-                                </button>
-                                <div id="dropdownContent" class="dropdown-content">
-                                    <div class="dropdown-option" onclick="fetchData('mensal')">Mensal</div>
+                <section class="dashboard-certificados">
+                    <div class="widget">
+                        <div class="activy-border">
+                            <div class="activy-header">
+                                <h3>Tempo de Atividade</h3>
+                                <div class="dropdown">
+                                    <button id="dropdownButton" class="dropdown-btn">
+                                        Semanal <span class="arrow">&#9662;</span>
+                                    </button>
+                                    <div id="dropdownContent" class="dropdown-content">
+                                        <div class="dropdown-option" onclick="fetchData('mensal')">Mensal</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- grafico -->
+                            <div class="activy-container">
+                                <div class="time-container">
+                                    <div class="number-container">
+                                        <p>8h</p>
+                                        <p>6h</p>
+                                        <p>4h</p>
+                                        <p>2h</p>
+                                        <p>0h</p>
+                                    </div>
+                                </div>
+                                <div id="graphs-container">
+                                    <div class="graph-wrapper">
+                                        <div class="graphs"></div>
+                                        <p>Dom</p>
+                                    </div>
+                                    <div class="graph-wrapper">
+                                        <div class="graphs"></div>
+                                        <p>Seg</p>
+                                    </div>
+                                    <div class="graph-wrapper">
+                                        <div class="graphs"></div>
+                                        <p>Ter</p>
+                                    </div>
+                                    <div class="graph-wrapper">
+                                        <div class="graphs"></div>
+                                        <p>Qua</p>
+                                    </div>
+                                    <div class="graph-wrapper">
+                                        <div class="graphs"></div>
+                                        <p>Qui</p>
+                                    </div>
+                                    <div class="graph-wrapper">
+                                        <div class="graphs"></div>
+                                        <p>Sex</p>
+                                    </div>
+                                    <div class="graph-wrapper">
+                                        <div class="graphs"></div>
+                                        <p>Sab</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- grafico -->
-                        <div class="activy-container">
-                            <div class="time-container">
-                                <div class="number-container">
-                                    <p>8h</p>
-                                    <p>6h</p>
-                                    <p>4h</p>
-                                    <p>2h</p>
-                                    <p>0h</p>
-                                </div>
-                            </div>
-                            <div id="graphs-container">
-                                <div class="graph-wrapper">
-                                    <div class="graphs"></div>
-                                    <p>Dom</p>
-                                </div>
-                                <div class="graph-wrapper">
-                                    <div class="graphs"></div>
-                                    <p>Seg</p>
-                                </div>
-                                <div class="graph-wrapper">
-                                    <div class="graphs"></div>
-                                    <p>Ter</p>
-                                </div>
-                                <div class="graph-wrapper">
-                                    <div class="graphs"></div>
-                                    <p>Qua</p>
-                                </div>
-                                <div class="graph-wrapper">
-                                    <div class="graphs"></div>
-                                    <p>Qui</p>
-                                </div>
-                                <div class="graph-wrapper">
-                                    <div class="graphs"></div>
-                                    <p>Sex</p>
-                                </div>
-                                <div class="graph-wrapper">
-                                    <div class="graphs"></div>
-                                    <p>Sab</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="certificados splide-certificados splide">
-                <div class="arrow splide__arrows-certificate splide__arrows">
-                    <button class="splide__arrow--prev">
-                        <img src="/IMG/iconamoon_arrow-up-2-left.svg" alt="Seta para o lado esquerdo">
-                    </button>
-                    <button class="splide__arrow--next">
-                        <img src="/IMG/iconamoon_arrow-up-2-light.svg" alt="Seta para o lado direito">
-                    </button>
-                </div>
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <div class="card">
-                                <div class="content">
-                                    <h3>Certificação curso de Desenvolvimento</h3>
-                                    <div>
-                                        <span>10/10</span>
-                                        <p>Módulos</p>
+                <section class="certificados splide-certificados splide">
+                    <div class="arrow splide__arrows-certificate splide__arrows">
+                        <button class="splide__arrow--prev">
+                            <img src="/IMG/iconamoon_arrow-up-2-left.svg" alt="Seta para o lado esquerdo">
+                        </button>
+                        <button class="splide__arrow--next">
+                            <img src="/IMG/iconamoon_arrow-up-2-light.svg" alt="Seta para o lado direito">
+                        </button>
+                    </div>
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="card">
+                                    <div class="content">
+                                        <h3>Certificação curso de Desenvolvimento</h3>
+                                        <div>
+                                            <span>10/10</span>
+                                            <p>Módulos</p>
+                                        </div>
                                     </div>
+                                    <a href="">Emitir certificado
+                                        <img src="/IMG/arrow-certificados.svg" alt="Seta para cima">
+                                    </a>
                                 </div>
-                                <a href="">Emitir certificado
-                                    <img src="/IMG/arrow-certificados.svg" alt="Seta para cima">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="card">
-                                <div class="content">
-                                    <h3>Certificação curso de Desenvolvimento</h3>
-                                    <div>
-                                        <span>08/10</span>
-                                        <p>Módulos</p>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="card">
+                                    <div class="content">
+                                        <h3>Certificação curso de Desenvolvimento</h3>
+                                        <div>
+                                            <span>08/10</span>
+                                            <p>Módulos</p>
+                                        </div>
                                     </div>
+                                    <a href="">Continuar Progresso
+                                        <img src="/IMG/arrow-certificados.svg" alt="Seta para cima">
+                                    </a>
                                 </div>
-                                <a href="">Continuar Progresso
-                                    <img src="/IMG/arrow-certificados.svg" alt="Seta para cima">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="card">
-                                <div class="content">
-                                    <h3>Certificação curso de Desenvolvimento</h3>
-                                    <div>
-                                        <span>10/10</span>
-                                        <p>Módulos</p>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="card">
+                                    <div class="content">
+                                        <h3>Certificação curso de Desenvolvimento</h3>
+                                        <div>
+                                            <span>10/10</span>
+                                            <p>Módulos</p>
+                                        </div>
                                     </div>
+                                    <a href="">Emitir certificado
+                                        <img src="/IMG/arrow-certificados.svg" alt="Seta para cima">
+                                    </a>
                                 </div>
-                                <a href="">Emitir certificado
-                                    <img src="/IMG/arrow-certificados.svg" alt="Seta para cima">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="card">
-                                <div class="content">
-                                    <h3>Certificação curso de Desenvolvimento</h3>
-                                    <div>
-                                        <span>10/10</span>
-                                        <p>Módulos</p>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="card">
+                                    <div class="content">
+                                        <h3>Certificação curso de Desenvolvimento</h3>
+                                        <div>
+                                            <span>10/10</span>
+                                            <p>Módulos</p>
+                                        </div>
                                     </div>
+                                    <a href="">Emitir certificado
+                                        <img src="/IMG/arrow-certificados.svg" alt="Seta para cima">
+                                    </a>
                                 </div>
-                                <a href="">Emitir certificado
-                                    <img src="/IMG/arrow-certificados.svg" alt="Seta para cima">
-                                </a>
-                            </div>
-                        </li>
+                            </li>
 
-                    </ul>
-                </div>
-            </section>
+                        </ul>
+                    </div>
+                </section>
+            </div>
         </div>
     </main>
     <div class="bottom-nav">

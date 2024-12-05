@@ -81,6 +81,11 @@ body {
     align-items: center;
 }
 
+
+.wid2{
+    overflow-y: scroll;
+    height: 95vh;
+}
 /*  Dashboard */
 
 .dashboard-certificados {
