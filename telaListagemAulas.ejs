@@ -297,99 +297,101 @@
                     </div>
                 </article>
             </div>
-            <div class="listagem-content">
-                <div class="listagem-banner">
-                    <img src="/IMG/banner-listagem.svg" alt="Curso Aula de Javascript">
-                    <ul>
-                        <li><img src="/IMG/mdi_medal-outline.svg" alt="Ícone de Medalha">
-                            <div>Altamente <b>Recomendado</b></div>
-                        </li>
-                        <li><img src="/IMG/mdi_medal-outline (1).svg" alt="Ícone de alunos">
-                            <div>Mais de 50 alunos <b>Concluíram o curso</b></div>
-                        </li>
-                    </ul>
-                    <div class="listagem">
-                        <h2>Módulo 01</h2>
-                        <% aulas.slice(1).forEach(aulas=> { %>
-                            <a href="../<%= curso.id_curso %>/<%= aulas.id_aula %>/interna-aula">
+            <div class="wid4">
+                <div class="listagem-content">
+                    <div class="listagem-banner">
+                        <img src="/IMG/banner-listagem.svg" alt="Curso Aula de Javascript">
+                        <ul>
+                            <li><img src="/IMG/mdi_medal-outline.svg" alt="Ícone de Medalha">
+                                <div>Altamente <b>Recomendado</b></div>
+                            </li>
+                            <li><img src="/IMG/mdi_medal-outline (1).svg" alt="Ícone de alunos">
+                                <div>Mais de 50 alunos <b>Concluíram o curso</b></div>
+                            </li>
+                        </ul>
+                        <div class="listagem">
+                            <h2>Módulo 01</h2>
+                            <% aulas.slice(1).forEach(aulas=> { %>
+                                <a href="../<%= curso.id_curso %>/<%= aulas.id_aula %>/interna-aula">
 
-                                <div class="listagem-card">
-                                    <img src="/IMG/aula.png" alt="Thumb Aula">
-                                    <div class="listagem-text">
-                                        <h2>
-                                            <%= aulas.titulo %>
-                                        </h2>
-                                        <p>
-                                            <%= aulas.conteudo %>
-                                        </p>
-                                        <div class="listagem-status">
-                                            <span>
-                                                <%= aulas.tempo_estimado %>
-                                            </span>
-                                            <span class="status fazer">A fazer</span>
+                                    <div class="listagem-card">
+                                        <img src="/IMG/aula.png" alt="Thumb Aula">
+                                        <div class="listagem-text">
+                                            <h2>
+                                                <%= aulas.titulo %>
+                                            </h2>
+                                            <p>
+                                                <%= aulas.conteudo %>
+                                            </p>
+                                            <div class="listagem-status">
+                                                <span>
+                                                    <%= aulas.tempo_estimado %>
+                                                </span>
+                                                <span class="status fazer">A fazer</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                            <% }); %>
+                                </a>
+                                <% }); %>
 
+                        </div>
                     </div>
-                </div>
-                <div class="listagem-infos">
-                    <!-- calendario -->
-                    <div class="widget2">
-                        <div class="wrapper">
-                            <header>
-                                <p class="current-date"></p>
-                                <div class="icons">
-                                    <span id="prev" class="material-symbols-rounded">chevron_left</span>
-                                    <span id="next" class="material-symbols-rounded">chevron_right</span>
+                    <div class="listagem-infos">
+                        <!-- calendario -->
+                        <div class="widget2">
+                            <div class="wrapper">
+                                <header>
+                                    <p class="current-date"></p>
+                                    <div class="icons">
+                                        <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                                        <span id="next" class="material-symbols-rounded">chevron_right</span>
+                                    </div>
+                                </header>
+                                <div class="calendar">
+                                    <ul class="weeks">
+                                        <li>Dom</li>
+                                        <li>Seg</li>
+                                        <li>Ter</li>
+                                        <li>Qua</li>
+                                        <li>Qui</li>
+                                        <li>Sex</li>
+                                        <li>Sab</li>
+                                    </ul>
+                                    <ul class="days"></ul>
                                 </div>
-                            </header>
-                            <div class="calendar">
-                                <ul class="weeks">
-                                    <li>Dom</li>
-                                    <li>Seg</li>
-                                    <li>Ter</li>
-                                    <li>Qua</li>
-                                    <li>Qui</li>
-                                    <li>Sex</li>
-                                    <li>Sab</li>
-                                </ul>
-                                <ul class="days"></ul>
                             </div>
                         </div>
-                    </div>
-                    <!-- blocos de texto start -->
-                    <div class="widget5" style="padding-top: 60px;">
-                        <div class="text-block1">
-                            <div class="text-container1">
-                                <h1>Atualize sua identidade!</h1>
-                                <p>
-                                    Gerencie suas informações e preferências de aprendizagem para
-                                    uma experiência personalizada.
-                                </p>
+                        <!-- blocos de texto start -->
+                        <div class="widget5" style="padding-top: 60px;">
+                            <div class="text-block1">
+                                <div class="text-container1">
+                                    <h1>Atualize sua identidade!</h1>
+                                    <p>
+                                        Gerencie suas informações e preferências de aprendizagem para
+                                        uma experiência personalizada.
+                                    </p>
+                                </div>
+                                <img src="/IMG/perfil2.png" />
                             </div>
-                            <img src="/IMG/perfil2.png" />
-                        </div>
-                        <div class="text-block2">
-                            <div class="text-container2">
-                                <h1>Aperfeiçoe suas habilidades!</h1>
-                                <p>
-                                    Confira a lista completa dos cursos que você está realizando e progrida na sua
-                                    jornada de aprendizado.
-                                </p>
+                            <div class="text-block2">
+                                <div class="text-container2">
+                                    <h1>Aperfeiçoe suas habilidades!</h1>
+                                    <p>
+                                        Confira a lista completa dos cursos que você está realizando e progrida na sua
+                                        jornada de aprendizado.
+                                    </p>
+                                </div>
+                                <img src="/IMG/Livro.png" alt="" />
                             </div>
-                            <img src="/IMG/Livro.png" alt="" />
-                        </div>
-                        <div class="text-block3">
-                            <div class="text-container3">
-                                <h1>Conquiste seu conhecimento!</h1>
-                                <p>
-                                    Acesse e baixe todos os seus certificados em um só lugar.
-                                </p>
+                            <div class="text-block3">
+                                <div class="text-container3">
+                                    <h1>Conquiste seu conhecimento!</h1>
+                                    <p>
+                                        Acesse e baixe todos os seus certificados em um só lugar.
+                                    </p>
+                                </div>
+                                <img src="/IMG/Chapeu.png" alt="" />
                             </div>
-                            <img src="/IMG/Chapeu.png" alt="" />
                         </div>
                     </div>
                 </div>

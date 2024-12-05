@@ -66,6 +66,11 @@ h1{
     white-space: nowrap;
 }
 
+.wid55{
+    overflow-y: scroll;
+    height: 95vh;
+}
+
 .container-aula .container-aula__descricao h2{
     font-size: 2rem;
     color: #090830;

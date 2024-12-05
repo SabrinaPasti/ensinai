@@ -99,6 +99,13 @@
     -webkit-box-orient: vertical;
 }
 
+
+.wid4{
+    overflow-y: scroll;
+    height: 90vh;
+    overflow-x: hidden;
+}
+
 .listagem-card img{
     margin-right: 2rem;
 }
@@ -245,6 +252,13 @@
         width: 80%;
         margin-bottom: 2rem;
     }
+
+
+        .wid4 {
+            overflow-y: auto;
+            height: 90vh;
+            overflow-x: hidden;
+        }
     .widget5{
         padding: 1rem;
     }
