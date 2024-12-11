@@ -378,63 +378,41 @@
                     </div>
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <li class="splide__slide">
-                                <div class="card">
-                                    <div class="content">
-                                        <h3>Certificação curso de Desenvolvimento</h3>
-                                        <div>
-                                            <span>10/10</span>
-                                            <p>Módulos</p>
-                                        </div>
-                                    </div>
-                                    <a href="">Emitir certificado
-                                        <img src="/IMG/arrow-certificados.svg" alt="Seta para cima">
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="card">
-                                    <div class="content">
-                                        <h3>Certificação curso de Desenvolvimento</h3>
-                                        <div>
-                                            <span>08/10</span>
-                                            <p>Módulos</p>
-                                        </div>
-                                    </div>
-                                    <a href="">Continuar Progresso
-                                        <img src="/IMG/arrow-certificados.svg" alt="Seta para cima">
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="card">
-                                    <div class="content">
-                                        <h3>Certificação curso de Desenvolvimento</h3>
-                                        <div>
-                                            <span>10/10</span>
-                                            <p>Módulos</p>
-                                        </div>
-                                    </div>
-                                    <a href="">Emitir certificado
-                                        <img src="/IMG/arrow-certificados.svg" alt="Seta para cima">
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="card">
-                                    <div class="content">
-                                        <h3>Certificação curso de Desenvolvimento</h3>
-                                        <div>
-                                            <span>10/10</span>
-                                            <p>Módulos</p>
-                                        </div>
-                                    </div>
-                                    <a href="">Emitir certificado
-                                        <img src="/IMG/arrow-certificados.svg" alt="Seta para cima">
-                                    </a>
-                                </div>
-                            </li>
+                            <% if (cursos && cursos.length > 0) { %>
+                                <% cursos.forEach(curso => { %>
 
+                            <li class="splide__slide">
+                                <div class="card">
+                                    <div class="content">
+                                        <h3><%= curso.cursos.nome_curso %></h3>
+                                    </h3>
+                                        <div>
+                                            <span>10/10</span>
+                                            <p>Módulos</p>
+                                        </div>
+                                    </div>
+                                    <a href="<%= curso.cursos.certificado_url && curso.cursos.certificado_url.startsWith('http') 
+                                    ? curso.cursos.certificado_url 
+                                    : curso.cursos.certificado_url 
+                                      ? `https://${curso.cursos.certificado_url}` 
+                                      : '#' %>" 
+                            class="btn btn-primary" 
+                            download="">
+                         
+                            <% if (curso.status) { %>
+                                Emitir Certificado
+                            <% } else { %>
+                                Em andamento
+                            <% } %>
+                            <img src="/IMG/arrow-certificados.svg" alt="Seta para cima">
+                         </a>
+                         
+                                </div>
+                            </li>
+                                <% }); %>
+                              <% } else { %>
+                                <p>O aluno não está cadastrado em nenhum curso.</p>
+                              <% } %> 
                         </ul>
                     </div>
                 </section>

@@ -76,25 +76,43 @@ app.get("/esqueci-senha", (req, res) => {
 app.get("/:id/perfil", async (req, res) => {
   const id_aluno = parseInt(req.params.id);
 
-  // Consulta no Supabase
+  // Consulta do aluno
   const { data: aluno, error: alunoError } = await supabase
     .from("alunos")
     .select("*")
     .eq("id_aluno", id_aluno)
     .single(); // Garante que retorna um único registro
 
-  // Log da consulta
-  console.log("Resposta da consulta aluno:", { aluno, alunoError });
-
-  // Tratamento de erro
   if (alunoError) {
     console.error("Erro ao buscar aluno:", alunoError);
     return res.status(500).send("Erro ao buscar dados do aluno.");
   }
 
-  // Renderiza a página de perfil com os dados do aluno
-  res.render("certificadosPerfil", { aluno });
+  // Consulta dos cursos relacionados ao aluno
+  const { data: cursosRelacionados, error: cursosError , cursoStatus} = await supabase
+    .from("aluno_curso")
+    .select(`
+      id_curso,
+      status,
+    cursos (nome_curso, certificado_url)
+    `)
+    .eq("id_aluno", id_aluno);
+
+  if (cursosError) {
+    console.error("Erro ao buscar cursos:", cursosError);
+    return res.status(500).send("Erro ao buscar cursos do aluno.");
+  }
+
+
+
+  console.log('alunos:', aluno, 'cursos:', cursosRelacionados)
+  // Renderiza a página de perfil com os dados do aluno e cursos
+  res.render("certificadosPerfil", {
+    aluno,
+    cursos: cursosRelacionados, // Cursos com detalhes
+  });
 });
+
 
 app.get("/:id/dashboard", async (req, res) => {
   const id_aluno = parseInt(req.params.id);
@@ -368,7 +386,7 @@ app.use((err, req, res, next) => {
 // Middleware para tratar erros
 app.use((err, req, res, next) => {
   console.error(err.stack); // Log do erro no console
-  res.status(err.status || 500).sendFile(path.join(__dirname, "public", "error.html"));
+  res.status(err.status || 500).sendFile(path.join(__dirname, "public", "erro.html"));
 });
 
 // Middleware para rotas não encontradas
