@@ -9,7 +9,7 @@ body {
   padding: 0;
   font-family: "Instrument Sans";
   overflow: hidden;
-  background: linear-gradient(to right, white 50%, #fdc7a5 50%);
+  background: linear-gradient(to right, white 50%, #9ec6ee 50%);
   position: relative;
 }
 
@@ -89,7 +89,7 @@ main {
 }
 
 #ai {
-  color: orange;
+  color: #a5e1fd
 }
 
 #img1 {
@@ -119,9 +119,8 @@ main {
 button {
   width: 324px;
   height: 56px;
-  background: #fa731e;
   border-radius: 70px;
-  background: #fa731e;
+  background: #055fcf;
   border-radius: 70px;
 }
 
